@@ -1,11 +1,12 @@
 @tailwind base;
 @tailwind components;
 /* purgecss start ignore */
-html {
-  font-family: 'Poppins', sans-serif;
+html,
+body {
+  @apply font-poppins text-black-body;
 }
 p {
-  @apply tracking-wide;
+  @apply leading-normal;
 }
 /* purgecss end ignore */
 @tailwind utilities;
