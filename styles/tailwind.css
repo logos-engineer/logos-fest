@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+/* purgecss start ignore */
+html {
+  font-family: 'Poppins', sans-serif;
+}
+p {
+  @apply tracking-wide;
+}
+/* purgecss end ignore */
+@tailwind utilities;
