@@ -15,7 +15,10 @@ const Button = ({
         'rounded-md transition-all',
         className,
         variant === 'primary' && ['text-white bg-pink-500 hover:bg-pink-700'],
-        variant === 'secondary' && ['text-white bg-red-500 hover:bg-red-800'],
+        variant === 'secondary' && ['text-white bg-red-500 hover:bg-pink-800'],
+        variant === 'outline-primary' && [
+          'text-pink-500 bg-white hover:bg-pink-500 hover:text-white border border-pink-500',
+        ],
         size === 'base' && ['px-6 py-3 text-base']
       )}
       onClick={onClick}
