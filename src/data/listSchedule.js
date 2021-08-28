@@ -7,11 +7,11 @@ const listSchedule = [
         date: '01 November 2021',
         subtitle:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi nisi, quam id libero sed. Turpis luctus sed placerat quis a a. Nulla vestibulum, massa consectetur feugiat et. cerat luct...',
-        person: {
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-        },
+        person: [
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
+        ],
         urlSchedule: '/',
         btnSchedule: 'Register Now',
       },
@@ -20,11 +20,11 @@ const listSchedule = [
         date: '02 November 2021',
         subtitle:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi nisi, quam id libero sed. Turpis luctus sed placerat quis a a. Nulla vestibulum, massa consectetur feugiat et. cerat luct...',
-        person: {
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-        },
+        person: [
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
+        ],
         urlSchedule: '/',
         btnSchedule: 'Register Now',
       },
@@ -38,11 +38,11 @@ const listSchedule = [
         date: '01 November 2021',
         subtitle:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi nisi, quam id libero sed. Turpis luctus sed placerat quis a a. Nulla vestibulum, massa consectetur feugiat et. cerat luct...',
-        person: {
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-        },
+        person: [
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
+        ],
         urlSchedule: '/',
         btnSchedule: 'Register Now',
       },
@@ -51,11 +51,11 @@ const listSchedule = [
         date: '02 November 2021',
         subtitle:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi nisi, quam id libero sed. Turpis luctus sed placerat quis a a. Nulla vestibulum, massa consectetur feugiat et. cerat luct...',
-        person: {
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-        },
+        person: [
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
+        ],
         urlSchedule: '/',
         btnSchedule: 'Register Now',
       },
@@ -69,11 +69,11 @@ const listSchedule = [
         date: '01 November 2021',
         subtitle:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi nisi, quam id libero sed. Turpis luctus sed placerat quis a a. Nulla vestibulum, massa consectetur feugiat et. cerat luct...',
-        person: {
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-        },
+        person: [
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
+        ],
         urlSchedule: '/',
         btnSchedule: 'Register Now',
       },
@@ -82,11 +82,11 @@ const listSchedule = [
         date: '02 November 2021',
         subtitle:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi nisi, quam id libero sed. Turpis luctus sed placerat quis a a. Nulla vestibulum, massa consectetur feugiat et. cerat luct...',
-        person: {
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-        },
+        person: [
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
+        ],
         urlSchedule: '/',
         btnSchedule: 'Register Now',
       },
@@ -100,11 +100,11 @@ const listSchedule = [
         date: '01 November 2021',
         subtitle:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi nisi, quam id libero sed. Turpis luctus sed placerat quis a a. Nulla vestibulum, massa consectetur feugiat et. cerat luct...',
-        person: {
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-        },
+        person: [
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
+        ],
         urlSchedule: '/',
         btnSchedule: 'Register Now',
       },
@@ -113,11 +113,11 @@ const listSchedule = [
         date: '02 November 2021',
         subtitle:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi nisi, quam id libero sed. Turpis luctus sed placerat quis a a. Nulla vestibulum, massa consectetur feugiat et. cerat luct...',
-        person: {
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-        },
+        person: [
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
+        ],
         urlSchedule: '/',
         btnSchedule: 'Register Now',
       },
@@ -131,11 +131,11 @@ const listSchedule = [
         date: '01 November 2021',
         subtitle:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi nisi, quam id libero sed. Turpis luctus sed placerat quis a a. Nulla vestibulum, massa consectetur feugiat et. cerat luct...',
-        person: {
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-        },
+        person: [
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
+        ],
         urlSchedule: '/',
         btnSchedule: 'Register Now',
       },
@@ -144,11 +144,11 @@ const listSchedule = [
         date: '02 November 2021',
         subtitle:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi nisi, quam id libero sed. Turpis luctus sed placerat quis a a. Nulla vestibulum, massa consectetur feugiat et. cerat luct...',
-        person: {
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-          imgUrl: '/img/homepage/schedule/hero-1.png',
-        },
+        person: [
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
+          { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
+        ],
         urlSchedule: '/',
         btnSchedule: 'Register Now',
       },
