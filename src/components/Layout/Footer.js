@@ -1,7 +1,7 @@
 import React from 'react';
 
-import FooterLink from './Common/FooterLink';
-import IconLink from './Common/IconLink';
+import FooterLink from './Footer/FooterLink';
+import IconLink from './Footer/IconLink';
 
 const Footer = () => {
   return (

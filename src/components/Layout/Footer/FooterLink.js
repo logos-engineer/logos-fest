@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 function FooterLink({ href, children }) {
   return (
-    <Link href={href}>
-      <a className="relative text-white text-lg font-medium" href={href}>
+    <Link passHref href={href}>
+      <a className="relative pb-2 text-white text-lg font-medium border-b-2 border-transparent hover:border-white transition-colors">
         {children}
       </a>
     </Link>
