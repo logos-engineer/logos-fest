@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import Link from 'next/link';
 
 function IconLink({ src, alt, href }) {
@@ -10,16 +10,16 @@ function IconLink({ src, alt, href }) {
         href={href}
         title={alt}
       >
-        <img src={src} className="h-[12.75px]" alt={src} />
+        <img src={src} className="h-[12.75px]" alt={alt} />
       </a>
     </Link>
   );
 }
 
-IconLink.PropTypes = {
-  src: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
+IconLink.propTypes = {
+  src: propTypes.string.isRequired,
+  href: propTypes.string.isRequired,
+  alt: propTypes.string.isRequired,
 };
 
 export default IconLink;
