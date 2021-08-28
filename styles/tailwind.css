@@ -3,10 +3,11 @@
 /* purgecss start ignore */
 html,
 body {
-  @apply font-poppins text-black-body;
+  @apply text-black-body font-poppins;
 }
 p {
   @apply leading-normal;
 }
+
 /* purgecss end ignore */
 @tailwind utilities;
