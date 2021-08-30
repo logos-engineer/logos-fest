@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 /* purgecss start ignore */
+
+@layer components {
+  .pattern-before::before {
+    @apply absolute bg-cover bg-no-repeat;
+  }
+  .pattern-after::after {
+    @apply absolute bg-cover bg-no-repeat;
+  }
+}
+
 html,
 body {
   @apply text-black-body font-poppins;
@@ -9,5 +19,23 @@ p {
   @apply leading-normal;
 }
 
+/* Book */
+.ornament-star::before {
+  content: '';
+  background-image: url('/pattern/homepage/ornament-star.svg');
+  width: 183px;
+  height: 315px;
+  top: -46%;
+  left: -10%;
+}
+.ornament-sun::after {
+  content: '';
+  background-image: url('/pattern/homepage/ornament-sun.svg');
+  width: 154px;
+  height: 154px;
+  z-index: -1;
+  top: -35%;
+  right: -10%;
+}
 /* purgecss end ignore */
 @tailwind utilities;
