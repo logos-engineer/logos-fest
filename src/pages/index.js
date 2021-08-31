@@ -3,6 +3,7 @@ import Layout from '@/components/Layout/Layout';
 import Hero from '@/components/Homepage/Hero';
 import Event from '@/components/Homepage/Event';
 import Schedule from '@/components/Homepage/Schedule';
+import Book from '@/components/Homepage/Book';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <Event />
         <Schedule />
+        <Book />
       </Layout>
     </>
   );
