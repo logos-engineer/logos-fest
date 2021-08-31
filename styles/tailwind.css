@@ -2,6 +2,16 @@
 @tailwind components;
 /* purgecss start ignore */
 
+@layer base {
+  html,
+  body {
+    @apply text-black-body font-poppins;
+  }
+  p {
+    @apply leading-normal;
+  }
+}
+
 @layer components {
   .pattern-before::before {
     @apply absolute bg-cover bg-no-repeat;
@@ -9,14 +19,6 @@
   .pattern-after::after {
     @apply absolute bg-cover bg-no-repeat;
   }
-}
-
-html,
-body {
-  @apply text-black-body font-poppins;
-}
-p {
-  @apply leading-normal;
 }
 
 /* Book */
@@ -36,6 +38,15 @@ p {
   z-index: -1;
   top: -35%;
   right: -10%;
+}
+.ornament-small-star::before {
+  content: '';
+  background-image: url('/pattern/homepage/small-star.svg');
+  width: 84px;
+  height: 84px;
+  z-index: -1;
+  top: -35%;
+  left: -5%;
 }
 /* purgecss end ignore */
 @tailwind utilities;

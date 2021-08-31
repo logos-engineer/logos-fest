@@ -16,7 +16,7 @@ const Hero = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id
               aliquet massa dui suscipit.
             </p>
-            <div className="mt-[42px] relative">
+            <div className="mt-[42px] pattern-before ornament-small-star relative">
               <Button>Register Here!</Button>
             </div>
           </div>
