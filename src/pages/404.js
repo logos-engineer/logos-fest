@@ -25,16 +25,16 @@ export default function Custom404() {
           <Button className="w-max" onClick={() => route.push('/')}>
             Kembali ke Home
           </Button>
-          <div className="w-[459] h-[460] pb-[24px] absolute -bottom-40 self-end justify-end">
-            <Image
-              src="/img/404/illust.png"
-              width={459}
-              height={460}
-              placeholder="empty"
-              alt="Patung merenung"
-            />
-          </div>
         </Container>
+        <div className="w-[459] h-[460] pb-[24px] absolute -bottom-40 right-0 self-end">
+          <Image
+            src="/img/404/illust.png"
+            width={459}
+            height={460}
+            placeholder="empty"
+            alt="Patung merenung"
+          />
+        </div>
       </Layout>
     </>
   )
