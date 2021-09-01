@@ -43,6 +43,13 @@ module.exports = {
       '5xl': '64px',
     },
     extend: {
+      backgroundImage: (theme) => ({
+        'speaker-gradient':
+          ' linear-gradient(180deg, rgba(234, 29, 119, 0) 63.55%, rgba(234, 29, 118, 0.84) 100%);',
+      }),
+      padding: {
+        '120px': '7.5rem',
+      },
       colors: {
         black: {
           500: '#000000',
@@ -93,5 +100,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require('@tailwindcss/aspect-ratio')],
 };
