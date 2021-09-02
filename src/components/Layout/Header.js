@@ -25,8 +25,8 @@ const Header = () => {
   const authContext = useContext(AuthContext)
 
   return (
-    <div className="relative">
-      <header className="fixed z-30 left-0 right-0 top-0 py-4 bg-white shadow-navbar">
+    <>
+      <header className="fixed z-30 left-0 right-0 top-0 py-4 w-screen bg-white shadow-navbar">
         <nav className="flex items-center justify-between mx-auto max-w-screen-xl">
           <Link passHref href="/">
             <a>
@@ -56,7 +56,7 @@ const Header = () => {
           )}
         </nav>
       </header>
-    </div>
+    </>
   )
 }
 

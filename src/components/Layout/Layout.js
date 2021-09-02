@@ -5,12 +5,12 @@ import RegisterModal from './RegisterModal'
 
 const Layout = ({ children }) => {
   return (
-    <div className="relative">
+    <>
       <Header />
       <RegisterModal />
       {children}
       <Footer />
-    </div>
+    </>
   )
 }
 
