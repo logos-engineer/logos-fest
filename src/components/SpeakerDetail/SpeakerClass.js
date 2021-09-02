@@ -9,7 +9,7 @@ export default function SpeakerClass({ listClass }) {
         <h1 className="col-span-11 col-start-2 mt-32 text-black-primary text-3xl font-semibold">
           Speaker Classes
         </h1>
-        <div className="grid col-span-10 col-start-2 grid-cols-2">
+        <div className="grid gap-10 col-span-10 col-start-2 grid-cols-2">
           {listClass.map((list) => (
             <div className="col-span-1">
               <CardSchedule
