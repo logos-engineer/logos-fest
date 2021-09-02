@@ -1,4 +1,6 @@
+import { ModalContext } from '@/context/RegistModal/ModalProvider'
 import Link from 'next/link'
+import { useContext } from 'react'
 import { Button } from '../Common'
 
 const Header = () => {
@@ -16,6 +18,7 @@ const Header = () => {
       link: '/speakers',
     },
   ]
+  const modalContext = useContext(ModalContext)
 
   return (
     <div className="relative">
@@ -39,7 +42,9 @@ const Header = () => {
               </Link>
             ))}
           </div>
-          <Button>Registration</Button>
+          <Button onClick={() => modalContext.setmodalView(true)}>
+            Registration
+          </Button>
         </nav>
       </header>
     </div>

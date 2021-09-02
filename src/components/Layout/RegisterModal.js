@@ -1,18 +1,18 @@
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'react'
+import { Fragment, useContext } from 'react'
 import { Button } from '@/components/Common'
+import { ModalContext } from '@/context/RegistModal/ModalProvider'
 
-export default function RegisterModal({
-  isOpen = false,
-  closeModal = () => {},
-}) {
+export default function RegisterModal() {
+  const context = useContext(ModalContext)
+
   return (
     <>
-      <Transition appear show={true} as={Fragment}>
+      <Transition appear show={context.modalView} as={Fragment}>
         <Dialog
           as="div"
           className="fixed z-50 inset-0 overflow-y-auto"
-          onClose={closeModal}
+          onClose={() => context.setmodalView(false)}
         >
           <div className="px-4 min-h-screen text-center bg-black-primary bg-opacity-50">
             <Transition.Child
@@ -44,7 +44,11 @@ export default function RegisterModal({
               leaveTo="opacity-0 scale-95"
             >
               <div className="shadow-xl inline-block align-middle my-8 p-8 w-full max-w-md text-left bg-white border rounded-2xl overflow-hidden transform transition-all">
-                <button className="flex mb-2 ml-auto w-3 h-3">
+                <button
+                  className="flex mb-2 ml-auto w-3 h-3"
+                  aria-label="close"
+                  onClick={() => context.setmodalView(false)}
+                >
                   <img
                     src="/icon/modal/close.svg"
                     alt="close "

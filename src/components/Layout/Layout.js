@@ -7,9 +7,9 @@ const Layout = ({ children }) => {
   return (
     <div className="relative">
       <Header />
+      <RegisterModal />
       {children}
       <Footer />
-      <RegisterModal />
     </div>
   )
 }

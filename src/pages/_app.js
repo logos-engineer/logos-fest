@@ -1,7 +1,12 @@
-import '@/styles/tailwind.css';
+import '@/styles/tailwind.css'
+import ModalProvider from '@/context/RegistModal/ModalProvider'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <ModalProvider>
+      <Component {...pageProps} />;
+    </ModalProvider>
+  )
 }
 
-export default MyApp;
+export default MyApp
