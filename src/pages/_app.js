@@ -1,11 +1,11 @@
+import WrapperProvider from '@/context/WrapperProvider'
 import '@/styles/tailwind.css'
-import ModalProvider from '@/context/RegistModal/ModalProvider'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ModalProvider>
+    <WrapperProvider>
       <Component {...pageProps} />
-    </ModalProvider>
+    </WrapperProvider>
   )
 }
 

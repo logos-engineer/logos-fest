@@ -5,7 +5,7 @@ import { ModalContext } from '@/context/RegistModal/ModalProvider'
 
 export default function RegisterModal() {
   const context = useContext(ModalContext)
-  console.log(context)
+
   return (
     <>
       <Transition appear show={context.modalView} as={Fragment}>
