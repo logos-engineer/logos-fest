@@ -4,7 +4,7 @@ import ModalProvider from '@/context/RegistModal/ModalProvider'
 function MyApp({ Component, pageProps }) {
   return (
     <ModalProvider>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </ModalProvider>
   )
 }
