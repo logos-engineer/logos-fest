@@ -12,10 +12,13 @@ export default function Profile() {
       <Popover className="relative">
         {({ open }) => (
           <>
-            <Popover.Button>
-              <button>
-                <Image src="/img/header/profile.png" width={42} height={42} />
-              </button>
+            <Popover.Button aria-label="profile picture">
+              <Image
+                src="/img/header/profile.png"
+                width={42}
+                height={42}
+                alt="profile picture"
+              />
             </Popover.Button>
             <Transition
               appear

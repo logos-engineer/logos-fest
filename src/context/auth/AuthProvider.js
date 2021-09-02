@@ -4,7 +4,7 @@ export const AuthContext = createContext()
 
 export default function AuthProvider({ children }) {
   const [authData, setauthData] = useState({
-    loggedIn: true,
+    loggedIn: false,
   })
 
   const login = () => {

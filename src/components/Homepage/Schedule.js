@@ -1,11 +1,11 @@
-import React from 'react';
-import { Fragment } from 'react';
-import { Tab } from '@headlessui/react';
-import { Button, Container, Grid } from '../Common';
-import HeadSection from './Common/HeadSection';
-import listSchedule from 'src/data/listSchedule';
-import clsx from 'clsx';
-import CardSchedule from './Common/CardSchedule';
+import React from 'react'
+import { Fragment } from 'react'
+import { Tab } from '@headlessui/react'
+import { Button, Container, Grid } from '../Common'
+import HeadSection from './Common/HeadSection'
+import listSchedule from 'src/data/listSchedule'
+import clsx from 'clsx'
+import CardSchedule from './Common/CardSchedule'
 
 const Schedule = () => {
   return (
@@ -23,7 +23,7 @@ const Schedule = () => {
               <Tab.List>
                 {listSchedule &&
                   listSchedule.map((item, index) => (
-                    <Tab as={Fragment}>
+                    <Tab as={Fragment} key={index}>
                       {({ selected }) => (
                         <button
                           className={clsx(
@@ -42,9 +42,13 @@ const Schedule = () => {
               <Tab.Panels>
                 {listSchedule &&
                   listSchedule.map((item, index) => (
-                    <Tab.Panel className="grid gap-10 grid-cols-2 mt-12">
+                    <Tab.Panel
+                      className="grid gap-10 grid-cols-2 mt-12"
+                      key={index}
+                    >
                       {item.schedule.map((datas, index) => (
                         <CardSchedule
+                          key={index}
                           title={datas.title}
                           date={datas.date}
                           subtitle={datas.subtitle}
@@ -65,7 +69,7 @@ const Schedule = () => {
         </Grid>
       </Container>
     </section>
-  );
-};
+  )
+}
 
-export default Schedule;
+export default Schedule
