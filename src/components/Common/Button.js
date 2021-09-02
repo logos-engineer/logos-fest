@@ -22,6 +22,9 @@ const Button = ({
         variant === 'outline-secondary' && [
           'text-black-primary bg-white font-medium hover:bg-gray-200 hover:to-black-primary border ',
         ],
+        variant === 'unstyled' && [
+          ' bg-white  hover:bg-gray-200 hover:to-black-primary ',
+        ],
         size === 'base' && ['px-6 py-3 text-base']
       )}
       onClick={onClick}

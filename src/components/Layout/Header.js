@@ -1,7 +1,10 @@
+import { AuthContext } from '@/context/auth/AuthProvider'
 import { ModalContext } from '@/context/RegistModal/ModalProvider'
 import Link from 'next/link'
 import { useContext } from 'react'
+
 import { Button } from '../Common'
+import Profile from './Header/Profile'
 
 const Header = () => {
   const listMenu = [
@@ -19,6 +22,7 @@ const Header = () => {
     },
   ]
   const modalContext = useContext(ModalContext)
+  const authContext = useContext(AuthContext)
 
   return (
     <div className="relative">
@@ -42,9 +46,14 @@ const Header = () => {
               </Link>
             ))}
           </div>
-          <Button onClick={() => modalContext.setmodalView(true)}>
-            Registration
-          </Button>
+
+          {authContext.authData.loggedIn ? (
+            <Profile />
+          ) : (
+            <Button onClick={() => modalContext.setmodalView(true)}>
+              Registration
+            </Button>
+          )}
         </nav>
       </header>
     </div>

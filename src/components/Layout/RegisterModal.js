@@ -2,17 +2,24 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useContext } from 'react'
 import { Button } from '@/components/Common'
 import { ModalContext } from '@/context/RegistModal/ModalProvider'
+import { AuthContext } from '@/context/auth/AuthProvider'
 
 export default function RegisterModal() {
-  const context = useContext(ModalContext)
+  const modalContext = useContext(ModalContext)
+  const authContext = useContext(AuthContext)
+
+  const dummyLogin = () => {
+    authContext.login()
+    modalContext.setmodalView(false)
+  }
 
   return (
     <>
-      <Transition appear show={context.modalView} as={Fragment}>
+      <Transition appear show={modalContext.modalView} as={Fragment}>
         <Dialog
           as="div"
           className="fixed z-50 inset-0 overflow-y-auto"
-          onClose={() => context.setmodalView(false)}
+          onClose={() => modalContext.setmodalView(false)}
         >
           <div className="px-4 min-h-screen text-center bg-black-primary bg-opacity-50">
             <Transition.Child
@@ -47,7 +54,7 @@ export default function RegisterModal() {
                 <button
                   className="flex mb-2 ml-auto w-3 h-3"
                   aria-label="close"
-                  onClick={() => context.setmodalView(false)}
+                  onClick={() => modalContext.setmodalView(false)}
                 >
                   <img
                     src="/icon/modal/close.svg"
@@ -71,6 +78,7 @@ export default function RegisterModal() {
                   className="flex flex-col mt-6 space-y-2"
                 >
                   <Button
+                    onClick={dummyLogin}
                     variant="outline-secondary"
                     className="flex items-center"
                   >
@@ -78,6 +86,7 @@ export default function RegisterModal() {
                     <p className="mx-auto">Sigin in with Google</p>
                   </Button>
                   <Button
+                    onClick={dummyLogin}
                     variant="outline-secondary"
                     className="flex items-center"
                   >
@@ -85,6 +94,7 @@ export default function RegisterModal() {
                     <p className="mx-auto">Sigin in with Facebook</p>
                   </Button>
                   <Button
+                    onClick={dummyLogin}
                     variant="outline-secondary"
                     className="flex items-center"
                   >
