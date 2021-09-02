@@ -1,6 +1,6 @@
-import React from 'react';
-import clsx from 'clsx';
-import PropTypes from 'prop-types';
+import React from 'react'
+import clsx from 'clsx'
+import PropTypes from 'prop-types'
 
 const Button = ({
   children,
@@ -19,14 +19,17 @@ const Button = ({
         variant === 'outline-primary' && [
           'text-pink-500 bg-white hover:bg-pink-500 hover:text-white border border-pink-500',
         ],
+        variant === 'outline-secondary' && [
+          'text-black-primary bg-white font-medium hover:bg-gray-200 hover:to-black-primary border ',
+        ],
         size === 'base' && ['px-6 py-3 text-base']
       )}
       onClick={onClick}
     >
       {children}
     </button>
-  );
-};
+  )
+}
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
@@ -34,6 +37,6 @@ Button.propTypes = {
   className: PropTypes.string,
   size: PropTypes.string,
   onClick: PropTypes.func,
-};
+}
 
-export default Button;
+export default Button
