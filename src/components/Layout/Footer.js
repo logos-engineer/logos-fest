@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-import FooterLink from './Footer/FooterLink';
-import IconLink from './Footer/IconLink';
+import FooterLink from './Footer/FooterLink'
+import IconLink from './Footer/IconLink'
 
 const Footer = () => {
   return (
-    <footer className="mt-32 px-40 py-14 w-full bg-pink-500">
+    <footer className="mt-32 px-40 py-14 w-full bg-pink-500 border">
       <div className="mx-auto max-w-screen-xl">
         <img
           src="/icon/logos-white.svg"
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

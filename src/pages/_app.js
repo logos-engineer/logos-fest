@@ -1,7 +1,12 @@
-import '@/styles/tailwind.css';
+import WrapperProvider from '@/context/WrapperProvider'
+import '@/styles/tailwind.css'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <WrapperProvider>
+      <Component {...pageProps} />
+    </WrapperProvider>
+  )
 }
 
-export default MyApp;
+export default MyApp

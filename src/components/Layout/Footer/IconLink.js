@@ -16,7 +16,7 @@ IconLink.propTypes = {
   src: propTypes.string.isRequired,
   href: propTypes.string.isRequired,
   alt: propTypes.string.isRequired,
-  height: propTypes.string.isRequired, //use tailwind height class
+  height: propTypes.string//use tailwind height class
 };
 
 export default IconLink;
