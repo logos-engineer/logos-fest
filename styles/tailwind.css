@@ -48,5 +48,13 @@
   top: -35%;
   left: -5%;
 }
+
+.slick-slide {
+  overflow: visible;
+}
+
+.slick-list {
+  overflow: visible;
+}
 /* purgecss end ignore */
 @tailwind utilities;
