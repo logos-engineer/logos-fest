@@ -4,7 +4,7 @@ import { ChevronRightIcon } from '@heroicons/react/solid';
 
 const CardEvent = ({ imgSrc, imgAlt, title, subtitle, url }) => {
   return (
-    <div className="shadow-fest mt-[18px] flex flex-col items-start px-10 py-10 bg-white rounded-3xl">
+    <div className="mt-[18px] flex flex-col items-start px-10 py-10 bg-white rounded-3xl shadow-fest">
       <div className="flex items-center justify-center w-16 h-16 bg-pink-500 rounded-2xl">
         <img className="w-8 h-8" src={imgSrc} alt={imgAlt} />
       </div>
