@@ -43,15 +43,9 @@ export default function ScheduleDesc() {
 
         <Popover className="relative">
           <>
-            <Popover.Button>
-              <button className="flex items-center mb-8 text-pink-500">
-                Add to Calendar
-                <img
-                  src="/icon/add.svg"
-                  alt="tambah"
-                  className="ml-2 w-4 h-4"
-                />
-              </button>
+            <Popover.Button className="flex items-center mb-8 text-pink-500">
+              Add to Calendar
+              <img src="/icon/add.svg" alt="tambah" className="ml-2 w-4 h-4" />
             </Popover.Button>
             <Transition
               as={Fragment}

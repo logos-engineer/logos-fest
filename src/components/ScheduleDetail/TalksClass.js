@@ -2,7 +2,6 @@ import React from 'react'
 import { Button } from '../Common'
 import Grid from '@/components/Common/Grid'
 import CardSchedule from '@/components/Homepage/Common/CardSchedule'
-import listSchedule from '@/data/listSchedule'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 
@@ -59,18 +58,18 @@ export default function TalksClass() {
           <Button variant="outline-primary">Lihat Semua</Button>
         </div>
       </Grid>
-      <Grid className="mx-auto pl-7 max-w-screen-2xl overflow-hidden">
+      <Grid className="mx-auto pl-10 max-w-screen-2xl overflow-hidden">
         <Slider
           infinite={false}
           slidesToShow={2.1}
           slidesToScroll={2}
           arrows={false}
-          className="col-span-12 col-start-1 justify-start py-10"
+          className="flex col-span-12 col-start-1 items-stretch justify-start justify-items-stretch py-10"
         >
-          {dummy.map((list) => (
-            <div className="mr-10 px-5 py-5">
+          {dummy.map((list, idx) => (
+            <div className="items-stretch mr-10 px-5 py-5">
               <CardSchedule
-                key={list.title}
+                key={idx}
                 title={list.title}
                 date={list.date}
                 subtitle={list.subtitle}
