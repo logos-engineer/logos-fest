@@ -1,8 +1,12 @@
-import React from 'react';
-import { Button, Container, Grid } from '../Common';
-import Image from 'next/image';
-import HeroImg from '@/public/img/homepage/hero-1.png';
+import React, { useContext } from 'react'
+import { Button, Container, Grid } from '../Common'
+import Image from 'next/image'
+import HeroImg from '@/public/img/homepage/hero-1.png'
+import { ModalContext } from '@/context/RegistModal/ModalProvider'
+
 const Hero = () => {
+  const modalContext = useContext(ModalContext)
+
   return (
     <section id="hero" className="pt-[221px] pb-36 w-full">
       <Container>
@@ -17,7 +21,9 @@ const Hero = () => {
               aliquet massa dui suscipit.
             </p>
             <div className="mt-[42px] pattern-before ornament-small-star relative">
-              <Button>Register Here!</Button>
+              <Button onClick={() => modalContext.setmodalView(true)}>
+                Register Here!
+              </Button>
             </div>
           </div>
           <div className="col-span-7 col-start-6">
@@ -35,7 +41,7 @@ const Hero = () => {
         </Grid>
       </Container>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
