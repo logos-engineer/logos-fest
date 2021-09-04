@@ -5,49 +5,7 @@ import CardSchedule from '@/components/Homepage/Common/CardSchedule'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 
-export default function TalksClass() {
-  const dummy = [
-    {
-      title: ' Keadilan dalam Undang - Eddy Omar ft. Hukum Online',
-      date: '01 November 2021',
-      subtitle:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi nisi, quam id libero sed. Turpis luctus sed placerat quis a a. Nulla vestibulum, massa consectetur feugiat et. cerat luct...',
-      person: [
-        { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy Omar' },
-        { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
-        { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
-      ],
-      urlSchedule: '/',
-      btnSchedule: 'Register Now',
-    },
-    {
-      title: ' Keadilan dalam Pulau - Eddy Omar ft. Hukum Online',
-      date: '02 November 2021',
-      subtitle:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi nisi, quam id libero sed. Turpis luctus sed placerat quis a a. Nulla vestibulum, massa consectetur feugiat et. cerat luct...',
-      person: [
-        { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy Omar' },
-        { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
-        { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
-      ],
-      urlSchedule: '/',
-      btnSchedule: 'Register Now',
-    },
-    {
-      title: ' Keadilan dalam Pulau - Eddy Omar ft. Hukum Online',
-      date: '02 November 2021',
-      subtitle:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi nisi, quam id libero sed. Turpis luctus sed placerat quis a a. Nulla vestibulum, massa consectetur feugiat et. cerat luct...',
-      person: [
-        { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy Omar' },
-        { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
-        { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
-      ],
-      urlSchedule: '/',
-      btnSchedule: 'Register Now',
-    },
-  ]
-
+export default function TalksClass({ data }) {
   return (
     <>
       <Grid className="mt-16 mx-auto max-w-screen-xl overflow-hidden">
@@ -66,7 +24,7 @@ export default function TalksClass() {
           arrows={false}
           className="flex col-span-12 col-start-1 items-stretch justify-start justify-items-stretch py-10"
         >
-          {dummy.map((list, idx) => (
+          {data.map((list, idx) => (
             <div className="items-stretch mr-10 px-5 py-5">
               <CardSchedule
                 key={idx}
