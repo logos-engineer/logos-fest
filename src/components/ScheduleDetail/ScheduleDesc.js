@@ -3,8 +3,10 @@ import Grid from '@/components/Common/Grid'
 import SpeakerCard from '@/components/ScheduleDetail/SpeakerCard'
 import { Button } from '@/components/Common'
 import { Popover, Transition } from '@headlessui/react'
+import { Router, useRouter } from 'next/dist/client/router'
 
 export default function ScheduleDesc() {
+  const route = useRouter()
   return (
     <Grid className="mt-32 mx-auto max-w-screen-xl">
       <div className="block col-span-7 col-start-1 font-semibold">
@@ -41,7 +43,7 @@ export default function ScheduleDesc() {
           Senin, 7 November 2021 17.00 - 18.00 WIB | 60 Menit
         </p>
 
-        <Popover className="relative">
+        <Popover className="relative hidden">
           <>
             <Popover.Button className="flex items-center mb-8 text-pink-500">
               Add to Calendar
@@ -102,7 +104,12 @@ export default function ScheduleDesc() {
           </>
         </Popover>
 
-        <Button className="w-full">Register Now</Button>
+        <Button
+          className="w-full"
+          onClick={() => route.push('https://lynk.id/logos_id/P9erAl8')}
+        >
+          Register Now
+        </Button>
       </div>
     </Grid>
   )
