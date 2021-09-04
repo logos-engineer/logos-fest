@@ -4,6 +4,7 @@ import Grid from '@/components/Common/Grid'
 import CardSchedule from '@/components/Homepage/Common/CardSchedule'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
+import Link from 'next/link'
 
 export default function TalksClass({ data }) {
   return (
@@ -13,7 +14,11 @@ export default function TalksClass({ data }) {
           <h1 className="flex-grow text-black-primary text-2xl font-semibold">
             Kelas lainnya dari Justice Talks
           </h1>
-          <Button variant="outline-primary">Lihat Semua</Button>
+          <Link passHref href={'/justice/talks'}>
+            <a aria-label="lihat semua">
+              <Button variant="outline-primary">Lihat Semua</Button>
+            </a>
+          </Link>
         </div>
       </Grid>
       <Grid className="mx-auto pl-10 max-w-screen-2xl overflow-hidden">
