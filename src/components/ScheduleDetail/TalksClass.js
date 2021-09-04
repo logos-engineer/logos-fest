@@ -27,6 +27,8 @@ export default function TalksClass({ data }) {
           {data.map((list, idx) => (
             <div className="items-stretch mr-10 px-5 py-5">
               <CardSchedule
+                category={list.category}
+                slug={list.slug}
                 key={idx}
                 title={list.title}
                 date={list.date}

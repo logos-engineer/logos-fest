@@ -48,6 +48,8 @@ const Schedule = () => {
                     >
                       {item.schedule.map((datas, index) => (
                         <CardSchedule
+                          slug={datas.slug}
+                          category={datas.category}
                           key={index}
                           title={datas.title}
                           date={datas.date}

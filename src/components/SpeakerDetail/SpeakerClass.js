@@ -13,6 +13,8 @@ export default function SpeakerClass({ listClass }) {
           {listClass.map((list) => (
             <div className="col-span-1">
               <CardSchedule
+                slug={list.slug}
+                category={list.category}
                 key={list.title}
                 title={list.title}
                 date={list.date}

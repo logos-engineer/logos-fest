@@ -9,8 +9,10 @@ export const Bootcamp = [
       { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
       { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
     ],
-    urlSchedule: '/',
+    urlSchedule: 'https://lynk.id/logos_id/P9erAl8',
     btnSchedule: 'Register Now',
+    category: 'bootcamp',
+    slug: 'Keadilan-dalam-Fisika-Eddy-Omar-ft.HukumOnline',
   },
   {
     title: ' Keadilan dalam Pulau - Eddy Omar ft. Hukum Online',
@@ -22,8 +24,10 @@ export const Bootcamp = [
       { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
       { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
     ],
-    urlSchedule: '/',
+    urlSchedule: 'https://lynk.id/logos_id/P9erAl8',
     btnSchedule: 'Register Now',
+    category: 'bootcamp',
+    slug: 'Keadilan-dalam-Fisika-Eddy-Omar-ft.HukumOnline',
   },
 ]
 export const Talks = [
@@ -37,8 +41,10 @@ export const Talks = [
       { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
       { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
     ],
-    urlSchedule: '/',
+    urlSchedule: 'https://lynk.id/logos_id/P9erAl8',
     btnSchedule: 'Register Now',
+    category: 'talks',
+    slug: 'Keadilan-dalam-Fisika-Eddy-Omar-ft.HukumOnline',
   },
   {
     title: ' Keadilan dalam Pulau - Eddy Omar ft. Hukum Online',
@@ -50,8 +56,10 @@ export const Talks = [
       { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
       { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
     ],
-    urlSchedule: '/',
+    urlSchedule: 'https://lynk.id/logos_id/P9erAl8',
     btnSchedule: 'Register Now',
+    category: 'talks',
+    slug: 'Keadilan-dalam-Fisika-Eddy-Omar-ft.HukumOnline',
   },
   {
     title: ' Keadilan dalam Gotham - Eddy Omar ft. Hukum Online',
@@ -63,7 +71,9 @@ export const Talks = [
       { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Omar' },
       { imgUrl: '/img/homepage/schedule/person-1.png', name: 'Eddy' },
     ],
-    urlSchedule: '/',
+    urlSchedule: 'https://lynk.id/logos_id/P9erAl8',
     btnSchedule: 'Register Now',
+    category: 'talks',
+    slug: 'Keadilan-dalam-Fisika-Eddy-Omar-ft.HukumOnline',
   },
 ]

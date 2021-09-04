@@ -1,7 +1,6 @@
 import React from 'react'
 import Grid from '@/components/Common/Grid'
 import CardSchedule from '@/components/Homepage/Common/CardSchedule'
-import listSchedule from '@/data/listSchedule'
 
 export default function BootcampClass({ data }) {
   return (
@@ -13,6 +12,8 @@ export default function BootcampClass({ data }) {
         {data.map((list) => (
           <div className="col-span-1">
             <CardSchedule
+              category={list.category}
+              slug={list.slug}
               key={list.title}
               title={list.title}
               date={list.date}
