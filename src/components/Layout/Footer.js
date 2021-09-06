@@ -5,25 +5,27 @@ import IconLink from './Footer/IconLink'
 
 const Footer = () => {
   return (
-    <footer className="mt-32 px-40 py-14 w-full bg-pink-500 border">
-      <div className="mx-auto max-w-screen-xl">
+    <footer className="mt-32 p-4 w-full bg-pink-500 border lg:px-40 lg:py-14">
+      <div className="max-w-screen-xl lg:mx-auto">
         <img
           src="/icon/logos-white.svg"
-          className="h-[32px] mx-auto w-auto"
+          className="h-[32px] w-auto lg:mx-auto"
           alt="Logos Logo"
         />
-        <div className="w-[50%] flex justify-between mt-6 mx-auto">
+        <div className="lg:w-[50%] flex flex-col justify-between mt-6 w-full lg:flex-row lg:mx-auto">
           <FooterLink href="/">Sitemap</FooterLink>
           <FooterLink href="/">Privacy Policy</FooterLink>
           <FooterLink href="/">Contact Us</FooterLink>
         </div>
 
-        <div className="h-[1px] flex mt-11 w-full bg-white bg-opacity-20">
+        <div className="h-[1px] flex mt-6 w-full bg-white bg-opacity-20 lg:mt-11">
           {' '}
         </div>
-        <div className="flex items-center justify-between mt-6">
-          <h5 className="text-white font-semibold">© 2021 Logos ID</h5>
-          <div className="flex gap-1">
+        <div className="flex flex-col justify-between mt-6 lg:flex-row lg:items-center">
+          <h5 className="text-white text-xs lg:text-base lg:font-semibold">
+            © Logos ID 2021. All Right Reserved
+          </h5>
+          <div className="flex gap-4 mt-4 lg:gap-1 lg:mt-0">
             <IconLink src="/icon/instagram.svg" href="/" alt="instagram" />
             <IconLink src="/icon/spotify.svg" href="/" alt="spotify" />
             <IconLink src="/icon/twitter.svg" href="/" alt="twitter" />

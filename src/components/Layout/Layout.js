@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
       <Header />
       <RegisterModal />
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
