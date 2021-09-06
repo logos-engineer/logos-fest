@@ -15,8 +15,8 @@ export default function Home() {
       <Layout>
         <Hero />
         <Event />
-        {/* <Schedule /> */}
-        {/* <Book /> */}
+        <Schedule />
+        <Book />
       </Layout>
     </>
   )

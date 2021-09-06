@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import DesktopListAndButton from './Header/DesktopListAndButton'
-import DetailNav from './Header/DetailNav'
 import MobileListAndButton from './Header/MobileListAndButton'
 
 const Header = () => {
