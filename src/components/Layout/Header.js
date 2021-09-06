@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed z-30 left-0 right-0 top-0 py-4 w-full bg-white shadow-navbar md:w-screen">
+      <header className="fixed z-30 left-0 right-0 top-0 py-4 bg-white shadow-navbar lg:w-screen">
         <nav className="flex items-center justify-between mx-auto px-4 max-w-screen-xl lg:px-0">
           <Link passHref href="/">
             <a>
@@ -35,7 +35,7 @@ const Header = () => {
               />
             </a>
           </Link>
-          <button>
+          <button className="lg:hidden">
             <img src="/icon/ham.svg" alt="menu nav" className="w-6 h-6" />
           </button>
           <DesktopListAndButton />
