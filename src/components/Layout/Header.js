@@ -1,27 +1,9 @@
-import { AuthContext } from '@/context/auth/AuthProvider'
-import { ModalContext } from '@/context/RegistModal/ModalProvider'
 import Link from 'next/link'
-import { useContext } from 'react'
-import { DesktopListAndButton } from './Header/DesktopListAndButton'
+import DesktopListAndButton from './Header/DesktopListAndButton'
+import DetailNav from './Header/DetailNav'
+import MobileListAndButton from './Header/MobileListAndButton'
 
 const Header = () => {
-  const listMenu = [
-    {
-      name: 'Home',
-      link: '/',
-    },
-    {
-      name: 'Schedule',
-      link: '/schedule',
-    },
-    {
-      name: 'Speakers',
-      link: '/speakers',
-    },
-  ]
-  const modalContext = useContext(ModalContext)
-  const authContext = useContext(AuthContext)
-
   return (
     <>
       <header className="fixed z-30 left-0 right-0 top-0 py-4 bg-white shadow-navbar lg:w-screen">
@@ -35,9 +17,8 @@ const Header = () => {
               />
             </a>
           </Link>
-          <button className="lg:hidden">
-            <img src="/icon/ham.svg" alt="menu nav" className="w-6 h-6" />
-          </button>
+          <MobileListAndButton />
+
           <DesktopListAndButton />
         </nav>
       </header>

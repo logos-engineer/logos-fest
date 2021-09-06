@@ -6,7 +6,7 @@ import { useContext } from 'react'
 import { AuthContext } from '@/context/auth/AuthProvider'
 import { ModalContext } from '@/context/RegistModal/ModalProvider'
 
-export const DesktopListAndButton = () => {
+export default function DesktopListAndButton() {
   const listMenu = [
     {
       name: 'Home',
