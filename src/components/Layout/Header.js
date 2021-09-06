@@ -2,9 +2,7 @@ import { AuthContext } from '@/context/auth/AuthProvider'
 import { ModalContext } from '@/context/RegistModal/ModalProvider'
 import Link from 'next/link'
 import { useContext } from 'react'
-
-import { Button } from '../Common'
-import Profile from './Header/Profile'
+import { DesktopListAndButton } from './Header/DesktopListAndButton'
 
 const Header = () => {
   const listMenu = [
@@ -26,8 +24,8 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed z-30 left-0 right-0 top-0 py-4 w-screen bg-white shadow-navbar">
-        <nav className="flex items-center justify-between mx-auto max-w-screen-xl">
+      <header className="fixed z-30 left-0 right-0 top-0 py-4 w-full bg-white shadow-navbar md:w-screen">
+        <nav className="flex items-center justify-between mx-auto px-4 max-w-screen-xl lg:px-0">
           <Link passHref href="/">
             <a>
               <img
@@ -37,23 +35,10 @@ const Header = () => {
               />
             </a>
           </Link>
-          <div className="flex space-x-3">
-            {listMenu.map((item, index) => (
-              <Link passHref href={item.link} key={index}>
-                <a className="px-1 text-black-primary text-base font-medium leading-normal">
-                  {item.name}
-                </a>
-              </Link>
-            ))}
-          </div>
-
-          {authContext.authData.loggedIn ? (
-            <Profile />
-          ) : (
-            <Button onClick={() => modalContext.setmodalView(true)}>
-              Registration
-            </Button>
-          )}
+          <button>
+            <img src="/icon/ham.svg" alt="menu nav" className="w-6 h-6" />
+          </button>
+          <DesktopListAndButton />
         </nav>
       </header>
     </>
