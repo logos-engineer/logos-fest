@@ -1,9 +1,8 @@
 import React, { useContext } from 'react'
 import { Button, Container, Grid } from '../Common'
-import Image from 'next/image'
-import HeroImg from '@/public/img/homepage/hero-1.png'
-import HeroMobile from '@/public/img/homepage/hero-mobile.png'
 import { ModalContext } from '@/context/RegistModal/ModalProvider'
+import DesktopHeroImage from './Hero/DesktopHeroImage'
+import MobileHeroImage from './Hero/MobileHeroImage'
 
 const Hero = () => {
   const modalContext = useContext(ModalContext)
@@ -11,8 +10,8 @@ const Hero = () => {
   return (
     <section id="hero" className="lg:pt-[221px] pb-36 pt-28 w-full">
       <Container>
-        <Grid>
-          <div className="flex flex-col col-span-11 justify-center pl-4 lg:col-span-5 lg:pr-7">
+        <Grid className="px-4 w-screen">
+          <div className="flex flex-col col-span-12 justify-center lg:col-span-5 lg:pr-7">
             <p className="text-pink-500 text-md">1 November - 1 Desember</p>
             <h1 className="mt-2 text-black-primary text-xl font-bold leading-snug lg:text-5xl">
               Logos Fest
@@ -30,29 +29,9 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="col-span-11 pl-4 lg:col-span-7 lg:col-start-6">
-            <div className="relative hidden w-full h-full rounded-3xl overflow-hidden lg:block">
-              <div className="absolute w-full bg-black-500 bg-opacity-40 lg:h-full"></div>
-              <Image
-                src={HeroImg}
-                alt="Hero Image"
-                className="relative w-full h-full object-contain"
-                layout="responsive"
-                width={698}
-                height={444}
-              />
-            </div>
-            <div className="relative w-full rounded-3xl overflow-hidden lg:hidden">
-              <div className="absolute w-full bg-black-500 bg-opacity-40 lg:h-full"></div>
-              <Image
-                className="border-8 lg:hidden"
-                src={HeroMobile}
-                alt=" Hero Image"
-                layout="responsive"
-                width={328}
-                height={180}
-              />
-            </div>
+          <div className="col-span-12 mt-12 lg:col-span-7 lg:col-start-6 lg:mt-0">
+            <DesktopHeroImage />
+            <MobileHeroImage />
           </div>
         </Grid>
       </Container>

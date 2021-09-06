@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
       <Layout>
         <Hero />
-        {/* <Event /> */}
+        <Event />
         {/* <Schedule /> */}
         {/* <Book /> */}
       </Layout>
