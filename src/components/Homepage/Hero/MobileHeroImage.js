@@ -4,16 +4,9 @@ import HeroMobile from '@/public/img/homepage/hero-mobile.png'
 
 export default function MobileHeroImage() {
   return (
-    <div className="relative w-full rounded-3xl overflow-hidden lg:hidden">
-      <div className="absolute w-full bg-black-500 bg-opacity-40 lg:h-full"></div>
-      <Image
-        className="border-8 lg:hidden"
-        src={HeroMobile}
-        alt=" Hero Image"
-        layout="responsive"
-        width={328}
-        height={180}
-      />
+    <div className="relative aspect-w-3 aspect-h-2 rounded-3xl overflow-hidden lg:hidden">
+     
+      <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/mnta9Pp2LqA?playlist=mnta9Pp2LqA&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   )
 }
