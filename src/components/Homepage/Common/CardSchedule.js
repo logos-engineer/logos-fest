@@ -16,11 +16,13 @@ const CardSchedule = ({
     <div className="flex flex-col px-8 py-8 w-full bg-white rounded-2xl shadow-fest">
       <Link href={`/schedule/${category}/${slug}`} passHref>
         <a aria-label={title} className="cursor-pointer">
-          <h5 className="text-black-500 text-xl font-semibold">{title}</h5>
+          <h5 className="text-black-500 text-base font-semibold lg:text-xl">
+            {title}
+          </h5>
         </a>
       </Link>
-      <p className="mt-2 text-pink-500 text-base">{date}</p>
-      <p className="mt-4 text-base">{subtitle}</p>
+      <p className="mt-2 text-pink-500 text-sm lg:text-base">{date}</p>
+      <p className="mt-4 text-sm lg:text-base">{subtitle}</p>
       <div className="flex mt-6 w-full space-x-4">
         {imgPerson.map((item, index) => (
           <div

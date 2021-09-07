@@ -1,18 +1,19 @@
 import React from 'react'
-import { Fragment } from 'react'
 import { Tab } from '@headlessui/react'
 import { Button, Container, Grid } from '../Common'
 import HeadSection from './Common/HeadSection'
 import listSchedule from 'src/data/listSchedule'
 import clsx from 'clsx'
+import { Fragment } from 'react'
+
 import CardSchedule from './Common/CardSchedule'
 
 const Schedule = () => {
   return (
     <section id="schedule" className="pt-36 w-full">
       <Container>
-        <Grid>
-          <div className="col-span-6 col-start-4">
+        <Grid className="px-4">
+          <div className="col-span-12 lg:col-span-6 lg:col-start-4">
             <HeadSection
               title="Schedule"
               subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa cras ipsum dolor sit amet, consectetur "
@@ -20,30 +21,32 @@ const Schedule = () => {
           </div>
           <div className="flex flex-col col-span-12 items-center justify-center">
             <Tab.Group>
-              <Tab.List>
-                {listSchedule &&
-                  listSchedule.map((item, index) => (
-                    <Tab as={Fragment} key={index}>
-                      {({ selected }) => (
-                        <button
-                          className={clsx(
-                            'mx-3 px-5 py-3 rounded-md transition-all',
-                            selected
-                              ? 'bg-pink-500 text-white'
-                              : 'bg-white text-black-primary opacity-40'
-                          )}
-                        >
-                          {item.title}
-                        </button>
-                      )}
-                    </Tab>
-                  ))}
+              <Tab.List className="mt-6 lg:mt-0">
+                <div className="hidden lg:block">
+                  {listSchedule &&
+                    listSchedule.map((item, index) => (
+                      <Tab as={Fragment} key={index}>
+                        {({ selected }) => (
+                          <button
+                            className={clsx(
+                              'mx-3 px-3 py-2 rounded-full transition-all lg:px-5 lg:py-3 lg:rounded-md',
+                              selected
+                                ? 'bg-pink-500 text-white'
+                                : 'bg-white text-black-primary opacity-40'
+                            )}
+                          >
+                            {item.title}
+                          </button>
+                        )}
+                      </Tab>
+                    ))}
+                </div>
               </Tab.List>
               <Tab.Panels>
                 {listSchedule &&
                   listSchedule.map((item, index) => (
                     <Tab.Panel
-                      className="grid gap-10 grid-cols-2 mt-12"
+                      className="grid gap-5 grid-cols-1 mt-12 lg:gap-10 lg:grid-cols-2"
                       key={index}
                     >
                       {item.schedule.map((datas, index) => (

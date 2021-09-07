@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section id="hero" className="lg:pt-[221px] pb-36 pt-28 w-full">
       <Container>
-        <Grid className="px-4 w-screen">
+        <Grid className="px-4 w-screen overflow-hidden lg:overflow-visible">
           <div className="flex flex-col col-span-12 justify-center lg:col-span-5 lg:pr-7">
             <p className="text-pink-500 text-md">1 November - 1 Desember</p>
             <h1 className="mt-2 text-black-primary text-xl font-bold leading-snug lg:text-5xl">
