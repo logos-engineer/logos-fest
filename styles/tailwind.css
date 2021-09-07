@@ -92,11 +92,13 @@
 }
 
 .slick-slide {
-  overflow: visible;
+  overflow: visible !important;
+  margin-right: -1px !important;
 }
 
 .slick-list {
-  overflow: visible;
+  overflow: visible !important;
 }
+
 /* purgecss end ignore */
 @tailwind utilities;
