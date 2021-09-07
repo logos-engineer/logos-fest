@@ -1,9 +1,12 @@
 import React, { useContext } from 'react'
 import { Button, Container, Grid } from '../Common'
 import { ModalContext } from '@/context/RegistModal/ModalProvider'
+import { useRouter } from 'next/dist/client/router'
+import { route } from 'next/dist/server/router'
 
 const Hero = () => {
   const modalContext = useContext(ModalContext)
+  const router = useRouter()
 
   return (
     <section id="hero" className="lg:pt-[221px] pb-36 pt-28 w-full">
@@ -20,7 +23,10 @@ const Hero = () => {
             </p>
             <div className="lg:mt-[42px] lg:pattern-before lg:ornament-small-star relative mt-6">
               <Button
-                onClick={() => modalContext.setmodalView(true)}
+                onClick={() => {
+                  router.push('/#schedule')
+                  // modalContext.setmodalView(true)
+                }}
                 className="w-full lg:w-max"
               >
                 Register Here!

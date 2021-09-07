@@ -9,6 +9,7 @@ import CardSchedule from './Common/CardSchedule'
 import useMediaQuery from '@/hooks/useMediaQuery'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
+import Link from 'next/link'
 
 const tabDesktop = () => {
   return (
@@ -103,11 +104,17 @@ const Schedule = () => {
                           imgPerson={datas.person}
                         />
                       ))}
-                      <div className="flex col-span-full justify-center mt-4">
-                        <Button size="base" variant="outline-primary">
-                          See All Schedule
-                        </Button>
-                      </div>
+                      <Link
+                        passHref
+                        href="/schedule"
+                        
+                      >
+                        <a aria-label="See All Schedule" className="flex col-span-full justify-center mt-4">
+                          <Button size="base" variant="outline-primary">
+                            See All Schedule
+                          </Button>
+                        </a>
+                      </Link>
                     </Tab.Panel>
                   ))}
               </Tab.Panels>
