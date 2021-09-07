@@ -29,7 +29,7 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="col-span-12 mt-12 lg:col-span-7 lg:col-start-6 lg:mt-0">
+          <div className="col-span-12 mt-12 lg:col-span-7 lg:col-start-6 lg:mt-0 relative pattern-before ornament-dawn pattern-after ornament-star-hero">
             <DesktopHeroImage />
             <MobileHeroImage />
           </div>
