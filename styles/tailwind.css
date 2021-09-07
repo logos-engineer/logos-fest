@@ -10,10 +10,6 @@
   p {
     @apply leading-normal;
   }
-
-  html {
-    scroll-behavior: smooth;
-  }
 }
 
 @layer components {
