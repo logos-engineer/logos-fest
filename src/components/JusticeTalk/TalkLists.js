@@ -1,7 +1,7 @@
-import React from 'react';
-import { Container, Grid } from '../Common';
-import listSchedule from '@/data/listSchedule';
-import CardSchedule from '../Homepage/Common/CardSchedule';
+import React from 'react'
+import { Container, Grid } from '../Common'
+import listSchedule from '@/data/listSchedule'
+import CardSchedule from '../Homepage/Common/CardSchedule'
 
 const TalkLists = () => {
   return (
@@ -13,6 +13,7 @@ const TalkLists = () => {
               .find((element) => element.title === 'Justice Talks')
               .schedule.map((datas) => (
                 <CardSchedule
+                  slug={datas.slug}
                   title={datas.title}
                   date={datas.date}
                   subtitle={datas.subtitle}
@@ -23,7 +24,7 @@ const TalkLists = () => {
         </div>
       </Grid>
     </Container>
-  );
-};
+  )
+}
 
-export default TalkLists;
+export default TalkLists

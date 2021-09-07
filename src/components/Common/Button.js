@@ -25,7 +25,8 @@ const Button = ({
         variant === 'unstyled' && [
           ' bg-white  hover:bg-gray-200 hover:to-black-primary ',
         ],
-        size === 'base' && ['px-6 py-3 text-base']
+        size === 'base' && ['px-6 py-3 text-base'],
+        size === 'sm' && ['px-4 py-2 text-base']
       )}
       onClick={onClick}
     >
