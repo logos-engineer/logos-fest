@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 
 const Grid = ({ className, children }) => {
   return (
-    <div className={clsx('grid gap-10 grid-cols-12 w-full', className)}>
+    <div
+      className={clsx('grid gap-6 grid-cols-12 w-full md:gap-10', className)}
+    >
       {children}
     </div>
   );

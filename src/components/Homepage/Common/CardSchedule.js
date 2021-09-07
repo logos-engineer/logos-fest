@@ -5,14 +5,16 @@ import Link from 'next/link';
 
 const CardSchedule = ({ title, date, subtitle, imgPerson, urlRegister }) => {
   return (
-    <div className="flex flex-col px-8 py-8 w-full bg-white rounded-2xl shadow-fest">
-      <h5 className="text-black-500 text-xl font-semibold">{title}</h5>
-      <p className="mt-2 text-pink-500 text-base">{date}</p>
-      <p className="mt-4 text-base">{subtitle}</p>
-      <div className="flex mt-6 w-full space-x-4">
+    <div className="flex flex-col px-4 py-4 w-full bg-white rounded-2xl shadow-fest md:px-8 md:py-8">
+      <h5 className="text-[16px] text-black-500 font-semibold md:text-xl">
+        {title}
+      </h5>
+      <p className="mt-2 text-pink-500 text-sm md:text-base">{date}</p>
+      <p className="mt-4 text-sm md:text-base">{subtitle}</p>
+      <div className="flex mt-4 w-full space-x-3 md:mt-6 md:space-x-4">
         {imgPerson.map((item, index) => (
           <div
-            className="h-[42px] w-[42px] rounded-md overflow-hidden"
+            className="h-[24px] w-[24px] md:h-[42px] md:w-[42px] rounded-md overflow-hidden"
             key={index}
           >
             <img
@@ -25,7 +27,7 @@ const CardSchedule = ({ title, date, subtitle, imgPerson, urlRegister }) => {
       </div>
       <Link href={urlRegister} passHref>
         <a>
-          <Button variant="primary" size="base" className="mt-8">
+          <Button variant="primary" size="base" className="mt-4 md:mt-8">
             Register Now
           </Button>
         </a>

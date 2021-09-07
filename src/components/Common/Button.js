@@ -19,7 +19,7 @@ const Button = ({
         variant === 'outline-primary' && [
           'text-pink-500 bg-white hover:bg-pink-500 hover:text-white border border-pink-500',
         ],
-        size === 'base' && ['px-6 py-3 text-base']
+        size === 'base' && ['px-4 py-2 md:px-6 md:py-3 text-sm md:text-base']
       )}
       onClick={onClick}
     >
