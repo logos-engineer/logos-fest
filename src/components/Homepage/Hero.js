@@ -1,8 +1,6 @@
 import React, { useContext } from 'react'
 import { Button, Container, Grid } from '../Common'
 import { ModalContext } from '@/context/RegistModal/ModalProvider'
-import DesktopHeroImage from './Hero/DesktopHeroImage'
-import MobileHeroImage from './Hero/MobileHeroImage'
 
 const Hero = () => {
   const modalContext = useContext(ModalContext)
@@ -29,9 +27,17 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="col-span-12 mt-12 lg:col-span-7 lg:col-start-6 lg:mt-0 relative pattern-before ornament-dawn pattern-after ornament-star-hero">
-            <DesktopHeroImage />
-            <MobileHeroImage />
+          <div className="pattern-before ornament-dawn pattern-after ornament-star-hero relative col-span-12 mt-12 lg:col-span-7 lg:col-start-6 lg:mt-0">
+            <div className="aspect-w-3 aspect-h-2 lg:aspect-w-6 lg:aspect-h-4 relative rounded-3xl overflow-hidden">
+              <iframe
+                class="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/mnta9Pp2LqA?playlist=mnta9Pp2LqA&loop=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </Grid>
       </Container>
