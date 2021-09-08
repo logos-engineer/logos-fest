@@ -2,8 +2,10 @@ import React from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import { Button } from '@/components/Common'
+import { useRouter } from 'next/dist/client/router'
 
 export default function DetailNav({ viewModal, handleModal }) {
+  const router = useRouter()
   return (
     <>
       <Transition appear show={viewModal} as={Fragment}>
@@ -80,7 +82,14 @@ export default function DetailNav({ viewModal, handleModal }) {
                   >
                     Speakers
                   </Button>
-                  <Button>Registration</Button>
+                  <Button
+                    onClick={() => {
+                      handleModal()
+                      router.push('/#schedule')
+                    }}
+                  >
+                    Registration
+                  </Button>
                 </section>
               </div>
             </Transition.Child>

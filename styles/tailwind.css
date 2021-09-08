@@ -64,39 +64,63 @@
 }
 
 /* Book */
+
 .ornament-star::before {
   content: '';
-  background-image: url('/pattern/homepage/ornament-star.svg');
-  width: 183px;
-  height: 315px;
-  top: -46%;
-  left: -10%;
+  background-image: url('/pattern/homepage/ornament-star-small.svg');
+  width: 34px;
+  height: 32px;
+  top: -10%;
+  left: -2%;
 }
 .ornament-sun::after {
   content: '';
   background-image: url('/pattern/homepage/ornament-sun.svg');
-  width: 154px;
-  height: 154px;
+  width: 56px;
+  height: 56px;
   z-index: -1;
-  top: -35%;
-  right: -10%;
-}
-.ornament-small-star::before {
-  content: '';
-  background-image: url('/pattern/homepage/small-star.svg');
-  width: 84px;
-  height: 84px;
-  z-index: -1;
-  top: -35%;
-  left: -5%;
+  bottom: -15%;
+  right: -3%;
 }
 
+@screen lg {
+  .ornament-star::before {
+    content: '';
+    background-image: url('/pattern/homepage/ornament-star.svg');
+    width: 183px;
+    height: 315px;
+    top: -46%;
+    left: -10%;
+  }
+  .ornament-sun::after {
+    content: '';
+    background-image: url('/pattern/homepage/ornament-sun.svg');
+    width: 154px;
+    height: 154px;
+    z-index: -1;
+    top: -35%;
+    right: -10%;
+  }
+  .ornament-small-star::before {
+    content: '';
+    background-image: url('/pattern/homepage/small-star.svg');
+    width: 84px;
+    height: 84px;
+    z-index: -1;
+    top: -35%;
+    left: -5%;
+  }
+}
+
+/*React-Slick*/
 .slick-slide {
-  overflow: visible;
+  overflow: visible !important;
+  margin-right: -1px !important;
 }
 
 .slick-list {
-  overflow: visible;
+  overflow: visible !important;
 }
+
 /* purgecss end ignore */
 @tailwind utilities;

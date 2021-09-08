@@ -5,8 +5,10 @@ import Link from 'next/link'
 import { useContext } from 'react'
 import { AuthContext } from '@/context/auth/AuthProvider'
 import { ModalContext } from '@/context/RegistModal/ModalProvider'
+import { useRouter } from 'next/dist/client/router'
 
 export default function DesktopListAndButton() {
+  const router = useRouter()
   const listMenu = [
     {
       name: 'Home',
@@ -40,7 +42,13 @@ export default function DesktopListAndButton() {
         {authContext.authData.loggedIn ? (
           <Profile />
         ) : (
-          <Button onClick={() => modalContext.setmodalView(true)}>
+          <Button
+            onClick={() => {
+              router.push('/#schedule')
+
+              // modalContext.setmodalView(true)
+            }}
+          >
             Registration
           </Button>
         )}
