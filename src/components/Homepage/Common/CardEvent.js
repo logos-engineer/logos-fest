@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ChevronRightIcon } from '@heroicons/react/solid'
+import Link from 'next/link'
 
 const CardEvent = ({ imgSrc, imgAlt, title, subtitle, url }) => {
   return (
@@ -12,12 +13,14 @@ const CardEvent = ({ imgSrc, imgAlt, title, subtitle, url }) => {
         {title}
       </h3>
       <p className="mt-2 text-sm lg:mt-4 lg:text-base">{subtitle}</p>
-      <a
-        href={url}
-        className="lg:mt-[42px] flex items-center mt-4 p-0 w-auto text-pink-500 leading-normal"
-      >
-        Learn More <ChevronRightIcon className="ml-1 w-6 h-6" />
-      </a>
+      <Link href={url} passHref>
+        <a
+          aria-label={'Learn More ' + title}
+          className="lg:mt-[42px] flex items-center mt-4 p-0 w-auto text-pink-500 leading-normal"
+        >
+          Learn More <ChevronRightIcon className="ml-1 w-6 h-6" />
+        </a>
+      </Link>
     </div>
   )
 }
