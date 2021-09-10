@@ -1,18 +1,18 @@
-import { useState } from 'react';
-import { Container, Grid } from '@/components/Common';
-import CardSchedule from '@/components/Homepage/Common/CardSchedule';
-import HeadSection from '@/components/Homepage/Common/HeadSection';
-import Layout from '@/components/Layout/Layout';
-import ClassList from '@/components/SchedulePage/ClassList';
-import listSchedule from 'src/data/listSchedule';
+import { useState } from 'react'
+import { Container, Grid } from '@/components/Common'
+import CardSchedule from '@/components/Homepage/Common/CardSchedule'
+import HeadSection from '@/components/Homepage/Common/HeadSection'
+import Layout from '@/components/Layout/Layout'
+import ClassList from '@/components/SchedulePage/ClassList'
+import listSchedule from 'src/data/listSchedule'
 
 const Schedule = () => {
-  const [selected, setSelected] = useState(listSchedule[0].title);
-  const [search, setSearch] = useState('');
+  const [selected, setSelected] = useState(listSchedule[0].title)
+  const [search, setSearch] = useState('')
 
   const findClass = (category) => {
-    return category.title === selected;
-  };
+    return category.title === selected
+  }
 
   const renderFiltered = () => {
     return (
@@ -25,6 +25,8 @@ const Schedule = () => {
                 .toLocaleLowerCase()
                 .includes(search.toLocaleLowerCase()) ? (
                 <CardSchedule
+                  slug={datas.slug}
+                  category={datas.category}
                   key={datas.title}
                   title={datas.title}
                   date={datas.date}
@@ -35,8 +37,8 @@ const Schedule = () => {
               ) : null
             )}
       </>
-    );
-  };
+    )
+  }
 
   return (
     <section id="schedule">
@@ -68,7 +70,7 @@ const Schedule = () => {
                     placeholder="Search"
                     className="border-[1px] px-4 py-3 w-full h-full rounded-lg focus:outline-none"
                     onChange={(event) => {
-                      setSearch(event.target.value);
+                      setSearch(event.target.value)
                     }}
                   />
                   <img
@@ -86,7 +88,7 @@ const Schedule = () => {
         </Container>
       </Layout>
     </section>
-  );
-};
+  )
+}
 
-export default Schedule;
+export default Schedule

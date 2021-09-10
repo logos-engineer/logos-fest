@@ -22,33 +22,107 @@
   }
 }
 
+.ornament-dawn::before {
+  content: '';
+  background-image: url('/pattern/homepage/ornament-dawn.svg');
+  width: 56px;
+  height: 56px;
+  bottom: -9%;
+  left: -4%;
+  z-index: -1;
+}
+@screen lg {
+  .ornament-dawn::before {
+    content: '';
+    background-image: url('/pattern/homepage/ornament-dawn.svg');
+    width: 154px;
+    height: 154px;
+    bottom: -14%;
+    left: -10%;
+    z-index: -1;
+  }
+}
+
+.ornament-star-hero::after {
+  content: '';
+  background-image: url('/pattern/homepage/ornament-star-hero.svg');
+  width: 45px;
+  height: 45px;
+  top: -10%;
+  right: -5%;
+  z-index: -1;
+}
+
+@screen lg {
+  .ornament-star-hero::after {
+    content: '';
+    background-image: url('/pattern/homepage/ornament-star-hero.svg');
+    width: 90px;
+    height: 87px;
+    top: -14%;
+    right: -10%;
+  }
+}
+
 /* Book */
+
 .ornament-star::before {
   content: '';
-  background-image: url('/pattern/homepage/ornament-star.svg');
-  width: 183px;
-  height: 315px;
-  top: -46%;
-  left: -10%;
+  background-image: url('/pattern/homepage/ornament-star-small.svg');
+  width: 34px;
+  height: 32px;
+  top: -10%;
+  left: -2%;
 }
 .ornament-sun::after {
   content: '';
   background-image: url('/pattern/homepage/ornament-sun.svg');
-  width: 154px;
-  height: 154px;
+  width: 56px;
+  height: 56px;
   z-index: -1;
-  top: -35%;
-  right: -10%;
+  bottom: -15%;
+  right: -3%;
 }
-.ornament-small-star::before {
-  content: '';
-  background-image: url('/pattern/homepage/small-star.svg');
-  width: 84px;
-  height: 84px;
-  z-index: -1;
-  top: -35%;
-  left: -5%;
+
+@screen lg {
+  .ornament-star::before {
+    content: '';
+    background-image: url('/pattern/homepage/ornament-star.svg');
+    width: 183px;
+    height: 315px;
+    top: -46%;
+    left: -10%;
+  }
+  .ornament-sun::after {
+    content: '';
+    background-image: url('/pattern/homepage/ornament-sun.svg');
+    width: 154px;
+    height: 154px;
+    z-index: -1;
+    top: -35%;
+    right: -10%;
+  }
+  .ornament-small-star::before {
+    content: '';
+    background-image: url('/pattern/homepage/small-star.svg');
+    width: 84px;
+    height: 84px;
+    z-index: -1;
+    top: -35%;
+    left: -5%;
+  }
 }
+
+/*React-Slick*/
+.slick-slide {
+  overflow: visible !important;
+  margin-right: -1px !important;
+}
+
+.slick-list {
+  overflow: visible !important;
+}
+
 /* purgecss end ignore */
 @layer utilities {
   @variants responsive {

@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { ChevronRightIcon } from '@heroicons/react/solid';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { ChevronRightIcon } from '@heroicons/react/solid'
 
 const CardEvent = ({ imgSrc, imgAlt, title, subtitle, url }) => {
   return (
@@ -8,19 +8,19 @@ const CardEvent = ({ imgSrc, imgAlt, title, subtitle, url }) => {
       <div className="flex items-center justify-center w-16 h-16 bg-pink-500 rounded-2xl">
         <img className="w-8 h-8" src={imgSrc} alt={imgAlt} />
       </div>
-      <h3 className="mt-8 text-black-primary text-2xl font-semibold leading-1.4 capitalize">
+      <h3 className="mt-4 text-black-primary font-semibold leading-1.4 capitalize lg:mt-8 lg:text-2xl">
         {title}
       </h3>
-      <p className="mt-4">{subtitle}</p>
+      <p className="mt-2 text-sm lg:mt-4 lg:text-base">{subtitle}</p>
       <a
         href={url}
-        className="mt-[42px] flex items-center p-0 w-auto text-pink-500 leading-normal"
+        className="lg:mt-[42px] flex items-center mt-4 p-0 w-auto text-pink-500 leading-normal"
       >
         Learn More <ChevronRightIcon className="ml-1 w-6 h-6" />
       </a>
     </div>
-  );
-};
+  )
+}
 
 CardEvent.propTypes = {
   imgSrc: PropTypes.string.isRequired,
@@ -28,5 +28,5 @@ CardEvent.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
-};
-export default CardEvent;
+}
+export default CardEvent
