@@ -43,16 +43,16 @@ const Schedule = () => {
   return (
     <section id="schedule">
       <Layout>
-        <Container className="pt-[87px] md:pt-[120px] px-4 w-full">
+        <Container className="pt-[88px] lg:pt-[120px] px-4 w-full">
           <Grid>
-            <div className="col-span-full md:col-span-6 md:col-start-4">
+            <div className="col-span-full lg:col-span-6 lg:col-start-4">
               <HeadSection
                 title="Schedule"
                 subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa cras ipsum dolor sit amet, consectetur"
               />
             </div>
             <div className="fl flex flex-col col-span-12">
-              <div className="flex flex-col-reverse gap-4 items-stretch justify-between md:flex-row">
+              <div className="flex flex-col-reverse gap-4 items-stretch justify-between lg:flex-row">
                 <div className="no-scrollbar flex flex-row overflow-x-auto xl:overflow-x-auto">
                   {listSchedule.map((item) => (
                     <ClassList
@@ -68,7 +68,7 @@ const Schedule = () => {
                   <input
                     type="text"
                     placeholder="Search"
-                    className="border-[1px] px-4 py-3 w-full h-full rounded-lg focus:outline-none"
+                    className="px-4 py-3 w-full h-full border rounded-lg focus:outline-none"
                     onChange={(event) => {
                       setSearch(event.target.value)
                     }}
@@ -80,7 +80,7 @@ const Schedule = () => {
                   />
                 </div>
               </div>
-              <div className="grid gap-6 grid-cols-1 mt-12 md:gap-10 md:grid-cols-2">
+              <div className="grid gap-6 grid-cols-1 mt-12 lg:gap-10 lg:grid-cols-2">
                 {renderFiltered()}
               </div>
             </div>

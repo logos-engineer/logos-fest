@@ -26,7 +26,7 @@ const CardSchedule = ({
       <div className="flex mt-6 w-full space-x-4">
         {imgPerson.map((item, index) => (
           <div
-            className="h-[24px] w-[24px] md:h-[42px] md:w-[42px] rounded-md overflow-hidden"
+            className="h-[24px] w-[24px] lg:h-[42px] lg:w-[42px] rounded-md overflow-hidden"
             key={index}
           >
             <img
@@ -39,7 +39,7 @@ const CardSchedule = ({
       </div>
       <Link href={urlRegister} passHref>
         <a>
-          <Button variant="primary" size="base" className="mt-4 md:mt-8">
+          <Button variant="primary" size="base" className="mt-4 lg:mt-8">
             Register Now
           </Button>
         </a>
