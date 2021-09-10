@@ -9,7 +9,7 @@ const Event = () => {
       img: '/icon/justice-bootcamp.svg',
       title: 'Justice Bootcamp',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu id orci lorem a nisl. Vestibulum, facilisis facilisis fermentum et maecenas volutpat. Turpis laoreet sed aliquam congue',
-      link: '/justice/bootcamps',
+      link: '/justice/bootcamp',
     },
     {
       img: '/icon/justice-talks.svg',
