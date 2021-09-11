@@ -6,13 +6,14 @@ import CardSchedule from '../Homepage/Common/CardSchedule'
 const TalkLists = () => {
   return (
     <Container>
-      <Grid>
-        <div className="flex flex-row col-span-full justify-center mt-4 space-x-10">
+      <Grid className="px-4 lg:px-0">
+        <div className="flex flex-row flex-wrap col-span-full justify-center mt-4 space-y-6 lg:flex-nowrap lg:space-x-10 lg:space-y-0">
           {listSchedule &&
             listSchedule
               .find((element) => element.title === 'Justice Talks')
-              .schedule.map((datas) => (
+              .schedule.map((datas, idx) => (
                 <CardSchedule
+                  key={idx}
                   slug={datas.slug}
                   title={datas.title}
                   date={datas.date}
