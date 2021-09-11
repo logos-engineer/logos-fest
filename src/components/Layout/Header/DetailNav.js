@@ -2,7 +2,24 @@ import React from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import { Button } from '@/components/Common'
-import { useRouter } from 'next/dist/client/router'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
+
+const LinkList = [
+  {
+    name: 'Home',
+    route: '/',
+  },
+  {
+    name: 'Schedule',
+    route: '/schedule',
+  },
+  ,
+  {
+    name: 'Speakers',
+    route: '/speakers',
+  },
+]
 
 export default function DetailNav({ viewModal, handleModal }) {
   const router = useRouter()
@@ -61,27 +78,20 @@ export default function DetailNav({ viewModal, handleModal }) {
                   id="dialog-content"
                   className="flex flex-col mt-12 space-y-6"
                 >
-                  <Button
-                    variant="unstyled"
-                    size="sm"
-                    className="text-left font-medium hover:bg-white"
-                  >
-                    Home
-                  </Button>
-                  <Button
-                    variant="unstyled"
-                    size="sm"
-                    className="text-left font-medium hover:bg-white"
-                  >
-                    Schedule
-                  </Button>
-                  <Button
-                    variant="unstyled"
-                    size="sm"
-                    className="text-left font-medium hover:bg-white"
-                  >
-                    Speakers
-                  </Button>
+                  {LinkList.map((list) => (
+                    <Link href={list.route} passHref key={list.name}>
+                      <a aria-label="link to">
+                        <Button
+                          variant="unstyled"
+                          size="sm"
+                          className="text-left font-medium hover:bg-white"
+                        >
+                          {list.name}
+                        </Button>
+                      </a>
+                    </Link>
+                  ))}
+
                   <Button
                     onClick={() => {
                       handleModal()
