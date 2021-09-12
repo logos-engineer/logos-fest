@@ -43,7 +43,7 @@ const tabMobile = () => {
         slidesToShow={4.2}
         slidesToScroll={1}
         arrows={false}
-        className="px-4 w-screen max-w-screen-sm md:max-w-screen-md"
+        className="px-4 w-screen max-w-screen-sm lg:max-w-screen-md"
       >
         {listSchedule &&
           listSchedule.map((item, index) => (
@@ -104,12 +104,11 @@ const Schedule = () => {
                           imgPerson={datas.person}
                         />
                       ))}
-                      <Link
-                        passHref
-                        href="/schedule"
-                        
-                      >
-                        <a aria-label="See All Schedule" className="flex col-span-full justify-center mt-4">
+                      <Link passHref href="/schedule">
+                        <a
+                          aria-label="See All Schedule"
+                          className="flex col-span-full justify-center mt-4"
+                        >
                           <Button size="base" variant="outline-primary">
                             See All Schedule
                           </Button>
