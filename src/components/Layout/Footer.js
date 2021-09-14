@@ -14,7 +14,7 @@ const Footer = () => {
         />
         <div className="lg:w-[50%] flex flex-col justify-between mt-6 w-full lg:flex-row lg:mx-auto">
           <FooterLink href="/">Sitemap</FooterLink>
-          <FooterLink href="/">Privacy Policy</FooterLink>
+          <FooterLink href="/privacy-policy">Privacy Policy</FooterLink>
           <FooterLink href="/">Contact Us</FooterLink>
         </div>
 
