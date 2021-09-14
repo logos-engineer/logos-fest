@@ -4,12 +4,12 @@ import CardSchedule from '@/components/Homepage/Common/CardSchedule'
 
 export default function SpeakerClass({ listClass }) {
   return (
-    <section id="speaker-class">
+    <section id="speaker-class" className="px-4 lg:px-0">
       <Grid>
-        <h1 className="col-span-11 col-start-2 mt-32 text-black-primary text-3xl font-semibold">
+        <h1 className="col-span-full mt-10 text-black-primary text-base font-semibold lg:col-span-11 lg:col-start-2 lg:mt-32 lg:text-3xl">
           Speaker Classes
         </h1>
-        <div className="grid gap-10 col-span-10 col-start-2 grid-cols-2">
+        <div className="grid gap-6 col-span-full mt-4 sm:col-span-10 sm:col-start-2 lg:gap-10 lg:grid-cols-2 lg:mt-0">
           {listClass.map((list) => (
             <div className="col-span-1">
               <CardSchedule
