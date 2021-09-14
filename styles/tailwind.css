@@ -7,6 +7,7 @@
   html,
   body {
     @apply text-black-body font-poppins;
+    scroll-behavior: smooth;
   }
   p {
     @apply leading-normal;

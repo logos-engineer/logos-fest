@@ -4,22 +4,26 @@ import Image from 'next/image'
 
 export default function SpeakerInfo({ photo, name, univ, desc }) {
   return (
-    <section id="speaker-info">
-      <Grid className="mt-36">
-        <div className="h-[380px] block col-span-4 col-start-2 rounded-3xl overflow-hidden">
+    <section id="speaker-info" className="px-4 lg:px-0">
+      <Grid className="mt-28 lg:mt-36">
+        <div className="h-[232px] w-[232px] sm:w-[300px] sm:h-[300px] lg:h-[380px] block col-span-full mx-auto rounded-3xl overflow-hidden lg:col-span-4 lg:col-start-2 lg:mx-0 lg:w-full">
           <Image
             src={photo}
             width={380}
             height={380}
             layout="responsive"
-            placeholder="empty"
+            placeholder="blur"
+            blurDataURL={photo}
+            alt={name}
           />
         </div>
-        <div className="flex flex-col col-span-6 col-start-6 justify-center">
-          <h1 className="mb-2 text-black-primary text-3xl font-semibold">
+        <div className="flex flex-col col-span-full justify-center mt-8 lg:col-span-6 lg:col-start-6 lg:mt-0">
+          <h1 className="mb-1 text-black-primary text-lg font-semibold lg:mb-2 lg:text-3xl">
             {name}
           </h1>
-          <h2 className="mb-6 text-gray-600 text-lg font-semibold">{univ}</h2>
+          <h2 className="mb-4 text-black-primary text-opacity-75 text-base font-semibold lg:mb-6 lg:text-lg">
+            {univ}
+          </h2>
           <p className="text-black-primary text-opacity-75">
             {desc ||
               `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem neque

@@ -29,6 +29,7 @@ module.exports = {
     boxShadow: {
       navbar: '0px 2px 16px rgba(0, 0, 0, 0.06)',
       fest: ' 0px 12px 40px 4px rgba(112, 144, 176, 0.08)',
+      airbnb: 'rgba(0, 0, 0, 0.08) 0px 4px 12px',
     },
     fontSize: {
       xs: '12px',
@@ -100,5 +101,8 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require('@tailwindcss/aspect-ratio')],
-};
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/line-clamp'),
+  ],
+}

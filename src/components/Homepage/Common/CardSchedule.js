@@ -22,7 +22,7 @@ const CardSchedule = ({
         </a>
       </Link>
       <p className="mt-2 text-pink-500 text-sm lg:text-base">{date}</p>
-      <p className="mt-4 text-sm lg:text-base">{subtitle}</p>
+      <p className="line-clamp-3 mt-4 text-sm lg:text-base">{subtitle}</p>
       <div className="flex mt-6 w-full space-x-4">
         {imgPerson.map((item, index) => (
           <div
@@ -38,8 +38,8 @@ const CardSchedule = ({
         ))}
       </div>
       <Link href={urlRegister} passHref>
-        <a>
-          <Button variant="primary" size="base" className="mt-4 lg:mt-8">
+        <a className="mt-8">
+          <Button variant="primary" size="base">
             Register Now
           </Button>
         </a>
