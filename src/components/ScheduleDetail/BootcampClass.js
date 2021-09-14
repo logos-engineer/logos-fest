@@ -4,26 +4,28 @@ import CardSchedule from '@/components/Homepage/Common/CardSchedule'
 
 export default function BootcampClass({ data }) {
   return (
-    <Grid className="mt-16 mx-auto max-w-screen-xl">
-      <h1 className="col-span-12 text-black-primary text-2xl font-semibold">
-        Kelas lainnya dari Bootcamp ini
-      </h1>
-      <div className="grid gap-10 col-span-12 grid-cols-2">
-        {data.map((list) => (
-          <div className="col-span-1">
-            <CardSchedule
-              category={list.category}
-              slug={list.slug}
-              key={list.title}
-              title={list.title}
-              date={list.date}
-              subtitle={list.subtitle}
-              urlRegister={list.urlSchedule}
-              imgPerson={list.person}
-            />
-          </div>
-        ))}
-      </div>
-    </Grid>
+    <section id="kelas-lain" className="px-4 w-full lg:px-0">
+      <Grid className="mt-16 mx-auto max-w-screen-xl">
+        <h1 className="col-span-12 text-black-primary text-base font-semibold lg:text-2xl">
+          Kelas lainnya dari Bootcamp ini
+        </h1>
+        <div className="grid gap-6 col-span-12 mt-4 lg:gap-10 lg:grid-cols-2 lg:mt-0">
+          {data.map((list) => (
+            <div className="col-span-1">
+              <CardSchedule
+                category={list.category}
+                slug={list.slug}
+                key={list.title}
+                title={list.title}
+                date={list.date}
+                subtitle={list.subtitle}
+                urlRegister={list.urlSchedule}
+                imgPerson={list.person}
+              />
+            </div>
+          ))}
+        </div>
+      </Grid>
+    </section>
   )
 }
