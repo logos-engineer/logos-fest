@@ -26,7 +26,7 @@ export default function Custom404() {
             Kembali ke Home
           </Button>
         </Container>
-        <div className="w-[230px] h-[230px] pb-[24px] -bottom-32git lg:w-[459] lg:h-[460] absolute right-0 self-end lg:-bottom-40">
+        <div className="w-[230px] h-[230px] pb-[24px] lg:w-[459px] lg:h-[460px] lg: absolute -bottom-32 right-0 self-end">
           <Image
             src="/img/404/illust.png"
             width={459}
