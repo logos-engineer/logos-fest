@@ -15,12 +15,12 @@ export default function SpeakerClass({ listClass }) {
               <CardSchedule
                 slug={list.slug}
                 category={list.category}
-                key={list.title}
+                key={list.id}
                 title={list.title}
                 date={list.date}
                 subtitle={list.subtitle}
-                urlRegister={list.urlSchedule}
-                imgPerson={list.person}
+                urlRegister={list.url}
+                imgPerson={list.speaker}
               />
             </div>
           ))}

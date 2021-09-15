@@ -6,8 +6,9 @@ export default function SpeakerInfo({ photo, name, univ, desc }) {
   return (
     <section id="speaker-info" className="px-4 lg:px-0">
       <Grid className="mt-28 lg:mt-36">
-        <div className="h-[232px] w-[232px] sm:w-[300px] sm:h-[300px] lg:h-[380px] block col-span-full mx-auto rounded-3xl overflow-hidden lg:col-span-4 lg:col-start-2 lg:mx-0 lg:w-full">
+        <div className="h-[232px] w-[232px] lg:h-[380px] block col-span-full mx-auto rounded-3xl overflow-hidden lg:col-span-4 lg:col-start-2 lg:mx-0 lg:w-full">
           <Image
+            objectFit="cover"
             src={photo}
             width={380}
             height={380}

@@ -17,7 +17,7 @@ const ListSpeaker = () => {
                 slug={item.slug}
                 name={item.name}
                 university={item.jabatan}
-                imgSrc={item.img}
+                imgSrc={item.imgUrl}
               />
             </div>
           ))}

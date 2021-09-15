@@ -21,8 +21,10 @@ const philosophy1 = {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   date: 'Rabu, 3 November 2021',
   time: '19.00 - 21.00',
-  speaker: speaker1,
+  speaker: [speaker1],
   slug: 'concept-ofjustice',
+  url: 'https://lynk.id/logos_id',
+  category: 'bootcamp',
 }
 const philosophy2 = {
   id: 2,
@@ -32,8 +34,10 @@ const philosophy2 = {
   date: 'Rabu, 3 November 2021',
   date: 'Jumat, 5 November 2021',
   time: '19.00 - 21.00',
-  speaker: speaker2,
+  speaker: [speaker2],
   slug: 'justice-in-pre-modern-era',
+  url: 'https://lynk.id/logos_id',
+  category: 'bootcamp',
 }
 const philosophy3 = {
   id: 3,
@@ -42,8 +46,10 @@ const philosophy3 = {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   date: 'Sabtu, 6 November 2021',
   time: '19.00 - 21.00',
-  speaker: speaker3,
+  speaker: [speaker3],
   slug: 'justice-in-modern-era',
+  url: 'https://lynk.id/logos_id',
+  category: 'bootcamp',
 }
 const philosophy4 = {
   id: 4,
@@ -52,8 +58,10 @@ const philosophy4 = {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   date: 'Minggu, 7 November 2021',
   time: '19.00 - 21.00',
-  speaker: speaker4,
+  speaker: [speaker4],
   slug: 'contemporary-justice"',
+  url: 'https://lynk.id/logos_id',
+  category: 'bootcamp',
 }
 
 const law1 = {
@@ -63,8 +71,10 @@ const law1 = {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   date: 'Jumat, 10 November 2021',
   time: '19.00 - 21.00',
-  speaker: speaker5,
+  speaker: [speaker5],
   slug: 'equity-in-law',
+  url: 'https://lynk.id/logos_id',
+  category: 'bootcamp',
 }
 const law2 = {
   id: 6,
@@ -73,8 +83,10 @@ const law2 = {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   date: 'Minggu, 12 November 2021',
   time: '19.00 - 21.00',
-  speaker: speaker6,
+  speaker: [speaker6],
   slug: 'restorative-justice',
+  url: 'https://lynk.id/logos_id',
+  category: 'bootcamp',
 }
 const law3 = {
   id: 7,
@@ -83,8 +95,10 @@ const law3 = {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   date: 'Selasa, 14 November 2021',
   time: '19.00 - 21.00',
-  speaker: speaker7,
+  speaker: [speaker7],
   slug: 'cyber-law',
+  url: 'https://lynk.id/logos_id',
+  category: 'bootcamp',
 }
 
 const politics1 = {
@@ -94,8 +108,10 @@ const politics1 = {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   date: 'Jumat, 17 November 2021',
   time: '19.00 - 21.00',
-  speaker: speaker8,
+  speaker: [speaker8],
   slug: 'sejarah-dan-aliran-politik-indonesia',
+  url: 'https://lynk.id/logos_id',
+  category: 'bootcamp',
 }
 const politics2 = {
   id: 9,
@@ -104,8 +120,10 @@ const politics2 = {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   date: 'Minggu, 19 November 2021',
   time: '19.00 - 21.00',
-  speaker: speaker9,
+  speaker: [speaker9],
   slug: 'politik-dinasti-indonesia',
+  url: 'https://lynk.id/logos_id',
+  category: 'bootcamp',
 }
 const politics3 = {
   id: 10,
@@ -114,8 +132,10 @@ const politics3 = {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   date: 'Selasa, 21 November 2021',
   time: '19.00 - 21.00',
-  speaker: speaker10,
+  speaker: [speaker10],
   slug: 'youth-political-participation-in-indonesia',
+  url: 'https://lynk.id/logos_id',
+  category: 'bootcamp',
 }
 
 const gender1 = {
@@ -125,8 +145,10 @@ const gender1 = {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   date: 'Jumat, 24 November 2021',
   time: '19.00 - 21.00',
-  speaker: speaker11,
+  speaker: [speaker11],
   slug: 'gender-dan-feminisme',
+  url: 'https://lynk.id/logos_id',
+  category: 'bootcamp',
 }
 const gender2 = {
   id: 12,
@@ -135,8 +157,10 @@ const gender2 = {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   date: 'Minggu, 26 November 2021',
   time: '19.00 - 21.00',
-  speaker: speaker12,
+  speaker: [speaker12],
   slug: 'keadilan-dan-kesetaraan-gender-dalam-seni',
+  url: 'https://lynk.id/logos_id',
+  category: 'bootcamp',
 }
 const gender3 = {
   id: 13,
@@ -145,8 +169,10 @@ const gender3 = {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   date: 'Selasa, 28 November 2021',
   time: '19.00 - 21.00',
-  speaker: speaker13,
+  speaker: [speaker13],
   slug: 'digital-dan-gender',
+  url: 'https://lynk.id/logos_id',
+  category: 'bootcamp',
 }
 
 export const kelas1 = [philosophy1, philosophy2, philosophy3, philosophy4]
