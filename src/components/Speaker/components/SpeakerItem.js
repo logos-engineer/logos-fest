@@ -2,10 +2,11 @@ import Image from 'next/image'
 import React from 'react'
 import useDataUrl from '@/hooks/useDataUrl'
 import Link from 'next/link'
-const SpeakerItem = ({ name, imgSrc, university }) => {
+
+const SpeakerItem = ({ name, imgSrc, university, slug }) => {
   const dataUrl = useDataUrl(275, 332)
   return (
-    <Link href={`speakers/${name}`} passHref>
+    <Link href={`/speakers/${slug}`} passHref>
       <a aria-label={`${name} detail`}>
         <div className="relative w-full h-full rounded-2xl cursor-pointer overflow-hidden">
           <Image
@@ -14,6 +15,7 @@ const SpeakerItem = ({ name, imgSrc, university }) => {
             width={275}
             height={332}
             layout="responsive"
+            objectFit="cover"
             placeholder="blur"
             blurDataURL={dataUrl}
           />

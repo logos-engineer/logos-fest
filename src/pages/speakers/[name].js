@@ -12,6 +12,9 @@ export default function SpeakerDetail() {
         <title>Speaker Detail</title>
       </Head>
       <Layout>
+        /*
+         * TODO : use getServerSide/getStaticProps to get data for detail speaker from listSpeakerName using id/slug
+         */
         <SpeakerInfo
           photo="/img/speaker/person-2.png"
           name="Zildjidan Ramadhan Syam"
