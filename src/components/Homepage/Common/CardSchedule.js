@@ -22,7 +22,9 @@ const CardSchedule = ({
         </a>
       </Link>
       <p className="mt-2 text-pink-500 text-sm lg:text-base">{date}</p>
-      <p className="line-clamp-3 mt-4 text-sm lg:text-base">{subtitle}</p>
+      <p className="line-clamp-3 mt-4 text-sm lg:text-base">
+        {subtitle.length > 226 ? subtitle.substring(0, 226) + '...' : subtitle}
+      </p>
       <div className="flex mt-6 w-full space-x-4">
         {imgPerson.map((item, index) => (
           <div
