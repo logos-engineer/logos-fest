@@ -18,7 +18,7 @@ export default function SpeakerClass({ listClass }) {
                 key={list.id}
                 title={list.title}
                 date={list.date}
-                subtitle={list.subtitle}
+                subtitle={list.desc}
                 urlRegister={list.url}
                 imgPerson={list.speaker}
               />
