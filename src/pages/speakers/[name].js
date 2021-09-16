@@ -10,7 +10,7 @@ export default function SpeakerDetail({ speakerData, speakerClass }) {
   return (
     <>
       <Head>
-        <title>Speaker Detail</title>
+        <title>Speaker - {speakerData.name}</title>
       </Head>
       <Layout>
         <SpeakerInfo
@@ -25,9 +25,12 @@ export default function SpeakerDetail({ speakerData, speakerClass }) {
   )
 }
 export function getStaticPaths() {
+  const paths = ListSpeakerName.map((data) => ({
+    params: { name: data.slug },
+  }))
   return {
-    paths: [], //indicates that no page needs be created at build time
-    fallback: 'blocking', //indicates the type of fallback
+    paths, //indicates that no page needs be created at build time
+    fallback: false, //indicates the type of fallback
   }
 }
 

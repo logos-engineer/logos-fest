@@ -25,7 +25,7 @@ export default function SpeakerInfo({ photo, name, univ, desc }) {
           <h2 className="mb-4 text-black-primary text-opacity-75 text-base font-semibold lg:mb-6 lg:text-lg">
             {univ}
           </h2>
-          <p className="text-black-primary text-opacity-75">
+          <p className="text-black-primary text-opacity-75 text-sm lg:text-base">
             {desc ||
               `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem neque
             pretium egestas in et, faucibus adipiscing lectus ipsum. Vel aliquam
