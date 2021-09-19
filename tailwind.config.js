@@ -46,7 +46,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         'speaker-gradient':
-          ' linear-gradient(180deg, rgba(234, 29, 119, 0) 63.55%, rgba(234, 29, 118, 0.84) 100%);',
+          ' linear-gradient(180deg, rgba(72, 145, 159, 0) 0%, #48919F 100%)',
       }),
       padding: {
         '120px': '7.5rem',
@@ -93,6 +93,16 @@ module.exports = {
           700: '#25AFC9',
           800: '#1E8DA2',
           900: '#176B7C',
+        },
+        ocean: {
+          50: '#67CFE3',
+          100: '#5DBACC',
+          200: '#52A6B6',
+          300: '#48919F',
+          400: '#3E7C88',
+          500: '#346872',
+          600: '#29535B',
+          700: '#1F3E44',
         },
       },
       lineHeight: {

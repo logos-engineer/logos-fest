@@ -62,7 +62,7 @@ export default function ScheduleDesc() {
 
           <Popover className="relative hidden">
             <>
-              <Popover.Button className="flex items-center mb-8 text-pink-500">
+              <Popover.Button className="text-ocean-300 flex items-center mb-8">
                 Add to Calendar
                 <img
                   src="/icon/add.svg"
@@ -144,7 +144,7 @@ export default function ScheduleDesc() {
       {/*
        * *Floating Register
        */}
-      <div className="shadow shadow-airbnb fixed z-20 bottom-0 left-0 right-0 block py-3 bg-white lg:hidden">
+      <div className="shadow fixed z-20 bottom-0 left-0 right-0 block py-3 bg-white shadow-airbnb lg:hidden">
         <Container>
           <Button
             className="py-3 w-full text-base"

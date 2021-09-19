@@ -22,7 +22,7 @@ const tabDesktop = () => {
                 className={clsx(
                   'mx-3 px-3 py-2 rounded-full transition-all lg:px-5 lg:py-3 lg:rounded-md',
                   selected
-                    ? 'bg-pink-500 text-white'
+                    ? 'bg-ocean-300 text-white'
                     : 'bg-white text-black-primary opacity-40'
                 )}
               >
@@ -54,7 +54,7 @@ const tabMobile = () => {
                     className={clsx(
                       'py-2 w-full text-xs font-semibold rounded-full transition-all',
                       selected
-                        ? 'bg-pink-500 text-white'
+                        ? 'bg-ocean-300 text-white'
                         : 'bg-white text-black-primary opacity-40 bord'
                     )}
                   >
@@ -77,8 +77,8 @@ const Schedule = () => {
         <Grid className="px-4">
           <div className="col-span-12 lg:col-span-6 lg:col-start-4">
             <HeadSection
-              title="Schedule"
-              subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa cras ipsum dolor sit amet, consectetur "
+              title="Jadwal Kelas"
+              subtitle="Kelas Kelas Logos Festival"
             />
           </div>
           <div className="flex flex-col col-span-12 items-center justify-center">
@@ -106,11 +106,11 @@ const Schedule = () => {
                       ))}
                       <Link passHref href="/schedule">
                         <a
-                          aria-label="See All Schedule"
+                          aria-label="Lihat semua jadwal"
                           className="flex col-span-full justify-center mt-4"
                         >
                           <Button size="base" variant="outline-primary">
-                            See All Schedule
+                            Lihat semua jadwal
                           </Button>
                         </a>
                       </Link>

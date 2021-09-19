@@ -19,8 +19,8 @@ const SpeakerItem = ({ name, imgSrc, university, slug }) => {
             placeholder="blur"
             blurDataURL={dataUrl}
           />
-          <div className="absolute bottom-0 left-0 right-0 top-0 bg-speaker-gradient">
-            <div className="absolute bottom-0 left-0 right-0 flex flex-col p-4 h-auto">
+          <div className="absolute bottom-0 left-0 right-0 top-0">
+            <div className="absolute bottom-0 left-0 right-0 flex flex-col pb-4 pt-12 px-4 h-auto bg-speaker-gradient">
               <h4 className="text-white text-md font-semibold">{name}</h4>
               <p className="text-white text-base">{university}</p>
             </div>

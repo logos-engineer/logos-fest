@@ -21,7 +21,7 @@ const CardSchedule = ({
           </h5>
         </a>
       </Link>
-      <p className="mt-2 text-pink-500 text-sm lg:text-base">{date}</p>
+      <p className="text-ocean-300 mt-2 text-sm lg:text-base">{date}</p>
       <p className="line-clamp-3 mt-4 text-sm lg:text-base">
         {subtitle.length > 226 ? subtitle.substring(0, 226) + '...' : subtitle}
       </p>
