@@ -5,18 +5,18 @@ import IconLink from './Footer/IconLink'
 
 const Footer = () => {
   return (
-    <footer className="mt-32 p-4 w-full bg-pink-500 border lg:px-40 lg:py-14">
+    <footer className="bg-ocean-300 mt-32 p-4 w-full border lg:px-40 lg:py-14">
       <div className="max-w-screen-xl lg:mx-auto">
         <img
-          src="/icon/logos-white.svg"
+          src="/icon/logos.png"
           className="h-[32px] w-auto lg:mx-auto"
           alt="Logos Logo"
         />
-        <div className="lg:w-[50%] flex flex-col justify-between mt-6 w-full lg:flex-row lg:mx-auto">
+        {/* <div className="lg:w-[50%] flex flex-col justify-between mt-6 w-full lg:flex-row lg:mx-auto">
           <FooterLink href="/">Sitemap</FooterLink>
           <FooterLink href="/privacy-policy">Privacy Policy</FooterLink>
           <FooterLink href="/">Contact Us</FooterLink>
-        </div>
+        </div> */}
 
         <div className="h-[1px] flex mt-6 w-full bg-white bg-opacity-20 lg:mt-11">
           {' '}

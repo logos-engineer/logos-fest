@@ -7,16 +7,16 @@ import Link from 'next/link'
 
 const LinkList = [
   {
-    name: 'Home',
+    name: 'Beranda',
     route: '/',
   },
   {
-    name: 'Schedule',
+    name: 'Jadwal',
     route: '/schedule',
   },
   ,
   {
-    name: 'Speakers',
+    name: 'Pemateri',
     route: '/speakers',
   },
 ]
@@ -57,7 +57,7 @@ export default function DetailNav({ viewModal, handleModal }) {
                 <Dialog.Title as="h3" className="flex items-center">
                   <a className="flex-grow">
                     <img
-                      src="/icon/logos.svg"
+                      src="/icon/logos.png"
                       className="h-[32px] w-auto"
                       alt="Logos Logo"
                     />

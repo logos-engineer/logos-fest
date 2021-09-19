@@ -8,13 +8,13 @@ const Event = () => {
     {
       img: '/icon/justice-bootcamp.svg',
       title: 'Justice Bootcamp',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu id orci lorem a nisl. Vestibulum, facilisis facilisis fermentum et maecenas volutpat. Turpis laoreet sed aliquam congue',
+      desc: 'Terdapat 4 buah kelas (Filsafat, Hukum, Gender, dan Politik) yang terdiri dari 3-4 pertemuan dalam Justice Bootcamp. Setiap pertemuan diisi oleh akademisi yang ahli di bidangnya.',
       link: '/justice/bootcamp',
     },
     {
       img: '/icon/justice-talks.svg',
       title: 'Justice Talks',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu id orci lorem a nisl. Vestibulum, facilisis facilisis fermentum et maecenas volutpat. Turpis laoreet sed aliquam congue',
+      desc: 'Acara puncak Logos Fest tahun ini akan mengundang beberapa pemikir internasional yang penelitiannya berfokus pada konsep keadilan dan filsafat politik.',
       link: '/justice/talks',
     },
   ]
@@ -24,8 +24,8 @@ const Event = () => {
         <Grid className="px-4 lg:px-0">
           <div className="col-span-12 lg:col-span-6 lg:col-start-4">
             <HeadSection
-              title="Our Event Product"
-              subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa cras ipsum dolor sit amet, consectetur "
+              title="Kegiatan Festival"
+              subtitle="Pada festival perdana Logos Fest, kami memperhatikan pedagogi untuk kelas-kelas yang diadakan."
             />
           </div>
           {listEvent.map((item, index) => (

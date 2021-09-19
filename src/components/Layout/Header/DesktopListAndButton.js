@@ -11,15 +11,15 @@ export default function DesktopListAndButton() {
   const router = useRouter()
   const listMenu = [
     {
-      name: 'Home',
+      name: 'Beranda',
       link: '/',
     },
     {
-      name: 'Schedule',
+      name: 'Jadwal',
       link: '/schedule',
     },
     {
-      name: 'Speakers',
+      name: 'Pemateri',
       link: '/speakers',
     },
   ]
