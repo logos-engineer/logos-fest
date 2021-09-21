@@ -15,7 +15,7 @@ const listSchedule = [
         urlSchedule: 'https://lynk.id/logos_id/P9erAl8',
         btnSchedule: 'Register Now',
         category: 'bootcamp',
-        slug: 'Keadilan-dalam-Hukum-Eddy Omar-ft.Hukum Online',
+        slug: 'concept-ofjustice',
       },
       {
         title: ' Keadilan dalam Alam - Eddy Omar ft. Hukum Online',

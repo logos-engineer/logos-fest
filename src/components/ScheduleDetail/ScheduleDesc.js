@@ -5,26 +5,26 @@ import { Button, Container } from '@/components/Common'
 import { Popover, Transition } from '@headlessui/react'
 import { Router, useRouter } from 'next/dist/client/router'
 
-export default function ScheduleDesc() {
+export default function ScheduleDesc({ data }) {
   const route = useRouter()
+
   return (
     <section id="schedule-details" className="px-4 w-full lg:px-0">
       <Grid className="mt-24 mx-auto max-w-screen-xl lg:mt-32">
         <div className="block col-span-full lg:col-span-7 lg:col-start-1">
           <h1 className="mb-6 text-black-primary text-lg lg:text-3xl">
-            Concept of Justice
+            {data && data.title}
           </h1>
           <div className="flex flex-col mb-6 space-y-4 lg:flex-row lg:space-x-8 lg:space-y-0">
-            <SpeakerCard />
-            <SpeakerCard />
+            {data && <SpeakerCard data={data.speaker} />}
           </div>
           <div className="flex flex-col mt-4 lg:hidden">
             <h1 className="text-black-primary text-sm">Date and Time</h1>
             <p className="mt-2 text-black-primary text-opacity-75 text-sm font-normal">
-              Senin, 7 November 2021{' '}
+              {data && data.date}
             </p>
             <p className="mt-1 text-black-primary text-opacity-75 text-sm font-normal">
-              17.00 - 18.00 WIB | 60 Menit
+              {data && data.time} | 120 Menit
             </p>
           </div>
           {/*
@@ -32,24 +32,7 @@ export default function ScheduleDesc() {
            */}
           <hr className="my-7 w-full border-gray-100" />
           <p className="text-black-primary text-opacity-75 font-normal">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique
-            tempor in dictumst sed mattis sed tellus. Aliquam, facilisi ante in
-            neque blandit scelerisque nunc. Scelerisque risus quis mauris risus,
-            ac nullam. Purus ac, velit vestibulum egestas neque risus, cursus
-            nec malesuada. Vitae et nunc turpis elementum. Leo in amet, risus,
-            in tellus lobortis egestas. Semper cursus blandit purus feugiat
-            egestas ut eu. Turpis egestas sociis odio et, amet fermentum mattis
-            tristique. Eu condimentum vivamus eleifend netus facilisi. Metus
-            abcdefghijklmnop qrstuvwxyzabcdefg hijklmnopqrst uvwxyzabcdefg
-            hijklmnopqrstuvw Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Tristique tempor in dictumst sed mattis sed tellus. Aliquam,
-            facilisi ante in neque blandit scelerisque nunc. Scelerisque risus
-            quis mauris risus, ac nullam. Purus ac, velit vestibulum egestas
-            neque risus, cursus nec malesuada. Vitae et nunc turpis elementum.
-            Leo in amet, risus, in tellus lobortis egestas. Semper cursus
-            blandit purus feugiat egestas ut eu. Turpis egestas sociis odio et,
-            amet fermentum mattis tristique. Eu condimentum vivamus eleifend
-            netus facilisi. Metus.
+            {data && data.subtitle}
           </p>
         </div>
         <div className="h-[max-content] hidden col-span-full p-8 border rounded-xl lg:block lg:col-span-4 lg:col-start-9">
@@ -57,7 +40,7 @@ export default function ScheduleDesc() {
             Date and Time
           </h1>
           <p className="mb-4 w-56 text-black-primary text-opacity-75">
-            Senin, 7 November 2021 17.00 - 18.00 WIB | 60 Menit
+            {data && data.date} {data && data.time} | 120 Menit
           </p>
 
           <Popover className="relative hidden">
@@ -144,7 +127,7 @@ export default function ScheduleDesc() {
       {/*
        * *Floating Register
        */}
-      <div className="shadow shadow-airbnb fixed z-20 bottom-0 left-0 right-0 block py-3 bg-white lg:hidden">
+      <div className="shadow fixed z-20 bottom-0 left-0 right-0 block py-3 bg-white shadow-airbnb lg:hidden">
         <Container>
           <Button
             className="py-3 w-full text-base"
