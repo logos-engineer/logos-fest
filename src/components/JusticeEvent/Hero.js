@@ -2,6 +2,9 @@ import React from 'react'
 import { Container, Grid } from '../Common'
 
 const Hero = ({ eventName }) => {
+  const subtitleBootcamp = 'Terdapat 4 buah kelas (Filsafat, Hukum, Gender, dan Politik) yang terdiri dari 3-4 pertemuan dalam Justice Bootcamp. Setiap pertemuan diisi oleh akademisi yang ahli di bidangnya.';
+  const subtitleTalks = 'Acara puncak Logos Fest tahun ini akan mengundang beberapa pemikir internasional yang penelitiannya berfokus pada konsep keadilan dan filsafat politik.';
+
   return (
     <Container>
       <Grid className="px-4 lg:px-0">
@@ -11,8 +14,7 @@ const Hero = ({ eventName }) => {
             {eventName === 'bootcamp' && 'Justice Bootcamp'}
           </h3>
           <p className="mt-3 text-center text-black-body text-base leading-normal lg:mt-4 lg:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa cras
-            ipsum dolor sit amet, consectetur{' '}
+            {eventName === 'talks' ? subtitleTalks : subtitleBootcamp}
           </p>
         </div>
       </Grid>

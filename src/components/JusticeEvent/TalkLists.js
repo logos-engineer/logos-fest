@@ -1,28 +1,35 @@
 import React from 'react'
 import { Container, Grid } from '../Common'
-import listSchedule from '@/data/listSchedule'
 import CardSchedule from '../Homepage/Common/CardSchedule'
+import { allSchedule } from '@/data/listScheduleName'
 
-const TalkLists = () => {
+const TalkLists = ({eventName}) => {
+  const bootcampData = allSchedule.filter((value)=>value.title.toLocaleLowerCase() !== 'justice talks')
+  const talksData = allSchedule.filter((value)=>value.title.toLocaleLowerCase() === 'justice talks')
+  let finalEvent = eventName === 'bootcamp' ? bootcampData : talksData
+
   return (
     <Container>
       <Grid className="px-4 lg:px-0">
-        <div className="flex flex-row flex-wrap col-span-full justify-center mt-4 space-y-6 lg:flex-nowrap lg:space-x-10 lg:space-y-0">
-          {listSchedule &&
-            listSchedule
-              .find((element) => element.title === 'Justice Talks')
-              .schedule.map((datas, idx) => (
+      <div className="fl flex flex-col col-span-12">
+        <div className="grid gap-6 grid-cols-1 mt-12 lg:gap-10 lg:grid-cols-2">
+          {finalEvent.length > 1 ? (finalEvent.map((datas, idx) => (
                 <CardSchedule
                   key={idx}
                   slug={datas.slug}
-                  title={datas.title}
-                  date={datas.date}
+                  title={`Bootcamp ${datas.title}`}
+                  date={datas.period}
                   subtitle={datas.subtitle}
-                  urlRegister={datas.urlSchedule}
-                  imgPerson={datas.person}
+                  urlRegister={datas.url}
+                  imgPerson={datas.speakersData}
                 />
-              ))}
+            ))) : (
+              <p className="mt-3 text-center text-black-body text-base leading-normal lg:mt-4 lg:text-lg w-full col-span-2">
+                Segera datang
+              </p>
+          )}  
         </div>
+      </div> 
       </Grid>
     </Container>
   )

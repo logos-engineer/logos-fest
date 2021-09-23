@@ -23,8 +23,8 @@ export const speaker3 = {
   slug: 'agus-wahyudi',
   jabatan: 'Dosen Filsafat Politik, Fakultas Filsafat UGM',
   profile:
-    '2009-2018 Ph.D, Northern Arizona University, USA,2002-2003 M.A. International School for Humanities and Social Sciences (ISHSS), University of Amsterdam, The Netherlands, 1998-1999 M.A. Research School of Pacific and Asian Studies (RSPAS), Australian National University, Australia (Incomplete), 1993-1997 MSi (Master of Science), Gadjah Mada University, Yogyakarta 1987-1992 Bachelor, Philosophy, Gadjah Mada University, Yogyakarta',
-  imgUrl: '/img/speaker/agus-wahyudi.png',
+    'Drs. Agus Wahyudi, M.Si., M.A., Ph.D adalah dosen Filsafat Politik Fakultas Filsafat UGM dan sebagai Kepala Pusat Studi Pancasila UGM. Riwayat pendidikan beliau yaitu 2009-2018 Ph.D, Northern Arizona University, USA; 2002-2003 M.A. International School for Humanities and Social Sciences (ISHSS), University of Amsterdam, The Netherlands; 1998-1999 M.A. Research School of Pacific and Asian Studies (RSPAS), Australian National University, Australia (Incomplete); 1993-1997 MSi (Master of Science), Gadjah Mada University, Yogyakarta 1987-1992 Bachelor, Philosophy, Gadjah Mada University, Yogyakarta',
+  imgUrl: '/img/speaker/agus-wahyudi.jpeg',
 }
 export const speaker4 = {
   id: 4,
@@ -32,7 +32,7 @@ export const speaker4 = {
   slug: 'martin-surjaya',
   jabatan: 'Kandidat Doktor STF Driyarkara, Jakarta',
   profile:
-    '2005-2009 S1 STF Driyarkara, Jakarta (jurusan Filsafat) 2010-2012 S2 STF Driyarkara, Jakarta (jurusan Filsafat), 2019 - sekarang kandidat doktor STF Driyarkara, Jakarta (jurusan Filsafat)',
+    'Martin Suryajaya, M.Hum., lahir 1986 di Semarang. Riwayat pendidikan beliau yaitu 2005-2009 S1 STF Driyarkara, Jakarta (jurusan Filsafat); 2010-2012 S2 STF Driyarkara, Jakarta (jurusan Filsafat); 2019 - sekarang kandidat doktor STF Driyarkara, Jakarta (jurusan Filsafat)',
   imgUrl: '/img/speaker/martin-suryajaya.jpg',
 }
 export const speaker5 = {
@@ -50,8 +50,8 @@ export const speaker6 = {
   slug: 'gandjar-laksmana',
   jabatan: 'Pakar Hukum Universitas Indonesia',
   profile:
-    'Ganjar Laksmana Bonaprapta merupakan ahli hukum pidana dan pengajar pada Fakultas Hukum Universitas Indonesia. ',
-  imgUrl: '/img/speaker/gandjar-laksmana.png',
+    'Ganjar Laksmana Bonaprapta merupakan ahli hukum pidana dan pengajar pada Fakultas Hukum Universitas Indonesia. Beliau lahir pada tahun 1971 di Pekalongan. Pada tahun 1995, beliau memperoleh gelar Sarjana Fakultas Hukum Universitas Indonesia. Selanjutnya, beliau melanjutkan studinya di tahun 2003 dan memperoleh gelar Pascasarjana Fakultas Hukum di Universitas indonesia. ',
+  imgUrl: '/img/speaker/gandjar-laksmana.jpeg',
 }
 export const speaker7 = {
   id: 7,
@@ -59,7 +59,7 @@ export const speaker7 = {
   slug: 'tasya-safiranita',
   jabatan: 'Kepala Pusat Studi Cyber Law & Transformasi Digital FH Unpad',
   profile:
-    'Dr. Tasya Safiranita, SH., MH. is a permanent lecturer at the Faculty of Law, Padjajaran University. In 2008 she received her Bachelor of Law degree from the Faculty of Law, Padjajaran University. Subsequently, she earned a Masters in Business Law and a Doctor of Law from the Faculty of Law, Padjajaran University, with cum laude.',
+    'Dr. Tasya Safiranita, SH., MH. adalah dosen Fakultas Hukum di Universitas Padjajaran. Pada tahun 2008 beliau memperoleh gelar Sarjana Hukum dari Fakultas Hukum Universitas Padjajaran. Selanjutnya meraih gelar Magister Hukum Bisnis dan Doktor Hukum dari Fakultas Hukum Universitas Padjajaran dengan predikat cum laude.',
   imgUrl: '/img/speaker/tasya-safiranita.jpeg',
 }
 export const speaker8 = {
@@ -68,7 +68,7 @@ export const speaker8 = {
   slug: 'peter-carey',
   jabatan: 'Sejarawan, Dosen Sejarah Universitas Indonesia',
   profile:
-    'Fellow Emeritus (profesor penghormatan) dari Trinity College, Oxford. Tutor sejarah modern di Trinity College, Oxford (1979-2008). Adjunct Professor (Profesor Tamu), Fakultas Ilmu Budaya Universitas Indonesia',
+    'Peter lahir di Rangoon (Yangon), Birma (Myanmar) pada tahun 1948, putra kedua dari orang tua yang berasal dari keluarga yang telah lama hidup di Asia (India dan Tiongkok). Beliau seorang  Adjunct Professor (Profesor Tamu), Fakultas Ilmu Budaya Universitas Indonesia dan Fellow Emeritus (profesor penghormatan) dari Trinity College, Oxford. Beliau juga seorang tutor sejarah modern di Trinity College, Oxford (1979-2008).',
   imgUrl: '/img/speaker/peter-carey.jpeg',
 }
 export const speaker9 = {
@@ -77,7 +77,7 @@ export const speaker9 = {
   slug: 'yoes-c',
   jabatan: 'Peneliti Ilmu Politik',
   profile:
-    'MA in Political Science, Northwestern University (Amerika Serikat)M.Sc in Asian Studies, S. Rajaratnam School of International Studies, Nanyang Technological University (Singapura)M.Si in Corporate Communications, London School of Public Relations (Indonesia)S.IP Hubungan Internasional - Universitas Katolik Parahyangan (Indonesia)',
+    'Riwayat Pendidikan Yoes C. Kenawas yaitu MA in Political Science, Northwestern University (Amerika Serikat)M.Sc in Asian Studies, S. Rajaratnam School of International Studies, Nanyang Technological University (Singapura)M.Si in Corporate Communications, London School of Public Relations (Indonesia)S.IP Hubungan Internasional - Universitas Katolik Parahyangan (Indonesia)',
   imgUrl: '/img/speaker/yoes-kenawas.jpeg',
 }
 export const speaker10 = {
@@ -86,7 +86,7 @@ export const speaker10 = {
   slug: 'amalia-nur',
   jabatan: 'Peneliti Ilmu Politik',
   profile:
-    'MA in Political Science, Northwestern University (Amerika Serikat)M.Sc in Asian Studies, S. Rajaratnam School of International Studies, Nanyang Technological University (Singapura)M.Si in Corporate Communications, London School of Public Relations (Indonesia) S.IP Hubungan Internasional - Universitas Katolik Parahyangan (Indonesia)',
+    'Amalia Nur Andini S.Hum., M.A. merupakan dosen Program Studi Hubungan Internasional di Universitas Brawijaya. Pada tahun 2006 beliau memperoleh gelar Sarjana Jurusan Sastra Inggris Fakultas Ilmu Budaya di Universitas Indonesia. Selanjutnya tahun 2019, beliau memperoleh gelar Pascasarjana pada Program Kerjasama Global, Sekolah Pascasarjana Hubungan Internasional, Universitas Ritsumeikan, Jepang.',
   imgUrl: '/img/speaker/amalia-nur-andini.jpg',
 }
 export const speaker11 = {
@@ -111,8 +111,8 @@ export const speaker13 = {
   id: 13,
   name: 'Hera Diani',
   slug: 'hera-diani',
-  jabatan: 'Writer/Editor/Communication Consultant',
+  jabatan: 'Penulis/Editor/Konsultan Komunikasi',
   profile:
-    'An accomplished Journalist with  21 years of experience for print anddigital media. A Co-founder of Magdalene.co, a web magazine focusingon women and gender issues. A seasoned Communication Consultantspecializing in sustainable development and public health campaign,for non-profits and multilateral agencies',
+    'Hera Diani seorang jurnalis dengan pengalaman 21 tahun untuk media cetak dan digital. Beliau merupakan Co-founder Magdalene.co, majalah web yang berfokus pada isu-isu perempuan dan gender. Beliau seorang konsultan Komunikasi berpengalaman yang berspesialisasi dalam pembangunan berkelanjutan dan kampanye kesehatan masyarakat, untuk lembaga nirlaba dan multilateral.',
   imgUrl: '/img/speaker/hera-diani.png',
 }

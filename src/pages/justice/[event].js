@@ -14,7 +14,7 @@ const Event = () => {
       </Head>
       <section id="justice-event" className="pt-120px w-full">
         <Hero eventName={eventName} />
-        <TalkLists />
+        <TalkLists eventName={eventName} />
       </section>
     </Layout>
   )
