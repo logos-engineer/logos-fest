@@ -45,7 +45,7 @@ export default function ScheduleDesc({ data }) {
 
           <Popover className="relative hidden">
             <>
-              <Popover.Button className="flex items-center mb-8 text-pink-500">
+              <Popover.Button className="text-ocean-300 flex items-center mb-8">
                 Add to Calendar
                 <img
                   src="/icon/add.svg"

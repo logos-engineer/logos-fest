@@ -14,11 +14,11 @@ export const speaker2 = {
   profile:
     'Romo Prof. Dr. Franz Magnis-Suseno SJ, rohaniwan, lahir 1936 di Jerman, sejak 1961 di Indonesia, sejak 1977 WNI, belajar filsafat, teologi dan teori politik di Pullach, Yogyakarta dan München; doktorat dalam filsafat 1973 dari Universitas München, sejak 1969 dosen tetap dan sekarang guru besar emeritus Sekolah Tinggi Filsafat Driyarkara di Jakarta. 1987-1998 Ketua Sekolah Tinggi Filsafat Driyarkara, 2008-2017 Ketua Pengurus Yayasan Pendidikan Driyarkara. Sejak 1976 ia mengajar di Universitas Indonesia dan selama 9 tahun di Universitas Katolik Parahyangan Bandung. Ia juga menjadi dosen tamu di beberapa perguruan tinggi di Eropa. ',
   img: '/img/speaker/franz-magnis.jpg',
-  slug: 'franz-magnis',
 }
 export const speaker3 = {
   id: 3,
   name: 'Drs. Agus Wahyudi, M.Si., M.A., Ph.D',
+  slug: 'agus-wahyudi',
   jabatan: 'Dosen Filsafat Politik, Fakultas Filsafat UGM',
   profile:
     '2009-2018 Ph.D, Northern Arizona University, USA,2002-2003 M.A. International School for Humanities and Social Sciences (ISHSS), University of Amsterdam, The Netherlands, 1998-1999 M.A. Research School of Pacific and Asian Studies (RSPAS), Australian National University, Australia (Incomplete), 1993-1997 MSi (Master of Science), Gadjah Mada University, Yogyakarta 1987-1992 Bachelor, Philosophy, Gadjah Mada University, Yogyakarta',
@@ -33,6 +33,7 @@ export const speaker4 = {
     '2005-2009 S1 STF Driyarkara, Jakarta (jurusan Filsafat) 2010-2012 S2 STF Driyarkara, Jakarta (jurusan Filsafat), 2019 - sekarang kandidat doktor STF Driyarkara, Jakarta (jurusan Filsafat)',
   img: '/img/speaker/martin-suryajaya.jpg',
   slug: 'martin-suryajaya',
+  imgUrl: '/img/speaker/martin-suryajaya.jpg',
 }
 export const speaker5 = {
   id: 5,
@@ -42,6 +43,7 @@ export const speaker5 = {
     'Zainal Arifin Mochtar adalah seorang dosen Fakultas Hukum Universitas Gadjah Mada (FH-UGM) Yogyakarta. Zainal juga merupakan alumnus dari tempat ia mengajar. Lulus bergelar sarjana hukum dari UGM di tahun 2003 dengan menyusun tugas akhir berjudul “Konsep Pertanggungjawaban Pelaku Crimes Against Humanity di Pengadilan HAM. Aktif sebagai dosen, juga pegiat antikorupsi dirinya juga aktif meneliti. Zainal tercatat pernah tergabung dalam Pusat Studi Hak Asasi Manusia (PUSHAM) UII Yogyakarta tahun 2001. Sebagai peneliti, Zainal memiliki ketertarikan pada Peradilan Tata Usaha Negara, Hukum Administrasi Negara dan Sosio Humaniora. Di tahun 2012 dirinya memeroleh gelar doktoral dari Universitas Gadjah Mada (UGM) Yogakarta.',
   img: '/img/speaker/zainal-arifin.jpg',
   slug: 'zainal-arifin',
+  imgUrl: '/img/speaker/zainal-arifin.jpg',
 }
 export const speaker6 = {
   id: 6,
@@ -78,6 +80,7 @@ export const speaker9 = {
     'MA in Political Science, Northwestern University (Amerika Serikat)M.Sc in Asian Studies, S. Rajaratnam School of International Studies, Nanyang Technological University (Singapura)M.Si in Corporate Communications, London School of Public Relations (Indonesia)S.IP Hubungan Internasional - Universitas Katolik Parahyangan (Indonesia)',
   img: '/img/speaker/yoes-kenawas.jpeg',
   slug: 'yoes-kenawas',
+  imgUrl: '/img/speaker/yoes-kenawas.jpeg',
 }
 export const speaker10 = {
   id: 10,
@@ -105,6 +108,7 @@ export const speaker12 = {
     'Syarif Maulana lahir di Bandung, 30 November 1985. Saat ini ia menjadi pengajar di Fakultas Filsafat, Universitas Katolik Parahyangan dan mahasiswa doktoral di Sekolah Tinggi Filsafat Driyarkara. Di masa pandemi, Syarif menginisiasi kelas belajar filsafat daring bernama Kelas Isolasi. Buku yang pernah ditulisnya antara lain Kumpulan Kalimat Demotivasi: Panduan Menjalani Hidup dengan Biasa-Biasa Saja (2020), Nasib Manusia: Kisah Awal Uzhara, Eksil di Rusia (2021) dan Kumpulan Kalimat Demotivasi 2: Panduan Hidup Bahagia untuk Medioker (2021). Syarif juga merupakan ketua panitia Philofest ID 2020 dan pengajar PhiloKids atau kelas filsafat untuk anak usia 10-15 tahun. ',
   img: '/img/speaker/syarif-maulana.jpg',
   slug: 'syarif-maulana',
+
 }
 export const speaker13 = {
   id: 13,

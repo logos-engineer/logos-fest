@@ -42,7 +42,7 @@ const Header = () => {
               }}
             >
               <img
-                src="/icon/logos.svg"
+                src="/icon/logos.png"
                 className="h-[32px] w-auto"
                 alt="Logos Logo"
               />

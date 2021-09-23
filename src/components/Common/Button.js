@@ -14,10 +14,12 @@ const Button = ({
       className={clsx(
         'rounded-md transition-all',
         className,
-        variant === 'primary' && ['text-white bg-pink-500 hover:bg-pink-700'],
-        variant === 'secondary' && ['text-white bg-red-500 hover:bg-pink-800'],
+        variant === 'primary' && ['text-white bg-ocean-300 hover:bg-ocean-500'],
+        variant === 'secondary' && [
+          'text-white bg-ocean-500 hover:bg-ocean-800',
+        ],
         variant === 'outline-primary' && [
-          'text-pink-500 bg-white hover:bg-pink-500 hover:text-white border border-pink-500',
+          'text-ocean-300 bg-white hover:bg-ocean-300 hover:text-white border border-ocean-300',
         ],
         variant === 'outline-secondary' && [
           'text-black-primary bg-white font-medium hover:bg-gray-200 hover:to-black-primary border ',
