@@ -44,7 +44,7 @@ export function getStaticProps({ params }) {
 
   //Get Speaker Class
   allSchedule.map((data) =>
-    data.schedule.map((child) =>
+    data.map((child) =>
       child.speaker.map((speak) => {
         if (speak.slug === params.name) {
           speakerClass.push(child)

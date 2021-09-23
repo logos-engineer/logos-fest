@@ -1,4 +1,3 @@
-import { INSTAGRAM_LINK, SPOTIFY_LINK, TWITTER_LINK, YOUTUBE_LINK } from '@/data/path'
 import React from 'react'
 
 import FooterLink from './Footer/FooterLink'
@@ -27,10 +26,10 @@ const Footer = () => {
             © Logos ID 2021. All Right Reserved
           </h5>
           <div className="flex gap-4 mt-4 lg:gap-1 lg:mt-0">
-            <IconLink src="/icon/instagram.svg" href={INSTAGRAM_LINK} alt="instagram" />
-            <IconLink src="/icon/spotify.svg" href={SPOTIFY_LINK} alt="spotify" />
-            <IconLink src="/icon/twitter.svg" href={TWITTER_LINK} alt="twitter" />
-            <IconLink src="/icon/youtube.svg" href={YOUTUBE_LINK} alt="youtube" />
+            <IconLink src="/icon/instagram.svg" href="/" alt="instagram" />
+            <IconLink src="/icon/spotify.svg" href="/" alt="spotify" />
+            <IconLink src="/icon/twitter.svg" href="/" alt="twitter" />
+            <IconLink src="/icon/youtube.svg" href="/" alt="youtube" />
           </div>
         </div>
       </div>

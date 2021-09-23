@@ -2,7 +2,7 @@ import React from 'react'
 import { Tab } from '@headlessui/react'
 import { Button, Container, Grid } from '../Common'
 import HeadSection from './Common/HeadSection'
-import { allSchedule } from '@/data/listScheduleName'
+import listSchedule from 'src/data/listSchedule'
 import clsx from 'clsx'
 import { Fragment } from 'react'
 import CardSchedule from './Common/CardSchedule'
@@ -11,12 +11,11 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import Link from 'next/link'
 
-
 const tabDesktop = () => {
   return (
     <Tab.List className="mt-6 lg:mt-0">
-      {allSchedule &&
-        allSchedule.map((item, index) => (
+      {listSchedule &&
+        listSchedule.map((item, index) => (
           <Tab as={Fragment} key={index}>
             {({ selected }) => (
               <button
@@ -27,7 +26,7 @@ const tabDesktop = () => {
                     : 'bg-white text-black-primary opacity-40'
                 )}
               >
-                {item.title.toLowerCase().includes('talks')? `${item.title}`: `B. ${item.title}`}
+                {item.title}
               </button>
             )}
           </Tab>
@@ -46,8 +45,8 @@ const tabMobile = () => {
         arrows={false}
         className="px-4 w-screen max-w-screen-sm lg:max-w-screen-md"
       >
-        {allSchedule &&
-          allSchedule.map((item, index) => (
+        {listSchedule &&
+          listSchedule.map((item, index) => (
             <div className="flex" key={index}>
               <Tab as={Fragment}>
                 {({ selected }) => (
@@ -59,7 +58,7 @@ const tabMobile = () => {
                         : 'bg-white text-black-primary opacity-40 bord'
                     )}
                   >
-                  {item.title.toLowerCase().includes('talks')? `${item.title}`: `B. ${item.title}`}
+                    {item.title}
                   </button>
                 )}
               </Tab>
@@ -71,7 +70,7 @@ const tabMobile = () => {
 }
 
 const Schedule = () => {
-  const isDesktop = useMediaQuery(1024);
+  const isDesktop = useMediaQuery(1024)
   return (
     <section id="schedule" className="pt-36 w-full">
       <Container className="overflow-hidden">
@@ -87,48 +86,36 @@ const Schedule = () => {
               {isDesktop ? tabDesktop() : tabMobile()}
 
               <Tab.Panels>
-                {allSchedule &&
-                  allSchedule.map((item, index) => {
-                    let itemSchedule = item?.schedule?.filter((_, index)=>  index < 2)
-                    return (
-                      <Tab.Panel
-                        className="grid gap-5 grid-cols-1 mt-12 lg:gap-10 lg:grid-cols-2"
-                        key={index}
-                      >
-                        {itemSchedule.length !== 0 ? (
-                          itemSchedule.map((datas, index) => {
-                            const {category, date, desc, slug, title, url, speaker} = datas;
-                            return(
-                            <CardSchedule
-                              slug={slug}
-                              category={category}
-                              key={index}
-                              title={title}
-                              date={date}
-                              subtitle={desc}
-                              urlRegister={url}
-                              imgPerson={speaker}
-                            />
-                            )
-                          })
-                        ):(
-                            <p className="mt-3 text-center text-black-body text-base leading-normal lg:mt-4 lg:text-lg w-full col-span-2">
-                              Segera datang
-                            </p>
-                        )}
-                        <Link passHref href="/schedule">
-                          <a
-                            aria-label="Lihat semua jadwal"
-                            className="flex col-span-full justify-center mt-4"
-                          >
-                            <Button size="base" variant="outline-primary">
-                              Lihat semua jadwal
-                            </Button>
-                          </a>
-                        </Link>
-                      </Tab.Panel>
-                    )
-                  })}
+                {listSchedule &&
+                  listSchedule.map((item, index) => (
+                    <Tab.Panel
+                      className="grid gap-5 grid-cols-1 mt-12 lg:gap-10 lg:grid-cols-2"
+                      key={index}
+                    >
+                      {item.schedule.map((datas, index) => (
+                        <CardSchedule
+                          slug={datas.slug}
+                          category={datas.category}
+                          key={index}
+                          title={datas.title}
+                          date={datas.date}
+                          subtitle={datas.subtitle}
+                          urlRegister={datas.urlSchedule}
+                          imgPerson={datas.person}
+                        />
+                      ))}
+                      <Link passHref href="/schedule">
+                        <a
+                          aria-label="Lihat semua jadwal"
+                          className="flex col-span-full justify-center mt-4"
+                        >
+                          <Button size="base" variant="outline-primary">
+                            Lihat semua jadwal
+                          </Button>
+                        </a>
+                      </Link>
+                    </Tab.Panel>
+                  ))}
               </Tab.Panels>
             </Tab.Group>
           </div>

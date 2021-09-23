@@ -9,10 +9,10 @@ const Hero = () => {
           <h3 className="text-center text-black-primary text-lg font-semibold leading-normal sm:text-2xl lg:text-3xl">
             Speakers
           </h3>
-          {/* <p className="mt-4 text-center text-black-body text-base leading-normal sm:text-lg">
+          <p className="mt-4 text-center text-black-body text-base leading-normal sm:text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa cras
             ipsum dolor sit amet, consectetur{' '}
-          </p> */}
+          </p>
         </div>
       </Grid>
     </Container>
