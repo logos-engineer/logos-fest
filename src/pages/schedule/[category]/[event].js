@@ -6,10 +6,13 @@ import TalksClass from '@/components/ScheduleDetail/TalksClass'
 import { useRouter } from 'next/dist/client/router'
 import { Bootcamp, Talks } from '@/data/listScheduleDetail'
 import Head from 'next/head'
+import { bootcamps } from '@/data/index'
 
 export default function ScheduleDetail() {
   const route = useRouter()
   const { category, event } = route.query
+  const bootcamp = bootcamps.flat()
+  const bootcampDetail = bootcamp.find((kelas) => kelas.slug === event)
 
   return (
     <>
@@ -17,9 +20,9 @@ export default function ScheduleDetail() {
         <title>Schedule detail - {category}</title>
       </Head>
       <Layout>
-        <ScheduleDesc />
-        {category === 'bootcamp' && <BootcampClass data={Bootcamp} />}
-        {category === 'talks' && <TalksClass data={Talks} />}
+        <ScheduleDesc data={category === 'bootcamp' ? bootcampDetail : null} />
+        {category === 'bootcamp' && <BootcampClass data={bootcamp} />}
+        {category === 'talks' && <BootcampClass data={Talks} />}
       </Layout>
     </>
   )
