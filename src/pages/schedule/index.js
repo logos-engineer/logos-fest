@@ -4,10 +4,10 @@ import CardSchedule from '@/components/Homepage/Common/CardSchedule'
 import HeadSection from '@/components/Homepage/Common/HeadSection'
 import Layout from '@/components/Layout/Layout'
 import ClassList from '@/components/SchedulePage/ClassList'
-import listSchedule from 'src/data/listSchedule'
+import { allSchedule } from '@/data/listScheduleName'
 
 const Schedule = () => {
-  const [selected, setSelected] = useState(listSchedule[0].title)
+  const [selected, setSelected] = useState(allSchedule[0].title)
   const [search, setSearch] = useState('')
 
   const findClass = (category) => {
@@ -17,8 +17,8 @@ const Schedule = () => {
   const renderFiltered = () => {
     return (
       <>
-        {listSchedule &&
-          listSchedule
+        {allSchedule &&
+          allSchedule
             .find(findClass)
             .schedule.map((datas, index) =>
               datas.title
@@ -30,9 +30,9 @@ const Schedule = () => {
                   key={datas.title}
                   title={datas.title}
                   date={datas.date}
-                  subtitle={datas.subtitle}
-                  urlRegister={datas.urlSchedule}
-                  imgPerson={datas.person}
+                  subtitle={datas.desc}
+                  urlRegister={datas.url}
+                  imgPerson={datas.speaker}
                 />
               ) : null
             )}
@@ -40,24 +40,26 @@ const Schedule = () => {
     )
   }
 
+  const subtitleData = allSchedule.find(findClass).subtitle
+
   return (
     <section id="schedule">
       <Layout>
         <Container className="pt-[88px] lg:pt-[120px] px-4 w-full">
           <Grid>
-            <div className="col-span-full lg:col-span-6 lg:col-start-4">
+            <div className="min-h[150px] col-span-full lg:col-span-6 lg:col-start-4">
               <HeadSection
-                title="Schedule"
-                subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa cras ipsum dolor sit amet, consectetur"
-              />
+                title="Jadwal"
+                // subtitle={subtitleData}
+              />     
             </div>
             <div className="fl flex flex-col col-span-12">
               <div className="flex flex-col-reverse gap-4 items-stretch justify-between lg:flex-row">
                 <div className="no-scrollbar flex flex-row overflow-x-auto xl:overflow-x-auto">
-                  {listSchedule.map((item) => (
+                  {allSchedule?.map((item) => (
                     <ClassList
                       key={item.title}
-                      title={item.title}
+                      title={item.title.toLowerCase().includes('talks') ?`${item.title}`: `B. ${item.title}`}
                       id={item.title}
                       active={selected === item.title}
                       setSelected={setSelected}

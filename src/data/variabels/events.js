@@ -17,8 +17,6 @@ import {
 const philosophy1 = {
   id: 1,
   title: 'Concept of Justice',
-  subtitle:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   desc: `Topik keadilan merupakan bahasan yang sangat erat dalam studi filsafat. Pemikiran-pemikiran kaum
           filsuf mengenai keadilan telah eksis bahkan sejak zaman Sokrates. Keadilan menjadi pembahasan yang
 
@@ -27,7 +25,7 @@ const philosophy1 = {
 
           Perjuangan akan keadilan sejatinya tak pernah mati hingga tercapainya suatu kedamaian dan keadilan
           yang setara bagi seluruh masyarakat dunia.Gagasan tentang keadilan sendiri menempati berbagai ranah
-          pembahasan utama, seperti: dalam etika, filsafat hukum maupun politik. Aspek-aspek gagasan tentang
+          pembahasan utama, seperti: dalam etika, filsafat hukum maupun politik. Aspek-aspek gagasan tentang 
           keadilan telah berkembang dan terserap dalam berbagai aspek kehidupan, seperti: peraturan, kebijakan dan
           lain sebagainya.
           Perkembangan konsepsi tentang keadilan sejatinya akan terus berkembang dan bertumbuh seturut
@@ -45,8 +43,6 @@ const philosophy1 = {
 const philosophy2 = {
   id: 2,
   title: 'Justice in Pre-Modern Era',
-  subtitle:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   desc: `Topik keadilan merupakan bahasan yang sangat erat dalam studi filsafat. Pemikiran-pemikiran kaum
         filsuf mengenai keadilan telah eksis bahkan sejak zaman Sokrates. Keadilan menjadi pembahasan yang
 
@@ -73,8 +69,6 @@ const philosophy2 = {
 const philosophy3 = {
   id: 3,
   title: 'Justice in Modern Era',
-  subtitle:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   desc: `Topik keadilan merupakan bahasan yang sangat erat dalam studi filsafat. Pemikiran-pemikiran kaum
         filsuf mengenai keadilan telah eksis bahkan sejak zaman Sokrates. Keadilan menjadi pembahasan yang
 
@@ -100,8 +94,6 @@ const philosophy3 = {
 const philosophy4 = {
   id: 4,
   title: 'Contemporary Justice',
-  subtitle:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   desc: `Topik keadilan merupakan bahasan yang sangat erat dalam studi filsafat. Pemikiran-pemikiran kaum
         filsuf mengenai keadilan telah eksis bahkan sejak zaman Sokrates. Keadilan menjadi pembahasan yang
 
@@ -128,8 +120,6 @@ const philosophy4 = {
 const law1 = {
   id: 5,
   title: 'Equity in Law',
-  subtitle:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   desc: `Keadilan dan hukum merupakan dua hal yang berkaitan sangat erat. Dalam praktiknya, tujuan utama
         dari peradilan dan hukum dalam suatu sistem kenegaraan tak lain adalah untuk menciptakan keadilan dan
         kedamaian bagi seluruh masyarakat didalamnya. Permasalahan akan keadilan dalam konteks hukum adalah
@@ -149,8 +139,6 @@ const law1 = {
 const law2 = {
   id: 6,
   title: 'Restorative Justice',
-  subtitle:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   desc: `Keadilan dan hukum merupakan dua hal yang berkaitan sangat erat. Dalam praktiknya, tujuan utama
         dari peradilan dan hukum dalam suatu sistem kenegaraan tak lain adalah untuk menciptakan keadilan dan
         kedamaian bagi seluruh masyarakat didalamnya. Permasalahan akan keadilan dalam konteks hukum adalah
@@ -170,8 +158,6 @@ const law2 = {
 const law3 = {
   id: 7,
   title: 'Cyber Law',
-  subtitle:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   desc: `Keadilan dan hukum merupakan dua hal yang berkaitan sangat erat. Dalam praktiknya, tujuan utama
         dari peradilan dan hukum dalam suatu sistem kenegaraan tak lain adalah untuk menciptakan keadilan dan
         kedamaian bagi seluruh masyarakat didalamnya. Permasalahan akan keadilan dalam konteks hukum adalah
@@ -192,8 +178,6 @@ const law3 = {
 const politics1 = {
   id: 8,
   title: 'Sejarah dan Aliran Politik Indonesia',
-  subtitle:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   desc: `Aristotle defined politics as an effort taken by citizens to realize the common good. Politics is closely
         related to the administration of government and the state. Politics is often stigmatized as being something
         bad, dirty and full of intrigue. Indonesia itself has experienced a long journey to create a “just politics”.
@@ -222,8 +206,6 @@ const politics1 = {
 const politics2 = {
   id: 9,
   title: 'Politik Dinasti Indonesia',
-  subtitle:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
 
   desc: `Aristoteles mengartikan politik sebagai usaha yang ditempuh warga negara untuk mewujudkan
         kebaikan bersama. Politik sangat erat kaitannya dengan penyelenggaraan pemerintahan dan negara. Stigma
@@ -253,8 +235,6 @@ const politics2 = {
 const politics3 = {
   id: 10,
   title: 'Youth Political Participation in Indonesia',
-  subtitle:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   desc: `Aristoteles mengartikan politik sebagai usaha yang ditempuh warga negara untuk mewujudkan
         kebaikan bersama. Politik sangat erat kaitannya dengan penyelenggaraan pemerintahan dan negara. Stigma
         mengenai politik sering dicitrakan sesuatu yang buruk, kotor dan penuh intrik. Indonesia sendiri telah
@@ -284,8 +264,6 @@ const politics3 = {
 const gender1 = {
   id: 11,
   title: 'Gender dan Feminisme',
-  subtitle:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   desc:`Gender sering disamakan dengan seks biologis yang mengklasifikasi individu sebagai, laki-laki,
 perempuan, atau intersex. Padahal, gender itu sendiri merupakan perbedaan sifat perempuan dan laki-laki
 yang tidak mengacu pada perbedaan biologis, melainkan pada nilai-nilai sosial budaya yang menentukan
@@ -314,8 +292,6 @@ mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasy
 const gender2 = {
   id: 12,
   title: 'Keadilan dan Kesetaraan Gender dalam Seni',
-  subtitle:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   desc:`Gender sering disamakan dengan seks biologis yang mengklasifikasi individu sebagai, laki-laki,
 perempuan, atau intersex. Padahal, gender itu sendiri merupakan perbedaan sifat perempuan dan laki-laki
 yang tidak mengacu pada perbedaan biologis, melainkan pada nilai-nilai sosial budaya yang menentukan
@@ -344,8 +320,6 @@ mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasy
 const gender3 = {
   id: 13,
   title: 'Digital dan Gender',
-  subtitle:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ab quibusdam magni rerum dolorem distinctio at odit similique, sed repudiandae praesentium molestiae. Autem quibusdam, assumenda cum eum corporis maiores!',
   desc: `Gender sering disamakan dengan seks biologis yang mengklasifikasi individu sebagai, laki-laki,
 perempuan, atau intersex. Padahal, gender itu sendiri merupakan perbedaan sifat perempuan dan laki-laki
 yang tidak mengacu pada perbedaan biologis, melainkan pada nilai-nilai sosial budaya yang menentukan
