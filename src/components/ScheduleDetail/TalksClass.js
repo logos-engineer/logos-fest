@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 export default function TalksClass({ data }) {
   return (
-    <>
+    <section id="kelas-lain" className="px-4 w-full lg:px-0">
       <Grid className="mt-16 mx-auto max-w-screen-xl overflow-hidden">
         <div className="flex col-span-12">
           <h1 className="flex-grow text-black-primary text-2xl font-semibold">
@@ -45,6 +45,6 @@ export default function TalksClass({ data }) {
           ))}
         </Slider>
       </Grid>
-    </>
+    </section>
   )
 }

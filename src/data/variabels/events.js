@@ -35,10 +35,10 @@ const philosophy1 = {
   date: 'Rabu, 3 November 2021',
 
   time: '19.00 - 21.00',
-  speaker: [speaker1],
-  slug: 'concept-ofjustice',
+  speaker: speaker1,
+  slug: 'concept-of-justice',
+  category: 'philosophy',
   url: 'https://lynk.id/logos_id',
-  category: 'bootcamp',
 }
 const philosophy2 = {
   id: 2,
@@ -63,8 +63,8 @@ const philosophy2 = {
   time: '19.00 - 21.00',
   speaker: [speaker2],
   slug: 'justice-in-pre-modern-era',
+  category: 'philosophy',
   url: 'https://lynk.id/logos_id',
-  category: 'bootcamp',
 }
 const philosophy3 = {
   id: 3,
@@ -88,8 +88,8 @@ const philosophy3 = {
   time: '19.00 - 21.00',
   speaker: [speaker3],
   slug: 'justice-in-modern-era',
+  category: 'philosophy',
   url: 'https://lynk.id/logos_id',
-  category: 'bootcamp',
 }
 const philosophy4 = {
   id: 4,
@@ -113,8 +113,8 @@ const philosophy4 = {
   time: '19.00 - 21.00',
   speaker: [speaker4],
   slug: 'contemporary-justice"',
+  category: 'philosophy',
   url: 'https://lynk.id/logos_id',
-  category: 'bootcamp',
 }
 
 const law1 = {
@@ -133,8 +133,8 @@ const law1 = {
   time: '19.00 - 21.00',
   speaker: [speaker5],
   slug: 'equity-in-law',
+  category: 'law',
   url: 'https://lynk.id/logos_id',
-  category: 'bootcamp',
 }
 const law2 = {
   id: 6,
@@ -152,8 +152,8 @@ const law2 = {
   time: '19.00 - 21.00',
   speaker: [speaker6],
   slug: 'restorative-justice',
+  category: 'law',
   url: 'https://lynk.id/logos_id',
-  category: 'bootcamp',
 }
 const law3 = {
   id: 7,
@@ -171,8 +171,8 @@ const law3 = {
   time: '19.00 - 21.00',
   speaker: [speaker7],
   slug: 'cyber-law',
+  category: 'law',
   url: 'https://lynk.id/logos_id',
-  category: 'bootcamp',
 }
 
 const politics1 = {
@@ -200,8 +200,8 @@ const politics1 = {
   time: '19.00 - 21.00',
   speaker: [speaker8],
   slug: 'sejarah-dan-aliran-politik-indonesia',
+  category: 'politics',
   url: 'https://lynk.id/logos_id',
-  category: 'bootcamp',
 }
 const politics2 = {
   id: 9,
@@ -229,8 +229,8 @@ const politics2 = {
   time: '19.00 - 21.00',
   speaker: [speaker9],
   slug: 'politik-dinasti-indonesia',
+  category: 'politics',
   url: 'https://lynk.id/logos_id',
-  category: 'bootcamp',
 }
 const politics3 = {
   id: 10,
@@ -257,8 +257,8 @@ const politics3 = {
   time: '19.00 - 21.00',
   speaker: [speaker10],
   slug: 'youth-political-participation-in-indonesia',
+  category: 'politics',
   url: 'https://lynk.id/logos_id',
-  category: 'bootcamp',
 }
 
 const gender1 = {
@@ -286,8 +286,8 @@ mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasy
   time: '19.00 - 21.00',
   speaker: [speaker11],
   slug: 'gender-dan-feminisme',
+  category: 'gender',
   url: 'https://lynk.id/logos_id',
-  category: 'bootcamp',
 }
 const gender2 = {
   id: 12,
@@ -314,8 +314,8 @@ mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasy
   time: '19.00 - 21.00',
   speaker: [speaker12],
   slug: 'keadilan-dan-kesetaraan-gender-dalam-seni',
+  category: 'gender',
   url: 'https://lynk.id/logos_id',
-  category: 'bootcamp',
 }
 const gender3 = {
   id: 13,
@@ -342,11 +342,14 @@ mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasy
   time: '19.00 - 21.00',
   speaker: [speaker13],
   slug: 'digital-dan-gender',
+  category: 'gender',
   url: 'https://lynk.id/logos_id',
-  category: 'bootcamp',
 }
 
 export const kelas1 = [philosophy1, philosophy2, philosophy3, philosophy4]
 export const kelas2 = [law1, law2, law3]
 export const kelas3 = [politics1, politics2, politics3]
 export const kelas4 = [gender1, gender2, gender3]
+
+export const bootcamps = [kelas1, kelas2, kelas3, kelas4]
+export const talks = []
