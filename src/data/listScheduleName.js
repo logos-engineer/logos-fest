@@ -56,7 +56,7 @@ export const bootcampClass = [
     period: '24 November 2021 - 28 November 2021',
     timePeriod: '19.00 - 21.00 WIB',
     speakersData: [speaker11, speaker12, speaker13],
-    slug: 'bootcamp-hukum',
+    slug: 'bootcamp-gender',
     url: 'https://lynk.id/logos_id',
     schedule: kelas4,
   },

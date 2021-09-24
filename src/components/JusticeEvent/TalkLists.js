@@ -20,7 +20,7 @@ const TalkLists = ({ eventName }) => {
             {finalEvent.length > 1 ? (
               finalEvent.map((datas, idx) => (
                 <CardSchedule
-                  titleLink="/schedule"
+                  titleLink={`/schedule?event=${datas.slug}`}
                   key={idx}
                   slug={datas.slug}
                   title={`Bootcamp ${datas.title}`}
