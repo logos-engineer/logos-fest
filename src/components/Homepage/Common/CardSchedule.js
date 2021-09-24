@@ -11,17 +11,18 @@ const CardSchedule = ({
   urlRegister,
   category,
   slug,
+  titleLink,
 }) => {
   return (
     <div className="flex flex-col px-8 py-8 w-full bg-white rounded-2xl shadow-fest">
-      <Link href={`/schedule/${category}/${slug}`} passHref>
+      <Link href={titleLink || `/schedule/${category}/${slug}`} passHref>
         <a aria-label={title} className="cursor-pointer">
           <h5 className="text-black-500 text-base font-semibold lg:text-xl">
             {title}
           </h5>
         </a>
       </Link>
-      <p className="text-ocean-300 mt-2 text-sm lg:text-base">{date}</p>
+      <p className="mt-2 text-ocean-300 text-sm lg:text-base">{date}</p>
       <p className="line-clamp-3 mt-4 text-sm lg:text-base">
         {subtitle.length > 226 ? subtitle.substring(0, 226) + '...' : subtitle}
       </p>
