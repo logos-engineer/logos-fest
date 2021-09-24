@@ -16,7 +16,7 @@ export default function SpeakerClass({ listClass }) {
                 <CardSchedule
                   slug={list.slug}
                   category={list.category}
-                  key={list.id}
+                  key={list.slug}
                   title={list.title}
                   date={list.date}
                   subtitle={list.desc}

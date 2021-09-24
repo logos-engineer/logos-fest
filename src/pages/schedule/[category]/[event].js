@@ -19,8 +19,11 @@ export default function ScheduleDetail({ dataSchedule, recomendation }) {
       </Head>
       <Layout>
         <ScheduleDesc data={dataSchedule} />
-        {/* {category === 'bootcamp' && <BootcampClass data={Bootcamp} />}
-        {category === 'talks' && <TalksClass data={Talks} />} */}
+
+        {/* 
+            Untuk sementara menggunakan komponen rekomendasi bootcamp class        
+        */}
+
         <BootcampClass data={recomendation} />
       </Layout>
     </>
@@ -51,7 +54,11 @@ export function getStaticProps({ params }) {
     .map((data) => data.slug)
     .indexOf(params.event)
   const dataSchedule = flatSchedule[indexSchedule]
-  const recomendation = generateRecomen(indexSchedule, flatSchedule)
+  const recomendation = flatSchedule.filter(
+    (data) =>
+      data.bootcampCategory === dataSchedule.bootcampCategory &&
+      data.slug !== dataSchedule.slug
+  )
 
   return {
     props: {
@@ -59,19 +66,4 @@ export function getStaticProps({ params }) {
       recomendation,
     },
   }
-}
-
-function generateRandom(exceptNum) {
-  const num = Math.floor(Math.random() * (13 - 0) + 0)
-  return num === exceptNum ? generateRandom() : num
-}
-
-function generateRecomen(currIndex, data) {
-  const indexRecom1 = generateRandom(currIndex)
-  const indexRecom2 = generateRandom(currIndex)
-
-  const recom1 = data[indexRecom1]
-  const recom2 = data[indexRecom2]
-
-  return [recom1, recom2]
 }

@@ -4,9 +4,12 @@ import SpeakerCard from '@/components/ScheduleDetail/SpeakerCard'
 import { Button, Container } from '@/components/Common'
 import { Popover, Transition } from '@headlessui/react'
 import { Router, useRouter } from 'next/dist/client/router'
+import { array } from 'prop-types'
 
 export default function ScheduleDesc({ data }) {
   const route = useRouter()
+  const duration = generateDuration(data.time)
+
   return (
     <section id="schedule-details" className="px-4 w-full lg:px-0">
       <Grid className="mt-24 mx-auto max-w-screen-xl lg:mt-32">
@@ -17,6 +20,7 @@ export default function ScheduleDesc({ data }) {
           <div className="flex flex-col mb-6 space-y-4 lg:flex-row lg:space-x-8 lg:space-y-0">
             {data.speaker.map((data) => (
               <SpeakerCard
+                key={data.name}
                 imgSrc={data.imgUrl}
                 name={data.name}
                 job={data.jabatan}
@@ -29,8 +33,7 @@ export default function ScheduleDesc({ data }) {
               {data.date}
             </p>
             <p className="mt-1 text-black-primary text-opacity-75 text-sm font-normal">
-              {data.time} WIB
-              {/* | 60 Menit */}
+              {data.time} WIB | {duration} Menit
             </p>
           </div>
           {/*
@@ -46,8 +49,7 @@ export default function ScheduleDesc({ data }) {
             Date and Time
           </h1>
           <p className="mb-4 w-56 text-black-primary text-opacity-75">
-            {data.date} {data.time}
-            {/* | 60 Menit */}
+            {data.date} {data.time} | {duration} Menit
           </p>
 
           <Popover className="relative hidden">
@@ -143,4 +145,30 @@ export default function ScheduleDesc({ data }) {
       </div>
     </section>
   )
+}
+
+const generateDuration = (time) => {
+  const arrayTime = time.split('-').map((time) => time.trim().split('.'))
+
+  let hourBetween = 0
+  let minuteBetween = 0
+  let duration = 0
+
+  const hour1 = Number(arrayTime[0][0])
+  const minute1 = Number(arrayTime[0][1])
+
+  const hour2 = Number(arrayTime[1][0])
+  const minute2 = Number(arrayTime[1][1])
+
+  if (hour1 > hour2) {
+    hourBetween = hour1 - hour2
+    minuteBetween = minute1 - minute2
+  } else {
+    hourBetween = hour2 - hour1
+    minuteBetween = minute2 - minute1
+  }
+
+  duration = hourBetween * 60 + minuteBetween
+
+  return duration
 }
