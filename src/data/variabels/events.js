@@ -39,6 +39,7 @@ const philosophy1 = {
   slug: 'concept-ofjustice',
   url: 'https://lynk.id/logos_id',
   category: 'bootcamp',
+  bootcampCategory: 'bootcamp-filsafat',
 }
 const philosophy2 = {
   id: 2,
@@ -65,6 +66,7 @@ const philosophy2 = {
   slug: 'justice-in-pre-modern-era',
   url: 'https://lynk.id/logos_id',
   category: 'bootcamp',
+  bootcampCategory: 'bootcamp-filsafat',
 }
 const philosophy3 = {
   id: 3,
@@ -90,6 +92,7 @@ const philosophy3 = {
   slug: 'justice-in-modern-era',
   url: 'https://lynk.id/logos_id',
   category: 'bootcamp',
+  bootcampCategory: 'bootcamp-filsafat',
 }
 const philosophy4 = {
   id: 4,
@@ -115,6 +118,7 @@ const philosophy4 = {
   slug: 'contemporary-justice"',
   url: 'https://lynk.id/logos_id',
   category: 'bootcamp',
+  bootcampCategory: 'bootcamp-filsafat',
 }
 
 const law1 = {
@@ -135,6 +139,7 @@ const law1 = {
   slug: 'equity-in-law',
   url: 'https://lynk.id/logos_id',
   category: 'bootcamp',
+  bootcampCategory: 'bootcamp-hukum',
 }
 const law2 = {
   id: 6,
@@ -154,6 +159,7 @@ const law2 = {
   slug: 'restorative-justice',
   url: 'https://lynk.id/logos_id',
   category: 'bootcamp',
+  bootcampCategory: 'bootcamp-hukum',
 }
 const law3 = {
   id: 7,
@@ -173,6 +179,7 @@ const law3 = {
   slug: 'cyber-law',
   url: 'https://lynk.id/logos_id',
   category: 'bootcamp',
+  bootcampCategory: 'bootcamp-hukum',
 }
 
 const politics1 = {
@@ -202,6 +209,7 @@ const politics1 = {
   slug: 'sejarah-dan-aliran-politik-indonesia',
   url: 'https://lynk.id/logos_id',
   category: 'bootcamp',
+  bootcampCategory: 'bootcamp-politik',
 }
 const politics2 = {
   id: 9,
@@ -231,6 +239,7 @@ const politics2 = {
   slug: 'politik-dinasti-indonesia',
   url: 'https://lynk.id/logos_id',
   category: 'bootcamp',
+  bootcampCategory: 'bootcamp-politik',
 }
 const politics3 = {
   id: 10,
@@ -259,12 +268,13 @@ const politics3 = {
   slug: 'youth-political-participation-in-indonesia',
   url: 'https://lynk.id/logos_id',
   category: 'bootcamp',
+  bootcampCategory: 'bootcamp-politik',
 }
 
 const gender1 = {
   id: 11,
   title: 'Gender dan Feminisme',
-  desc:`Gender sering disamakan dengan seks biologis yang mengklasifikasi individu sebagai, laki-laki,
+  desc: `Gender sering disamakan dengan seks biologis yang mengklasifikasi individu sebagai, laki-laki,
 perempuan, atau intersex. Padahal, gender itu sendiri merupakan perbedaan sifat perempuan dan laki-laki
 yang tidak mengacu pada perbedaan biologis, melainkan pada nilai-nilai sosial budaya yang menentukan
 peranan perempuan dan laki-laki dalam kehidupan pribadi dan dalam setiap bidang kehidupan masyarakat.
@@ -288,11 +298,12 @@ mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasy
   slug: 'gender-dan-feminisme',
   url: 'https://lynk.id/logos_id',
   category: 'bootcamp',
+  bootcampCategory: 'bootcamp-hukum',
 }
 const gender2 = {
   id: 12,
   title: 'Keadilan dan Kesetaraan Gender dalam Seni',
-  desc:`Gender sering disamakan dengan seks biologis yang mengklasifikasi individu sebagai, laki-laki,
+  desc: `Gender sering disamakan dengan seks biologis yang mengklasifikasi individu sebagai, laki-laki,
 perempuan, atau intersex. Padahal, gender itu sendiri merupakan perbedaan sifat perempuan dan laki-laki
 yang tidak mengacu pada perbedaan biologis, melainkan pada nilai-nilai sosial budaya yang menentukan
 peranan perempuan dan laki-laki dalam kehidupan pribadi dan dalam setiap bidang kehidupan masyarakat.
@@ -316,6 +327,7 @@ mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasy
   slug: 'keadilan-dan-kesetaraan-gender-dalam-seni',
   url: 'https://lynk.id/logos_id',
   category: 'bootcamp',
+  bootcampCategory: 'bootcamp-hukum',
 }
 const gender3 = {
   id: 13,
@@ -344,6 +356,7 @@ mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasy
   slug: 'digital-dan-gender',
   url: 'https://lynk.id/logos_id',
   category: 'bootcamp',
+  bootcampCategory: 'bootcamp-hukum',
 }
 
 export const kelas1 = [philosophy1, philosophy2, philosophy3, philosophy4]

@@ -15,12 +15,12 @@ export default function BootcampClass({ data }) {
               <CardSchedule
                 category={list.category}
                 slug={list.slug}
-                key={list.title}
+                key={list.slug}
                 title={list.title}
                 date={list.date}
-                subtitle={list.subtitle}
-                urlRegister={list.urlSchedule}
-                imgPerson={list.person}
+                subtitle={list.desc}
+                urlRegister={list.url}
+                imgPerson={list.speaker}
               />
             </div>
           ))}
