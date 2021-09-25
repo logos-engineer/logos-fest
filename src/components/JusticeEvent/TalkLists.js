@@ -2,6 +2,8 @@ import React from 'react'
 import { Container, Grid } from '../Common'
 import CardSchedule from '../Homepage/Common/CardSchedule'
 import { allSchedule } from '@/data/listScheduleName'
+import { motion } from 'framer-motion'
+import { StaggerChildFast } from '../Animations'
 
 const TalkLists = ({ eventName }) => {
   const bootcampData = allSchedule.filter(
@@ -15,8 +17,11 @@ const TalkLists = ({ eventName }) => {
   return (
     <Container>
       <Grid className="px-4 lg:px-0">
-        <div className="fl flex flex-col col-span-12">
-          <div className="grid gap-6 grid-cols-1 mt-12 lg:gap-10 lg:grid-cols-2">
+        <div className="flex flex-col col-span-12 sm:min-h-screen">
+          <motion.div
+            variants={StaggerChildFast}
+            className="grid gap-6 grid-cols-1 mt-12 lg:gap-10 lg:grid-cols-2"
+          >
             {finalEvent.length > 1 ? (
               finalEvent.map((datas, idx) => (
                 <CardSchedule
@@ -35,7 +40,7 @@ const TalkLists = ({ eventName }) => {
                 Segera datang
               </p>
             )}
-          </div>
+          </motion.div>
         </div>
       </Grid>
     </Container>

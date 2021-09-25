@@ -7,7 +7,7 @@ const CardBook = ({ className, title, subtitle, imgSrc }) => {
   return (
     <div
       className={clsx(
-        'lg:max-h-[170px] relative flex flex-col mt-6 bg-white rounded-2xl shadow-fest lg:flex-row lg:mt-0 ',
+        'lg:max-h-[170px] relative flex flex-col mt-6 bg-white rounded-xl shadow-fest sm:rounded-2xl lg:flex-row lg:mt-0 ',
         className
       )}
     >
