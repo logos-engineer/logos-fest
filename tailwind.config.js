@@ -28,7 +28,7 @@ module.exports = {
     },
     boxShadow: {
       navbar: '0px 2px 16px rgba(0, 0, 0, 0.06)',
-      fest: ' 0px 12px 40px 4px rgba(112, 144, 176, 0.08)',
+      fest: '0px 41px 170px rgba(18, 18, 18, 0.06), 0px 5.13px 21.29px rgba(18, 18, 18, 0.03)',
       airbnb: 'rgba(0, 0, 0, 0.08) 0px 4px 12px',
     },
     fontSize: {

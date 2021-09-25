@@ -37,7 +37,7 @@ const philosophy1 = {
   time: '19.00 - 21.00',
   speaker: [speaker1],
   slug: 'concept-ofjustice',
-  url: 'https://lynk.id/logos_id',
+  url: 'https://lynk.id/logos_id/ZYdJXkZ',
   category: 'bootcamp',
   bootcampCategory: 'bootcamp-filsafat',
 }
@@ -64,7 +64,7 @@ const philosophy2 = {
   time: '19.00 - 21.00',
   speaker: [speaker2],
   slug: 'justice-in-pre-modern-era',
-  url: 'https://lynk.id/logos_id',
+  url: ' https://lynk.id/logos_id/ZYdJXkZ',
   category: 'bootcamp',
   bootcampCategory: 'bootcamp-filsafat',
 }
@@ -90,7 +90,7 @@ const philosophy3 = {
   time: '19.00 - 21.00',
   speaker: [speaker3],
   slug: 'justice-in-modern-era',
-  url: 'https://lynk.id/logos_id',
+  url: ' https://lynk.id/logos_id/ZYdJXkZ',
   category: 'bootcamp',
   bootcampCategory: 'bootcamp-filsafat',
 }
@@ -115,8 +115,8 @@ const philosophy4 = {
   date: 'Minggu, 7 November 2021',
   time: '19.00 - 21.00',
   speaker: [speaker4],
-  slug: 'contemporary-justice"',
-  url: 'https://lynk.id/logos_id',
+  slug: 'contemporary-justice',
+  url: ' https://lynk.id/logos_id/ZYdJXkZ',
   category: 'bootcamp',
   bootcampCategory: 'bootcamp-filsafat',
 }
@@ -137,7 +137,7 @@ const law1 = {
   time: '19.00 - 21.00',
   speaker: [speaker5],
   slug: 'equity-in-law',
-  url: 'https://lynk.id/logos_id',
+  url: 'https://lynk.id/logos_id/Ax3YqeL',
   category: 'bootcamp',
   bootcampCategory: 'bootcamp-hukum',
 }
@@ -157,7 +157,7 @@ const law2 = {
   time: '19.00 - 21.00',
   speaker: [speaker6],
   slug: 'restorative-justice',
-  url: 'https://lynk.id/logos_id',
+  url: 'https://lynk.id/logos_id/Ax3YqeL',
   category: 'bootcamp',
   bootcampCategory: 'bootcamp-hukum',
 }
@@ -177,7 +177,7 @@ const law3 = {
   time: '19.00 - 21.00',
   speaker: [speaker7],
   slug: 'cyber-law',
-  url: 'https://lynk.id/logos_id',
+  url: 'https://lynk.id/logos_id/Ax3YqeL',
   category: 'bootcamp',
   bootcampCategory: 'bootcamp-hukum',
 }
@@ -207,7 +207,7 @@ const politics1 = {
   time: '19.00 - 21.00',
   speaker: [speaker8],
   slug: 'sejarah-dan-aliran-politik-indonesia',
-  url: 'https://lynk.id/logos_id',
+  url: 'https://lynk.id/logos_id/peEow3V',
   category: 'bootcamp',
   bootcampCategory: 'bootcamp-politik',
 }
@@ -237,7 +237,7 @@ const politics2 = {
   time: '19.00 - 21.00',
   speaker: [speaker9],
   slug: 'politik-dinasti-indonesia',
-  url: 'https://lynk.id/logos_id',
+  url: 'https://lynk.id/logos_id/peEow3V',
   category: 'bootcamp',
   bootcampCategory: 'bootcamp-politik',
 }
@@ -266,7 +266,7 @@ const politics3 = {
   time: '19.00 - 21.00',
   speaker: [speaker10],
   slug: 'youth-political-participation-in-indonesia',
-  url: 'https://lynk.id/logos_id',
+  url: 'https://lynk.id/logos_id/peEow3V',
   category: 'bootcamp',
   bootcampCategory: 'bootcamp-politik',
 }
@@ -296,7 +296,7 @@ mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasy
   time: '19.00 - 21.00',
   speaker: [speaker11],
   slug: 'gender-dan-feminisme',
-  url: 'https://lynk.id/logos_id',
+  url: 'https://lynk.id/logos_id/Ax3YqeL',
   category: 'bootcamp',
   bootcampCategory: 'bootcamp-hukum',
 }
@@ -325,9 +325,9 @@ mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasy
   time: '19.00 - 21.00',
   speaker: [speaker12],
   slug: 'keadilan-dan-kesetaraan-gender-dalam-seni',
-  url: 'https://lynk.id/logos_id',
+  url: 'https://lynk.id/logos_id/mxnabzz',
   category: 'bootcamp',
-  bootcampCategory: 'bootcamp-hukum',
+  bootcampCategory: 'bootcamp-gender',
 }
 const gender3 = {
   id: 13,
@@ -354,7 +354,7 @@ mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasy
   time: '19.00 - 21.00',
   speaker: [speaker13],
   slug: 'digital-dan-gender',
-  url: 'https://lynk.id/logos_id',
+  url: 'https://lynk.id/logos_id/Ax3YqeL',
   category: 'bootcamp',
   bootcampCategory: 'bootcamp-hukum',
 }

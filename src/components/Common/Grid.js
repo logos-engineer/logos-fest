@@ -1,12 +1,14 @@
 import clsx from 'clsx'
 import React from 'react'
 import PropTypes from 'prop-types'
+import InViewDiv from './InViewDiv'
+import { StaggerChildFast } from '../Animations'
 
 const Grid = ({ className, children }) => {
   return (
-    <div className={clsx('grid grid-cols-12 w-full lg:gap-10', className)}>
+    <InViewDiv variants={StaggerChildFast} className={clsx('grid grid-cols-12 w-full lg:gap-10', className)}>
       {children}
-    </div>
+    </InViewDiv>
   )
 }
 

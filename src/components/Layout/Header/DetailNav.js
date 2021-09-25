@@ -35,9 +35,9 @@ export default function DetailNav({ viewModal, handleModal }) {
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
-              enterFrom="opacity-0"
-              enterTo="opacity-100"
-              leave="ease-in duration-200"
+              enterFrom="opacity-0 h-0"
+              enterTo="opacity-100 h-full"
+              leave="ease-in duration-200 delay-75 "
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
@@ -46,12 +46,12 @@ export default function DetailNav({ viewModal, handleModal }) {
 
             <Transition.Child
               as={Fragment}
-              enter="ease-out duration-300"
-              enterFrom="opacity-0"
-              enterTo="opacity-100"
-              leave="ease-in duration-200"
-              leaveFrom="opacity-100 scale-100"
-              leaveTo="opacity-0 scale-95"
+              enter="ease-in-out duration-500 delay-75 h-[341px] "
+              enterFrom="opacity-0 translate-y-full"
+              enterTo="opacity-100 translate-y-0"
+              leave="ease-in-out duration-200"
+              leaveFrom="opacity-100 scale-100 translate-y-0"
+              leaveTo="opacity-0 scale-95 translate-y-full"
             >
               <div className="shadow-xl inline-block align-middle p-4 w-full text-left bg-white overflow-hidden transform transition-all">
                 <Dialog.Title as="h3" className="flex items-center">

@@ -3,6 +3,8 @@ import Hero from '@/components/Speaker/Hero'
 import ListSpeaker from '@/components/Speaker/ListSpeaker'
 import React from 'react'
 import Head from 'next/head'
+import { motion } from 'framer-motion'
+import { StaggerChildFast } from '@/components/Animations'
 
 const Speakers = () => {
   return (
@@ -11,10 +13,14 @@ const Speakers = () => {
         <title>List Speaker</title>
       </Head>
       <Layout>
-        <section id="speaker-logos" className="pt-120px px-4 w-full lg:px-0">
+        <motion.section
+          variants={StaggerChildFast}
+          id="speaker-logos"
+          className="pt-120px px-4 w-full lg:px-0"
+        >
           <Hero />
           <ListSpeaker />
-        </section>
+        </motion.section>
       </Layout>
     </>
   )
