@@ -18,7 +18,7 @@ const CardEvent = ({ imgSrc, imgAlt, title, subtitle, url }) => {
       <Link href={url} passHref>
         <a
           aria-label={'Learn More ' + title}
-          className="lg:mt-[42px] flex items-center mt-4 p-0 w-auto text-ocean-300 leading-normal"
+          className="lg:mt-[42px] flex items-center mt-4 p-0 w-auto text-ocean-300 text-sm leading-normal sm:text-base"
         >
           Baca selengkapnya <ChevronRightIcon className="ml-1 w-6 h-6" />
         </a>

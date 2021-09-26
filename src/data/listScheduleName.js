@@ -24,7 +24,7 @@ export const bootcampClass = [
     timePeriod: '19.00 - 21.00 WIB',
     speakersData: [speaker1, speaker2, speaker3, speaker4],
     slug: 'bootcamp-filsafat',
-    url: ' https://lynk.id/logos_id/ZYdJXkZ',
+    url: ' https://lynk.id/logos_id/',
     schedule: kelas1,
   },
   {
@@ -35,7 +35,7 @@ export const bootcampClass = [
     timePeriod: '19.00 - 21.00 WIB',
     speakersData: [speaker5, speaker6, speaker7],
     slug: 'bootcamp-hukum',
-    url: ' https://lynk.id/logos_id/Ax3YqeL',
+    url: ' https://lynk.id/logos_id/',
     schedule: kelas2,
   },
   {
@@ -46,7 +46,7 @@ export const bootcampClass = [
     timePeriod: '19.00 - 21.00 WIB',
     speakersData: [speaker8, speaker9, speaker10],
     slug: 'bootcamp-politik',
-    url: ' https://lynk.id/logos_id/peEow3V',
+    url: ' https://lynk.id/logos_id/',
     schedule: kelas3,
   },
   {
@@ -57,7 +57,7 @@ export const bootcampClass = [
     timePeriod: '19.00 - 21.00 WIB',
     speakersData: [speaker11, speaker12, speaker13],
     slug: 'bootcamp-gender',
-    url: 'https://lynk.id/logos_id/mxnabzz',
+    url: 'https://lynk.id/logos_id/',
     schedule: kelas4,
   },
 ]
