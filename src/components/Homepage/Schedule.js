@@ -10,6 +10,8 @@ import useMediaQuery from '@/hooks/useMediaQuery'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import Link from 'next/link'
+import InViewDiv from '../Common/InViewDiv'
+import { FadeInUp } from '../Animations'
 
 const tabDesktop = () => {
   return (
@@ -76,16 +78,22 @@ const tabMobile = () => {
 const Schedule = () => {
   const isDesktop = useMediaQuery(1024)
   return (
-    <section id="schedule" className="pt-36 w-full">
+    <section id="schedule" className="pt-14 w-full sm:pt-36">
       <Container className="overflow-hidden">
         <Grid className="px-4">
-          <div className="col-span-12 lg:col-span-6 lg:col-start-4">
+          <InViewDiv
+            variants={FadeInUp}
+            className="col-span-12 lg:col-span-6 lg:col-start-4"
+          >
             <HeadSection
               title="Jadwal Kelas"
               subtitle="Kelas Kelas Logos Festival"
             />
-          </div>
-          <div className="flex flex-col col-span-12 items-center justify-center">
+          </InViewDiv>
+          <InViewDiv
+            variants={FadeInUp}
+            className="flex flex-col col-span-12 items-center justify-center"
+          >
             <Tab.Group>
               {isDesktop ? tabDesktop() : tabMobile()}
 
@@ -125,7 +133,7 @@ const Schedule = () => {
                             )
                           })
                         ) : (
-                          <p className="col-span-2 mt-3 w-full text-center text-black-body text-base leading-normal lg:mt-4 lg:text-lg">
+                          <p className="col-span-2 mt-3 w-full text-center text-black-primary text-xl font-bold leading-snug lg:mt-4 lg:text-3xl">
                             Segera datang
                           </p>
                         )}
@@ -144,7 +152,7 @@ const Schedule = () => {
                   })}
               </Tab.Panels>
             </Tab.Group>
-          </div>
+          </InViewDiv>
         </Grid>
       </Container>
     </section>

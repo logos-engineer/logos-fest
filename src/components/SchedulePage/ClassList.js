@@ -1,9 +1,9 @@
 import clsx from 'clsx'
 
-const ClassList = ({ active, id, title, setSelected }) => {
+const ClassList = ({ active, title, setSelected }) => {
   return (
     <button
-      onClick={() => setSelected(id)}
+      onClick={setSelected}
       className={clsx(
         'px-[12px] py-[6px] mr-3 min-w-max text-sm border border-black-line rounded-md transition-all lg:mr-6 lg:px-5 lg:py-3 lg:text-base',
         active

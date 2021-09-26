@@ -1,10 +1,13 @@
 import WrapperProvider from '@/context/WrapperProvider'
 import '@/styles/tailwind.css'
+import { AnimateSharedLayout } from 'framer-motion'
 
 function MyApp({ Component, pageProps }) {
   return (
     <WrapperProvider>
-      <Component {...pageProps} />
+      <AnimateSharedLayout>
+        <Component {...pageProps} />
+      </AnimateSharedLayout>
     </WrapperProvider>
   )
 }

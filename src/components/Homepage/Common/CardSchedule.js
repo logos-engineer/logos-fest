@@ -2,6 +2,9 @@ import { Button } from '@/components/Common'
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
+import InViewDiv from '@/components/Common/InViewDiv'
+import { FadeInUp } from '@/components/Animations'
+import { motion } from 'framer-motion'
 
 const CardSchedule = ({
   title,
@@ -11,17 +14,21 @@ const CardSchedule = ({
   urlRegister,
   category,
   slug,
+  titleLink,
 }) => {
   return (
-    <div className="flex flex-col px-8 py-8 w-full bg-white rounded-2xl shadow-fest">
-      <Link href={`/schedule/${category}/${slug}`} passHref>
+    <InViewDiv
+      variants={FadeInUp}
+      className="flex flex-col px-4 py-6 w-full bg-white rounded-xl shadow-fest sm:px-8 sm:py-8 sm:rounded-2xl"
+    >
+      <Link href={titleLink || `/schedule/${category}/${slug}`} passHref>
         <a aria-label={title} className="cursor-pointer">
           <h5 className="text-black-500 text-base font-semibold lg:text-xl">
             {title}
           </h5>
         </a>
       </Link>
-      <p className="text-ocean-300 mt-2 text-sm lg:text-base">{date}</p>
+      <p className="mt-2 text-ocean-300 text-sm lg:text-base">{date}</p>
       <p className="line-clamp-3 mt-4 text-sm lg:text-base">
         {subtitle.length > 226 ? subtitle.substring(0, 226) + '...' : subtitle}
       </p>
@@ -40,13 +47,13 @@ const CardSchedule = ({
         ))}
       </div>
       <Link href={urlRegister} passHref>
-        <a className="mt-8">
+        <a className="mt-8" target="_blank">
           <Button variant="primary" size="base">
             Register Now
           </Button>
         </a>
       </Link>
-    </div>
+    </InViewDiv>
   )
 }
 

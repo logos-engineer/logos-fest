@@ -1,5 +1,8 @@
+import { motion } from 'framer-motion'
 import React from 'react'
+import { FadeInUp } from '../Animations'
 import { Container, Grid } from '../Common'
+import InViewDiv from '../Common/InViewDiv'
 import CardEvent from './Common/CardEvent'
 import HeadSection from './Common/HeadSection'
 
@@ -22,14 +25,21 @@ const Event = () => {
     <section id="event-product" className="pt-5 w-full">
       <Container>
         <Grid className="px-4 lg:px-0">
-          <div className="col-span-12 lg:col-span-6 lg:col-start-4">
+          <InViewDiv
+            variants={FadeInUp}
+            className="col-span-12 lg:col-span-6 lg:col-start-4"
+          >
             <HeadSection
               title="Kegiatan Festival"
               subtitle="Pada festival perdana Logos Fest, kami memperhatikan pedagogi untuk kelas-kelas yang diadakan."
             />
-          </div>
+          </InViewDiv>
           {listEvent.map((item, index) => (
-            <div className="col-span-12 lg:col-span-6" key={index}>
+            <InViewDiv
+              variants={FadeInUp}
+              className="col-span-12 lg:col-span-6"
+              key={index}
+            >
               <CardEvent
                 imgSrc={item.img}
                 imgAlt={item.title}
@@ -37,7 +47,7 @@ const Event = () => {
                 subtitle={item.desc}
                 url={item.link}
               />
-            </div>
+            </InViewDiv>
           ))}
         </Grid>
       </Container>
