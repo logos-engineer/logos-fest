@@ -11,7 +11,6 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import Link from 'next/link'
 
-
 const tabDesktop = () => {
   return (
     <Tab.List className="mt-6 lg:mt-0">
@@ -27,7 +26,9 @@ const tabDesktop = () => {
                     : 'bg-white text-black-primary opacity-40'
                 )}
               >
-                {item.title.toLowerCase().includes('talks')? `${item.title}`: `B. ${item.title}`}
+                {item.title.toLowerCase().includes('talks')
+                  ? `${item.title}`
+                  : `${item.title}`}
               </button>
             )}
           </Tab>
@@ -59,7 +60,9 @@ const tabMobile = () => {
                         : 'bg-white text-black-primary opacity-40 bord'
                     )}
                   >
-                  {item.title.toLowerCase().includes('talks')? `${item.title}`: `B. ${item.title}`}
+                    {item.title.toLowerCase().includes('talks')
+                      ? `${item.title}`
+                      : `${item.title}`}
                   </button>
                 )}
               </Tab>
@@ -71,7 +74,7 @@ const tabMobile = () => {
 }
 
 const Schedule = () => {
-  const isDesktop = useMediaQuery(1024);
+  const isDesktop = useMediaQuery(1024)
   return (
     <section id="schedule" className="pt-36 w-full">
       <Container className="overflow-hidden">
@@ -89,7 +92,9 @@ const Schedule = () => {
               <Tab.Panels>
                 {allSchedule &&
                   allSchedule.map((item, index) => {
-                    let itemSchedule = item?.schedule?.filter((_, index)=>  index < 2)
+                    let itemSchedule = item?.schedule?.filter(
+                      (_, index) => index < 2
+                    )
                     return (
                       <Tab.Panel
                         className="grid gap-5 grid-cols-1 mt-12 lg:gap-10 lg:grid-cols-2"
@@ -97,24 +102,32 @@ const Schedule = () => {
                       >
                         {itemSchedule.length !== 0 ? (
                           itemSchedule.map((datas, index) => {
-                            const {category, date, desc, slug, title, url, speaker} = datas;
-                            return(
-                            <CardSchedule
-                              slug={slug}
-                              category={category}
-                              key={index}
-                              title={title}
-                              date={date}
-                              subtitle={desc}
-                              urlRegister={url}
-                              imgPerson={speaker}
-                            />
+                            const {
+                              category,
+                              date,
+                              desc,
+                              slug,
+                              title,
+                              url,
+                              speaker,
+                            } = datas
+                            return (
+                              <CardSchedule
+                                slug={slug}
+                                category={category}
+                                key={index}
+                                title={title}
+                                date={date}
+                                subtitle={desc}
+                                urlRegister={url}
+                                imgPerson={speaker}
+                              />
                             )
                           })
-                        ):(
-                            <p className="mt-3 text-center text-black-body text-base leading-normal lg:mt-4 lg:text-lg w-full col-span-2">
-                              Segera datang
-                            </p>
+                        ) : (
+                          <p className="col-span-2 mt-3 w-full text-center text-black-body text-base leading-normal lg:mt-4 lg:text-lg">
+                            Segera datang
+                          </p>
                         )}
                         <Link passHref href="/schedule">
                           <a

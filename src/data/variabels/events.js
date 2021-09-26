@@ -33,7 +33,6 @@ const philosophy1 = {
           penting bagi kita dalam mengembangkan pemikiran mengenai keadilan perlu untuk memahami konsep
           keadilan dan bagaimana perkembangannya hingga saat ini.`,
   date: 'Rabu, 3 November 2021',
-
   time: '19.00 - 21.00',
   speaker: [speaker1],
   slug: 'concept-ofjustice',
@@ -178,24 +177,12 @@ const law3 = {
 const politics1 = {
   id: 8,
   title: 'Sejarah dan Aliran Politik Indonesia',
-  desc: `Aristotle defined politics as an effort taken by citizens to realize the common good. Politics is closely
-        related to the administration of government and the state. Politics is often stigmatized as being something
-        bad, dirty and full of intrigue. Indonesia itself has experienced a long journey to create a “just politics”.
-        Indonesia's political trajectory from the early days of independence to the period of guided democracy was
-        marked by various political currents and changes in the political system. Even though Indonesia has now
-        entered the industrial 4.0 phase, to realize democratic politics, it seems that Indonesia cannot be separated
-        from previous cultures and traditions.
-        The Feudalism culture in the archipelago which also adheres to patrimonialism has created political
-        dynasties that are hereditary. Political dynasties are often considered to rob other people of their rights
-        because the politicians presumably could have access and use improper methods that violate democratic
-        principles and human rights. However, should political dynasties from the point of view of Indonesian law
-        be prohibited?
-        In order to create a “just politics”, the role of the millennial generation is very influential in the
-        realization of democratic politics. Digitalization has become a new era for the millennial generation in
-        determining and succeeding in democracy, both at the regional and national levels. Not only providing a
-        space of opinion for the millennial generation, digitalization can also cause many political conflicts that
-        have a negative impact. Therefore, it is important to implement political education so that the millennial
-        generation can actively participate in just political activities.`,
+  desc: `Aristoteles mengartikan politik sebagai usaha yang ditempuh warga negara untuk mewujudkan kebaikan bersama. Politik sangat erat kaitannya dengan penyelenggaraan pemerintahan dan negara. Stigma mengenai politik sering dicitrakan sesuatu yang buruk, kotor dan penuh intrik. Indonesia sendiri telah mengalami perjalanan panjang untuk menciptakan politik yang berkeadilan. Trajektori politik indonesia dari masa awal kemerdekaan hingga periode demokrasi terpimpin diwarnai oleh berbagai aliran politik dan pergantian sistem politik. Walaupun saat ini Indonesia telah memasuki fase industrial 4.0, untuk mewujudkan politik demokrasi nampaknya Indonesia belum bisa terlepas dari budaya dan tradisi terdahulu.
+
+  Budaya feodalisme di Nusantara yang juga menganut patrimonialisme telah menciptakan politik dinasti yang turun temurun. Seperti kasus pilkada 2020 banyak menuai pro dan kontra, politik dinasti dianggap merampas hak orang lain sebab berpotensi menggunakan cara-cara yang tidak benar yang melanggar prinsip demokrasi dan hak asasi manusia. Namun, apakah politik dinasti dalam sudut pandang hukum Indonesia merupakan hal yang dilarang? 
+  
+  Demi menciptakan politik yang berkeadilan, peran generasi milenial sangat berpengaruh dalam terwujudnya politik demokrasi. Digitalisasi telah menjadi era baru untuk generasi milenial dalam penentuan dan keberhasilan demokrasi, baik di tingkat daerah maupun nasional. Bukan hanya memberikan ruang opini bagi generasi milenial, digitalisasi juga dapat menimbulkan banyak konflik politik yang berdampak negatif. Oleh karena itu, pelaksanaan pendidikan politik penting untuk dilaksanakan agar generasi milenial dapat berpartisipasi aktif dalam kegiatan politik yang berkeadilan.
+  .`,
   date: 'Jumat, 17 November 2021',
   time: '19.00 - 21.00',
   speaker: [speaker8],
@@ -264,7 +251,7 @@ const politics3 = {
 const gender1 = {
   id: 11,
   title: 'Gender dan Feminisme',
-  desc:`Gender sering disamakan dengan seks biologis yang mengklasifikasi individu sebagai, laki-laki,
+  desc: `Gender sering disamakan dengan seks biologis yang mengklasifikasi individu sebagai, laki-laki,
 perempuan, atau intersex. Padahal, gender itu sendiri merupakan perbedaan sifat perempuan dan laki-laki
 yang tidak mengacu pada perbedaan biologis, melainkan pada nilai-nilai sosial budaya yang menentukan
 peranan perempuan dan laki-laki dalam kehidupan pribadi dan dalam setiap bidang kehidupan masyarakat.
@@ -292,7 +279,7 @@ mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasy
 const gender2 = {
   id: 12,
   title: 'Keadilan dan Kesetaraan Gender dalam Seni',
-  desc:`Gender sering disamakan dengan seks biologis yang mengklasifikasi individu sebagai, laki-laki,
+  desc: `Gender sering disamakan dengan seks biologis yang mengklasifikasi individu sebagai, laki-laki,
 perempuan, atau intersex. Padahal, gender itu sendiri merupakan perbedaan sifat perempuan dan laki-laki
 yang tidak mengacu pada perbedaan biologis, melainkan pada nilai-nilai sosial budaya yang menentukan
 peranan perempuan dan laki-laki dalam kehidupan pribadi dan dalam setiap bidang kehidupan masyarakat.

@@ -51,7 +51,7 @@ const Schedule = () => {
               <HeadSection
                 title="Jadwal"
                 // subtitle={subtitleData}
-              />     
+              />
             </div>
             <div className="fl flex flex-col col-span-12">
               <div className="flex flex-col-reverse gap-4 items-stretch justify-between lg:flex-row">
@@ -59,7 +59,11 @@ const Schedule = () => {
                   {allSchedule?.map((item) => (
                     <ClassList
                       key={item.title}
-                      title={item.title.toLowerCase().includes('talks') ?`${item.title}`: `B. ${item.title}`}
+                      title={
+                        item.title.toLowerCase().includes('talks')
+                          ? `${item.title}`
+                          : `${item.title}`
+                      }
                       id={item.title}
                       active={selected === item.title}
                       setSelected={setSelected}
