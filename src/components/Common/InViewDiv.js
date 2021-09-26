@@ -7,7 +7,7 @@ import { FadeInUp } from '../Animations'
 export default function InViewDiv(props) {
   const controls = useAnimation()
   const [ref, inView] = useInView({
-    threshold: 0.2,
+    threshold: 0,
   })
 
   useEffect(() => {

@@ -11,9 +11,9 @@ const CardBook = ({ className, title, subtitle, imgSrc }) => {
         className
       )}
     >
-      <div className="lg:w-[170px] flex-shrink-0 w-full h-24 overflow-hidden lg:h-full lg:overflow-visible">
-        <div className="aspect-w-2 aspect-h-3 lg:aspect-h-1 lg:aspect-w-1 rounded-2xl overflow-hidden lg:rounded-l-2xl">
-          <Image
+      <div className="lg:w-[170px] flex-shrink-0 w-full h-24 bg-ocean-300 rounded-t-xl overflow-hidden lg:h-full lg:overflow-visible">
+        <div className="flex items-end justify-center h-full">
+          {/* <Image
             src={imgSrc}
             width={170}
             height={170}
@@ -22,6 +22,11 @@ const CardBook = ({ className, title, subtitle, imgSrc }) => {
             blurDataURL={dataUrl}
             className="object-cover"
             alt={title}
+          /> */}
+          <img
+            src={imgSrc}
+            alt={title}
+            className="h-[96px] w-[106px] lg:h-[170px] lg:w-[170px] -mb-1"
           />
         </div>
       </div>

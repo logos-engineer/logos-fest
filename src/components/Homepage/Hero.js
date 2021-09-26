@@ -19,7 +19,7 @@ const Hero = () => {
     }
   }, [inView])
   return (
-    <section id="hero" className="lg:pt-[221px] pb-36 pt-28 w-full">
+    <section id="hero" className="lg:pt-[221px] pb-14 pt-28 w-full sm:pb-36">
       <Container>
         <Grid className="px-4 w-screen overflow-hidden lg:overflow-visible">
           <InViewDiv
@@ -27,7 +27,7 @@ const Hero = () => {
             className="flex flex-col col-span-12 justify-center lg:col-span-5 lg:pr-7"
           >
             <motion.p variants={FadeInUp} className="text-ocean-300 text-md">
-              1 November - 1 Desember
+              3 November - 3 Desember
             </motion.p>
             <motion.h1
               variants={FadeInUp}

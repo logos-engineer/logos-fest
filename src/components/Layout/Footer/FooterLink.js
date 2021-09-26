@@ -25,6 +25,6 @@ function FooterLink({ href, children, newTab = false }) {
 FooterLink.propTypes = {
   children: propTypes.node.isRequired,
   href: propTypes.string.isRequired,
-  newTab: propTypes.bool.isRequired,
+  newTab: propTypes.bool,
 }
 export default FooterLink

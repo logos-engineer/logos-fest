@@ -30,7 +30,7 @@ const tabDesktop = () => {
               >
                 {item.title.toLowerCase().includes('talks')
                   ? `${item.title}`
-                  : `B. ${item.title}`}
+                  : `${item.title}`}
               </button>
             )}
           </Tab>
@@ -64,7 +64,7 @@ const tabMobile = () => {
                   >
                     {item.title.toLowerCase().includes('talks')
                       ? `${item.title}`
-                      : `B. ${item.title}`}
+                      : `${item.title}`}
                   </button>
                 )}
               </Tab>
@@ -78,7 +78,7 @@ const tabMobile = () => {
 const Schedule = () => {
   const isDesktop = useMediaQuery(1024)
   return (
-    <section id="schedule" className="pt-36 w-full">
+    <section id="schedule" className="pt-14 w-full sm:pt-36">
       <Container className="overflow-hidden">
         <Grid className="px-4">
           <InViewDiv

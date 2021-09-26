@@ -84,7 +84,7 @@ const Schedule = () => {
                         title={
                           item.title.toLowerCase().includes('talks')
                             ? `${item.title}`
-                            : `B. ${item.title}`
+                            : `${item.title}`
                         }
                         id={item.title}
                         active={selected === item.slug}
