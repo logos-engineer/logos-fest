@@ -9,10 +9,11 @@ export default function BootcampClass({ data }) {
         <h1 className="col-span-12 text-black-primary text-base font-semibold lg:text-2xl">
           Kelas lainnya dari Bootcamp ini
         </h1>
-        <div className="grid gap-6 col-span-12 mt-4 lg:gap-10 lg:grid-cols-2 lg:mt-0">
+        <div className="h-[max-content] grid gap-6 col-span-12 mt-4 lg:gap-10 lg:grid-cols-2 lg:mt-0">
           {data.map((list) => (
             <div className="col-span-1">
               <CardSchedule
+                className="h-full"
                 category={list.category}
                 slug={list.slug}
                 key={list.slug}
