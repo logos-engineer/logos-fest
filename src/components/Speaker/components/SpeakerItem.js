@@ -2,12 +2,21 @@ import Image from 'next/image'
 import React from 'react'
 import useDataUrl from '@/hooks/useDataUrl'
 import Link from 'next/link'
+import splitbee from '@splitbee/web'
+import { SPLITBEE_EVENTS } from '@/constants/eventSplitbee'
 
 const SpeakerItem = ({ name, imgSrc, university, slug }) => {
   const dataUrl = useDataUrl(275, 332)
   return (
     <Link href={`/speakers/${slug}`} passHref>
-      <a aria-label={`${name} detail`}>
+      <a
+        aria-label={`${name} detail`}
+        onClick={() =>
+          splitbee.track(`/speakers/${slug}`, {
+            data: SPLITBEE_EVENTS.SPEAKERS,
+          })
+        }
+      >
         <div className="relative w-full h-full rounded-2xl cursor-pointer overflow-hidden">
           <Image
             src={imgSrc}

@@ -11,12 +11,16 @@ import MagdaleneImg from '@/public/img/homepage/sponsors/dekstop/magdalene.png'
 import KelasImg from '@/public/img/homepage/sponsors/dekstop/kelas-isolasi.png'
 import GreatMind from '@/public/img/homepage/sponsors/dekstop/great-mind.png'
 import FineryImg from '@/public/img/homepage/sponsors/dekstop/finery-report.png'
+import splitbee from '@splitbee/web'
+import { SPLITBEE_EVENTS } from 'src/constants/eventSplitbee'
+import Link from 'next/link'
 
 const SponsorDekstop = () => {
   const ListSponsor = [
     {
       imgSrc: PoliticalImg,
       alt: 'Political Jokes',
+      url: 'https://www.instagram.com/politicaljokesid/',
     },
     {
       imgSrc: KokBisaImg,
@@ -53,14 +57,24 @@ const SponsorDekstop = () => {
   ]
   return (
     <>
-      <div className="flex col-span-full items-center justify-center">
-        <motion.img
-          variants={FadeInUp}
-          src="/img/homepage/sponsors/indika.svg"
-          alt="Indika Foundation"
-          className="w-[214px] h-auto"
-        />
-      </div>
+      <Link href="https://indikafoundation.org/" passHref>
+        <a
+          target="_blank"
+          className="flex col-span-full items-center justify-center"
+          onClick={() =>
+            splitbee.track('https://indikafoundation.org/', {
+              data: SPLITBEE_EVENTS.SPONSOR,
+            })
+          }
+        >
+          <motion.img
+            variants={FadeInUp}
+            src="/img/homepage/sponsors/indika.svg"
+            alt="Indika Foundation"
+            className="w-[214px] h-auto"
+          />
+        </a>
+      </Link>
       <div className="flex col-span-full justify-center space-x-8">
         {/* component Import Nextjs image*/}
 

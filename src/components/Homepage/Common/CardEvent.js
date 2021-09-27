@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { ChevronRightIcon } from '@heroicons/react/solid'
 import Link from 'next/link'
+import splitbee from '@splitbee/web'
 
 const CardEvent = ({ imgSrc, imgAlt, title, subtitle, url }) => {
   return (
@@ -19,6 +20,9 @@ const CardEvent = ({ imgSrc, imgAlt, title, subtitle, url }) => {
         <a
           aria-label={'Learn More ' + title}
           className="lg:mt-[42px] flex items-center mt-4 p-0 w-auto text-ocean-300 text-sm leading-normal sm:text-base"
+          onClick={() => {
+            splitbee.track(title, { link: url })
+          }}
         >
           Baca selengkapnya <ChevronRightIcon className="ml-1 w-6 h-6" />
         </a>

@@ -4,7 +4,9 @@ import {
   TWITTER_LINK,
   YOUTUBE_LINK,
 } from '@/data/path'
+import splitbee from '@splitbee/web'
 import React from 'react'
+import { SPLITBEE_EVENTS } from '@/constants/eventSplitbee'
 
 import FooterLink from './Footer/FooterLink'
 import IconLink from './Footer/IconLink'
@@ -22,10 +24,29 @@ const Footer = () => {
             alt="Logos Logo"
           />
           <div className="lg:w-[50%] flex flex-col justify-between mt-6 w-full lg:flex-row lg:mx-auto">
-            <FooterLink href="/">Beranda</FooterLink>
-            <FooterLink href="/schedule">Jadwal</FooterLink>
-            <FooterLink href="/speakers">Pemateri</FooterLink>
-            <FooterLink href={emailDraft} newTab={true}>
+            <FooterLink
+              href="/"
+              onClick={() => splitbee.track(SPLITBEE_EVENTS.HOMEPAGE)}
+            >
+              Beranda
+            </FooterLink>
+            <FooterLink
+              href="/schedule"
+              onClick={() => splitbee.track(SPLITBEE_EVENTS.SCHEDULE)}
+            >
+              Jadwal
+            </FooterLink>
+            <FooterLink
+              href="/speakers"
+              onClick={() => splitbee.track(SPLITBEE_EVENTS.SPEAKERS)}
+            >
+              Pemateri
+            </FooterLink>
+            <FooterLink
+              href={emailDraft}
+              newTab={true}
+              onClick={() => splitbee.track(SPLITBEE_EVENTS.CONTACT)}
+            >
               Contact Us
             </FooterLink>
           </div>
@@ -42,21 +63,33 @@ const Footer = () => {
                 src="/icon/instagram.svg"
                 href={INSTAGRAM_LINK}
                 alt="instagram"
+                onClick={() =>
+                  splitbee.track(INSTAGRAM_LINK, { data: 'contact' })
+                }
               />
               <IconLink
                 src="/icon/spotify.svg"
                 href={SPOTIFY_LINK}
                 alt="spotify"
+                onClick={() =>
+                  splitbee.track(SPOTIFY_LINK, { data: 'contact' })
+                }
               />
               <IconLink
                 src="/icon/twitter.svg"
                 href={TWITTER_LINK}
                 alt="twitter"
+                onClick={() =>
+                  splitbee.track(TWITTER_LINK, { data: 'contact' })
+                }
               />
               <IconLink
                 src="/icon/youtube.svg"
                 href={YOUTUBE_LINK}
                 alt="youtube"
+                onClick={() =>
+                  splitbee.track(YOUTUBE_LINK, { data: 'contact' })
+                }
               />
             </div>
           </div>
