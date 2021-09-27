@@ -13,6 +13,7 @@ export default function BootcampClass({ data }) {
           {data.map((list) => (
             <div className="col-span-1">
               <CardSchedule
+                className="min-h-[400px]"
                 category={list.category}
                 slug={list.slug}
                 key={list.slug}
