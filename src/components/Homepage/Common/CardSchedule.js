@@ -51,13 +51,13 @@ const CardSchedule = ({
           </div>
         ))}
       </div>
-      <Link href={urlRegister} passHref>
-        <a className="mt-8" target="_blank">
-          <Button variant="primary" size="base">
-            Register Now
-          </Button>
-        </a>
-      </Link>
+      {/* <Link href={urlRegister} passHref> */}
+      <a className="mt-8" target="_blank" href={urlRegister}>
+        <Button variant="primary" size="base">
+          Register Now
+        </Button>
+      </a>
+      {/* </Link> */}
     </InViewDiv>
   )
 }
