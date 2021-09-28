@@ -25,34 +25,42 @@ const SponsorDekstop = () => {
     {
       imgSrc: KokBisaImg,
       alt: 'Kok Bisa',
+      url: 'https://www.instagram.com/kokbisa/',
     },
     {
       imgSrc: EkskulImg,
       alt: 'Ekskul',
+      url: 'https://www.instagram.com/ekskulindonesia/',
     },
     {
       imgSrc: InspectImg,
       alt: 'Inspect History',
+      url: 'https://www.instagram.com/inspecthistory/',
     },
     {
       imgSrc: JadiImg,
       alt: 'Jadi Gini',
+      url: 'https://www.instagram.com/_jadigini/',
     },
     {
       imgSrc: MagdaleneImg,
       alt: 'Magdalene',
+      url: 'https://www.instagram.com/magdaleneid/',
     },
     {
       imgSrc: KelasImg,
       alt: 'Kelas Isolasi',
+      url: 'https://www.instagram.com/kelas.isolasi/',
     },
     {
       imgSrc: GreatMind,
       alt: 'Great Mind',
+      url: 'https://www.instagram.com/greatmind.id/',
     },
     {
       imgSrc: FineryImg,
       alt: 'Finery Report',
+      url: 'https://www.instagram.com/thefineryreport/',
     },
   ]
   return (
@@ -80,30 +88,52 @@ const SponsorDekstop = () => {
 
         {ListSponsor.slice(0, 6).map((item, index) => (
           <motion.div variants={FadeInUp} className="relative w-auto">
-            <Image
-              key={index}
-              src={item.imgSrc}
-              alt={item.alt}
-              width={index === 5 ? 185 : 140}
-              height={90}
-              placeholder="blur"
-              quality={100}
-            />
+            <Link href={item.url} passHref>
+              <a
+                target="_blank"
+                onClick={() => {
+                  splitbee.track('https://indikafoundation.org/', {
+                    data: SPLITBEE_EVENTS.SPONSOR,
+                  })
+                }}
+              >
+                <Image
+                  key={index}
+                  src={item.imgSrc}
+                  alt={item.alt}
+                  width={index === 5 ? 185 : 140}
+                  height={90}
+                  placeholder="blur"
+                  quality={100}
+                />
+              </a>
+            </Link>
           </motion.div>
         ))}
       </div>
       <div className="flex col-span-full items-center justify-center">
         {ListSponsor.slice(6, 9).map((item, index) => (
           <motion.div variants={FadeInUp} className="relative w-auto">
-            <Image
-              key={index}
-              src={item.imgSrc}
-              alt={item.alt}
-              width={140}
-              height={90}
-              placeholder="blur"
-              quality={100}
-            />
+            <Link href={item.url} passHref>
+              <a
+                target="_blank"
+                onClick={() => {
+                  splitbee.track('https://indikafoundation.org/', {
+                    data: SPLITBEE_EVENTS.SPONSOR,
+                  })
+                }}
+              >
+                <Image
+                  key={index}
+                  src={item.imgSrc}
+                  alt={item.alt}
+                  width={140}
+                  height={90}
+                  placeholder="blur"
+                  quality={100}
+                />
+              </a>
+            </Link>
           </motion.div>
         ))}
       </div>
