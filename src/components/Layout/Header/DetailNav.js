@@ -4,6 +4,8 @@ import { Fragment } from 'react'
 import { Button } from '@/components/Common'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import splitbee from '@splitbee/web'
+import { SPLITBEE_EVENTS } from '@/constants/eventSplitbee'
 
 const LinkList = [
   {
@@ -85,6 +87,9 @@ export default function DetailNav({ viewModal, handleModal }) {
                           variant="unstyled"
                           size="sm"
                           className="text-left font-medium hover:bg-white"
+                          onClick={splitbee.track(list.route, {
+                            data: SPLITBEE_EVENTS.NAVIGATION,
+                          })}
                         >
                           {list.name}
                         </Button>

@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import DesktopListAndButton from './Header/DesktopListAndButton'
 import MobileListAndButton from './Header/MobileListAndButton'
+import splitbee from '@splitbee/web'
+import { SPLITBEE_EVENTS } from '@/constants/eventSplitbee'
 
 const Header = () => {
   const route = useRouter()
@@ -34,6 +36,7 @@ const Header = () => {
           <Link passHref href="/">
             <a
               onClick={() => {
+                splitbee.track(SPLITBEE_EVENTS.HOMEPAGE)
                 if (route.pathname === '/') {
                   window.scrollTo({
                     top: 0,

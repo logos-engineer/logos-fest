@@ -1,0 +1,17 @@
+export const SPLITBEE_EVENTS = {
+  HOMEPAGE: 'menu_homepage',
+  SCHEDULE: 'menu_schedule',
+  SPEAKERS: 'menu_speakers',
+  NAVIGATION: 'menu_navigation',
+  EVENTS_BOOTCAMP: 'events_bootcamp',
+  EVENTS_JUSTICE: 'events_bootcamp',
+  BOOTCAMP_FILSAFAT: 'bootcam_filsafat',
+  BOOTCAMP_LAW: 'bootcamp_law',
+  BOOTCAMP_POLITIC: 'bootcamp_politic',
+  BOOTCAMP_GENDER: 'bootcamp_gender',
+  JUSTICE_TALKS: 'bootcamp_talks',
+  SUPPORT_US: 'support_us',
+  SPONSOR: 'sponsor_indika',
+  MEDIA_PARTNER: 'media_partner',
+  CONTACT: 'contact',
+}
