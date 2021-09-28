@@ -92,7 +92,7 @@ const SponsorDekstop = () => {
               <a
                 target="_blank"
                 onClick={() => {
-                  splitbee.track('https://indikafoundation.org/', {
+                  splitbee.track(item.url, {
                     data: SPLITBEE_EVENTS.SPONSOR,
                   })
                 }}

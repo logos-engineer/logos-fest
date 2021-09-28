@@ -2,6 +2,8 @@ import { FadeInUp } from '@/components/Animations'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import React from 'react'
+import splitbee from '@splitbee/web'
+import { SPLITBEE_EVENTS } from 'src/constants/eventSplitbee'
 
 const SponsorMobile = () => {
   const ListSponsor = [
@@ -52,7 +54,14 @@ const SponsorMobile = () => {
     <>
       <div className="flex col-span-full items-center justify-center">
         <Link href="https://indikafoundation.org/" passHref>
-          <a target="_blank">
+          <a
+            target="_blank"
+            onClick={() => {
+              splitbee.track('https://indikafoundation.org/', {
+                data: SPLITBEE_EVENTS.SPONSOR,
+              })
+            }}
+          >
             <motion.img
               variants={FadeInUp}
               src="/img/homepage/sponsors/indika.svg"
@@ -66,7 +75,14 @@ const SponsorMobile = () => {
       {ListSponsor.map((item, idx) => (
         <div className="flex col-span-6 items-center justify-center" key={idx}>
           <Link href={item.url} passHref>
-            <a target="_blank">
+            <a
+              target="_blank"
+              onClick={() => {
+                splitbee.track(item.url, {
+                  data: SPLITBEE_EVENTS.SPONSOR,
+                })
+              }}
+            >
               <motion.img
                 variants={FadeInUp}
                 src={item.imgSrc}
@@ -80,7 +96,14 @@ const SponsorMobile = () => {
 
       <div className="flex col-span-full items-center justify-center">
         <Link href="https://www.instagram.com/inspecthistory/" passHref>
-          <a target="_blank">
+          <a
+            target="_blank"
+            onClick={() => {
+              splitbee.track('https://www.instagram.com/inspecthistory/', {
+                data: SPLITBEE_EVENTS.SPONSOR,
+              })
+            }}
+          >
             <motion.img
               variants={FadeInUp}
               src="/img/homepage/sponsors/inspect-history.svg"
