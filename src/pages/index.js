@@ -5,14 +5,12 @@ import Event from '@/components/Homepage/Event'
 import Schedule from '@/components/Homepage/Schedule'
 import Book from '@/components/Homepage/Book'
 import Sponsors from '@/components/Homepage/Sponsors'
+import Seo from '@/components/Seo'
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Logos Festival</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Seo templateTitle="Logos Festival" />
       <Layout>
         <Hero />
         <Event />
