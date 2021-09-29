@@ -9,6 +9,7 @@ const defaultMeta = {
   url: 'http://festival.logosid.xyz/',
   image: 'http://festival.logosid.xyz/favicon/logos-large.png',
   type: 'website',
+  appId: '244180207721395',
   robots: 'follow, index',
 }
 
@@ -44,6 +45,7 @@ const Seo = (props) => {
       <meta property="og:description" content={meta.description} />
       <meta property="og:title" content={meta.title} />
       <meta property="og:image" content={meta.image} />
+      <meta property="fb:app_id" content={meta.appId} />
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@logos_id" />
