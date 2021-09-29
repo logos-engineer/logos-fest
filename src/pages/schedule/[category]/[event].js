@@ -3,8 +3,6 @@ import Layout from '@/components/Layout/Layout'
 import ScheduleDesc from '@/components/ScheduleDetail/ScheduleDesc'
 import BootcampClass from '@/components/ScheduleDetail/BootcampClass'
 import { useRouter } from 'next/dist/client/router'
-
-import Head from 'next/head'
 import { allSchedule } from '@/data/listScheduleName'
 import Seo from '@/components/Seo'
 
@@ -14,7 +12,10 @@ export default function ScheduleDetail({ dataSchedule, recomendation }) {
 
   return (
     <>
-      <Seo templateTitle={`Schedule Detail - ${category}`} />
+      <Seo
+        templateTitle={`Schedule Detail - ${category}`}
+        templateDesc="Pilih jadwalmu untuk Justice Bootcamp dan Justice Talk."
+      />
       <Layout>
         <ScheduleDesc data={dataSchedule} />
 
@@ -47,6 +48,8 @@ export function getStaticPaths() {
 
 export function getStaticProps({ params }) {
   const flatSchedule = allSchedule.map((data) => data.schedule).flat()
+
+  console.log(flatSchedule)
 
   const indexSchedule = flatSchedule
     .map((data) => data.slug)

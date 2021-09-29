@@ -19,8 +19,11 @@ const Seo = (props) => {
     ...props,
   }
   meta['title'] = props.templateTitle
-    ? `${props.templateTitle} | ${meta.site_name}`
+    ? `${meta.site_name} | ${props.templateTitle}`
     : meta.title
+  meta['description'] = props.templateDesc
+    ? props.templateDesc
+    : meta.description
 
   return (
     <Head>
@@ -40,7 +43,7 @@ const Seo = (props) => {
       <meta property="og:site_name" content={meta.site_name} />
       <meta property="og:description" content={meta.description} />
       <meta property="og:title" content={meta.title} />
-      <meta name="image" property="og:image" content={meta.image} />
+      <meta property="og:image" content={meta.image} />
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@logos_id" />

@@ -10,7 +10,7 @@ import Seo from '@/components/Seo'
 export default function Home() {
   return (
     <>
-      <Seo templateTitle="Logos Festival" />
+      <Seo />
       <Layout>
         <Hero />
         <Event />

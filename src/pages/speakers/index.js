@@ -2,7 +2,6 @@ import Layout from '@/components/Layout/Layout'
 import Hero from '@/components/Speaker/Hero'
 import ListSpeaker from '@/components/Speaker/ListSpeaker'
 import React from 'react'
-import Head from 'next/head'
 import { motion } from 'framer-motion'
 import { StaggerChildFast } from '@/components/Animations'
 import Seo from '@/components/Seo'
@@ -10,7 +9,10 @@ import Seo from '@/components/Seo'
 const Speakers = () => {
   return (
     <>
-      <Seo templateTitle="Speakers" />
+      <Seo
+        templateTitle="Speakers"
+        templateDesc="Pembicara event ini adalah pembicara hebat dan tentunya dengan berbagai pengalaman yang sudah dimiliki di bidangnya."
+      />
       <Layout>
         <motion.section
           variants={StaggerChildFast}
