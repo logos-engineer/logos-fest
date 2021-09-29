@@ -7,7 +7,8 @@ import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { StaggerChildFast, FadeInUp } from '../Animations'
 import InViewDiv from '../Common/InViewDiv'
-
+import Image from 'next/image'
+import HeroImage from '@/public/img/homepage/logos-hero.png'
 const Hero = () => {
   const modalContext = useContext(ModalContext)
   const router = useRouter()
@@ -54,22 +55,22 @@ const Hero = () => {
               </Button>
             </motion.div>
           </InViewDiv>
-          <div className="pattern-before ornament-dawn pattern-after ornament-star-hero relative col-span-12 mt-12 lg:col-span-7 lg:col-start-6 lg:mt-0">
+          <div className="relative col-span-12 mt-12 lg:col-span-7 lg:col-start-6 lg:mt-0">
             <motion.div
               ref={ref}
               variants={FadeInUp}
               initial="hidden"
               animate={controls}
-              className="aspect-w-3 aspect-h-2 lg:aspect-w-6 lg:aspect-h-4 relative rounded-3xl overflow-hidden"
+              className="relative rounded-3xl overflow-hidden"
             >
-              <iframe
-                className="absolute inset-0 w-full h-full"
-                src="https://www.youtube.com/embed/mnta9Pp2LqA?playlist=mnta9Pp2LqA&loop=1"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+              <Image
+                src={HeroImage}
+                alt="Logos Festival"
+                width={694}
+                height={400}
+                layout="responsive"
+                quality={100}
+              />
             </motion.div>
           </div>
         </Grid>
