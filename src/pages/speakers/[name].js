@@ -5,13 +5,12 @@ import SpeakerClass from '@/components/SpeakerDetail/SpeakerClass'
 import Head from 'next/head'
 import ListSpeakerName from '@/data/listSpeakerName'
 import { allSchedule } from '@/data/listScheduleName'
+import Seo from '@/components/Seo'
 
 export default function SpeakerDetail({ speakerData, speakerClass }) {
   return (
     <>
-      <Head>
-        <title>Speaker - {speakerData.name}</title>
-      </Head>
+      <Seo templateTitle={`Speaker - ${speakerData.name}`} />
       <Layout>
         <SpeakerInfo
           photo={speakerData.imgUrl}

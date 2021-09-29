@@ -9,6 +9,7 @@ import { useRouter } from 'next/router'
 import Head from 'next/head'
 import { FadeInUp } from '@/components/Animations'
 import { motion } from 'framer-motion'
+import Seo from '@/components/Seo'
 
 const Schedule = () => {
   const route = useRouter()
@@ -56,9 +57,7 @@ const Schedule = () => {
 
   return (
     <>
-      <Head>
-        <title>Jadwal</title>
-      </Head>
+      <Seo templateTitle="Jadwal" />
       <section id="schedule" className="flex flex-col min-h-screen">
         <Layout>
           <Container className="pt-[88px] lg:pt-[120px] px-4 w-full">

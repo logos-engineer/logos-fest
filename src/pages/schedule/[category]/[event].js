@@ -6,6 +6,7 @@ import { useRouter } from 'next/dist/client/router'
 
 import Head from 'next/head'
 import { allSchedule } from '@/data/listScheduleName'
+import Seo from '@/components/Seo'
 
 export default function ScheduleDetail({ dataSchedule, recomendation }) {
   const route = useRouter()
@@ -13,9 +14,7 @@ export default function ScheduleDetail({ dataSchedule, recomendation }) {
 
   return (
     <>
-      <Head>
-        <title>Schedule detail - {category}</title>
-      </Head>
+      <Seo templateTitle={`Schedule Detail - ${category}`} />
       <Layout>
         <ScheduleDesc data={dataSchedule} />
 

@@ -44,9 +44,18 @@ const Seo = (props) => {
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@logos_id" />
-      <meta name="twitter:title" content={meta.title} />
-      <meta name="twitter:description" content={meta.description} />
-      <meta name="twitter:image" content={meta.image} />
+      <meta key="tw-image" name="twitter:image" content={meta.image} />
+      <meta name="twitter:image:width" content="500" />
+      <meta name="twitter:image:height" content="500" />
+      <meta key="tw-title" name="twitter:title" content={meta.title} />
+      <meta
+        key="tw-description"
+        name="twitter:description"
+        content={meta.description}
+      />
+      <meta key="tw-url" name="twitter:url" content={meta.url} />
+
+      <meta name="twitter:card" content="summary_large_image" />
       {meta.date && (
         <>
           <meta property="article:published_time" content={meta.date} />
@@ -87,7 +96,7 @@ const favicons = [
   {
     rel: 'icon',
     type: 'image/png',
-    sizes: '192x192',
+    sizes: '150x150',
     href: '/favicon/android-icon-150x150.png',
   },
   {
