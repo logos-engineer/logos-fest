@@ -4,7 +4,9 @@ import PropTypes from 'prop-types'
 import Link from 'next/link'
 import InViewDiv from '@/components/Common/InViewDiv'
 import { FadeInUp } from '@/components/Animations'
-import { motion } from 'framer-motion'
+import clsx from 'clsx'
+import splitbee from '@splitbee/web'
+import { SPLITBEE_EVENTS } from '@/constants/eventSplitbee'
 
 const CardSchedule = ({
   title,
@@ -15,14 +17,26 @@ const CardSchedule = ({
   category,
   slug,
   titleLink,
+  className,
 }) => {
   return (
     <InViewDiv
       variants={FadeInUp}
-      className="flex flex-col px-4 py-6 w-full bg-white rounded-xl shadow-fest sm:px-8 sm:py-8 sm:rounded-2xl"
+      className={clsx(
+        'flex flex-col px-4 py-6 w-full bg-white rounded-xl shadow-fest sm:px-8 sm:py-8 sm:rounded-2xl',
+        className
+      )}
     >
       <Link href={titleLink || `/schedule/${category}/${slug}`} passHref>
-        <a aria-label={title} className="cursor-pointer">
+        <a
+          aria-label={title}
+          className="flex-1 cursor-pointer"
+          onClick={() =>
+            splitbee.track(titleLink || `/schedule/${category}/${slug}`, {
+              data: SPLITBEE_EVENTS.SCHEDULE,
+            })
+          }
+        >
           <h5 className="text-black-500 text-base font-semibold lg:text-xl">
             {title}
           </h5>
@@ -46,13 +60,18 @@ const CardSchedule = ({
           </div>
         ))}
       </div>
-      <Link href={urlRegister} passHref>
-        <a className="mt-8" target="_blank">
-          <Button variant="primary" size="base">
-            Register Now
-          </Button>
-        </a>
-      </Link>
+      {/* <Link href={urlRegister} passHref> */}
+      <a
+        className="mt-8"
+        target="_blank"
+        href={urlRegister}
+        onClick={() => splitbee.track(urlRegister, { data: category })}
+      >
+        <Button variant="primary" size="base">
+          Register Now
+        </Button>
+      </a>
+      {/* </Link> */}
     </InViewDiv>
   )
 }

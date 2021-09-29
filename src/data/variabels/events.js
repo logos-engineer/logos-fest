@@ -285,7 +285,7 @@ mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasy
   slug: 'gender-dan-feminisme',
   url: 'https://lynk.id/logos_id/',
   category: 'bootcamp',
-  bootcampCategory: 'bootcamp-hukum',
+  bootcampCategory: 'bootcamp-gender',
 }
 const gender2 = {
   id: 12,
@@ -343,7 +343,7 @@ mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasy
   slug: 'digital-dan-gender',
   url: 'https://lynk.id/logos_id/',
   category: 'bootcamp',
-  bootcampCategory: 'bootcamp-hukum',
+  bootcampCategory: 'bootcamp-gender',
 }
 
 export const kelas1 = [philosophy1, philosophy2, philosophy3, philosophy4]

@@ -5,6 +5,8 @@ import { Button, Container } from '@/components/Common'
 import { Popover, Transition } from '@headlessui/react'
 import { Router, useRouter } from 'next/dist/client/router'
 import { array } from 'prop-types'
+import splitbee from '@splitbee/web'
+import { SPLITBEE_EVENTS } from '@/constants/eventSplitbee'
 
 export default function ScheduleDesc({ data }) {
   const route = useRouter()
@@ -125,7 +127,15 @@ export default function ScheduleDesc({ data }) {
             </>
           </Popover>
 
-          <Button className="w-full" onClick={() => route.push(data.url)}>
+          <Button
+            className="w-full"
+            onClick={() => {
+              route.push(data.url)
+              splitbee.track(data.url, {
+                data: SPLITBEE_EVENTS.EVENTS_BOOTCAMP,
+              })
+            }}
+          >
             Register Now
           </Button>
         </div>
@@ -137,7 +147,12 @@ export default function ScheduleDesc({ data }) {
         <Container>
           <Button
             className="py-3 w-full text-base"
-            onClick={() => route.push(data.url)}
+            onClick={() => {
+              route.push(data.url)
+              splitbee.track(data.url, {
+                data: SPLITBEE_EVENTS.EVENTS_BOOTCAMP,
+              })
+            }}
           >
             Register Now
           </Button>
