@@ -31,7 +31,7 @@ export default function DetailNav({ viewModal, handleModal }) {
         <Dialog
           as="div"
           className="fixed z-50 inset-0 overflow-y-auto"
-          onClose={handleModal}
+          onClose={() => handleModal()}
         >
           <div className="min-h-screen text-center bg-black-primary bg-opacity-50">
             <Transition.Child
@@ -67,7 +67,7 @@ export default function DetailNav({ viewModal, handleModal }) {
                   <button
                     className="flex w-3 h-3"
                     aria-label="close"
-                    onClick={handleModal}
+                    onClick={() => handleModal()}
                   >
                     <img
                       src="/icon/modal/close.svg"
@@ -87,9 +87,11 @@ export default function DetailNav({ viewModal, handleModal }) {
                           variant="unstyled"
                           size="sm"
                           className="text-left font-medium hover:bg-white"
-                          onClick={splitbee.track(list.route, {
-                            data: SPLITBEE_EVENTS.NAVIGATION,
-                          })}
+                          onClick={() => {
+                            splitbee.track(list.route, {
+                              data: SPLITBEE_EVENTS.NAVIGATION,
+                            })
+                          }}
                         >
                           {list.name}
                         </Button>

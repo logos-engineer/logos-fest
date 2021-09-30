@@ -56,6 +56,7 @@ const SponsorMobile = () => {
         <Link href="https://indikafoundation.org/" passHref>
           <a
             target="_blank"
+            rel="noreferrer noopener"
             onClick={() => {
               splitbee.track('https://indikafoundation.org/', {
                 data: SPLITBEE_EVENTS.SPONSOR,
@@ -77,6 +78,7 @@ const SponsorMobile = () => {
           <Link href={item.url} passHref>
             <a
               target="_blank"
+              rel="noreferrer noopener"
               onClick={() => {
                 splitbee.track(item.url, {
                   data: SPLITBEE_EVENTS.SPONSOR,
@@ -98,6 +100,7 @@ const SponsorMobile = () => {
         <Link href="https://www.instagram.com/inspecthistory/" passHref>
           <a
             target="_blank"
+            rel="noreferrer noopener"
             onClick={() => {
               splitbee.track('https://www.instagram.com/inspecthistory/', {
                 data: SPLITBEE_EVENTS.SPONSOR,

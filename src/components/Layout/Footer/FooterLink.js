@@ -9,6 +9,7 @@ function FooterLink({ href, children, newTab = false, onClick }) {
         <a
           onClick={onClick}
           target="_blank"
+          rel="noreferrer noopener"
           rel="noopener noreferrer"
           className="relative pb-2 w-max text-white text-sm font-medium border-b-2 border-transparent hover:border-white transition-colors lg:text-lg"
         >
