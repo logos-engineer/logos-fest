@@ -13,11 +13,16 @@ const Event = () => {
     'Acara puncak Logos Fest tahun ini akan mengundang beberapa pemikir internasional yang penelitiannya berfokus pada konsep keadilan dan filsafat politik.'
 
   const eventName = route.query.event
+
+  console.log(route.query)
   const eventDesc = eventName === 'bootcamp' ? subtitleBootcamp : subtitleTalks
 
   return (
     <Layout>
-      <Seo templateTitle={`Justice - ${eventName}`} templateDesc={eventDesc} />
+      <Seo
+        templateTitle={`Justice - ${route.query.event}`}
+        templateDesc={eventDesc}
+      />
       <section id="justice-event" className="pt-120px w-full">
         <Hero eventName={eventName} />
         <TalkLists eventName={eventName} />
