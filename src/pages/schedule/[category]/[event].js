@@ -8,13 +8,12 @@ import Seo from '@/components/Seo'
 
 export default function ScheduleDetail({ dataSchedule, recomendation }) {
   const route = useRouter()
-  const { category, event } = route.query
 
   return (
     <>
       <Seo
-        templateTitle={`Schedule Detail - ${category}`}
-        templateDesc="Pilih jadwalmu untuk Justice Bootcamp dan Justice Talk."
+        templateTitle={dataSchedule.name}
+        templateDesc={dataSchedule.desc.slice(0, 160) + '...'}
       />
       <Layout>
         <ScheduleDesc data={dataSchedule} />

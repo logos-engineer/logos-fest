@@ -11,7 +11,7 @@ const Speakers = () => {
     <>
       <Seo
         templateTitle="Speakers"
-        templateDesc="Pembicara event ini adalah pembicara hebat dan tentunya dengan berbagai pengalaman yang sudah dimiliki di bidangnya."
+        templateDesc="Pembicara pada LogosFest adalah pembicara hebat dan tentunya dengan berbagai pengalaman yang sudah dimiliki di bidangnya."
       />
       <Layout>
         <motion.section

@@ -1,30 +1,37 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-
-const defaultMeta = {
-  title: 'Logos Festival',
-  site_name: 'Logos Festival',
-  description:
-    'Festival keilmuan yang diselenggarakan oleh LOGOS ID. Akan ada berbagai macam kegiatan seperti Justice Bootcamp dan Justice Talk',
-  url: 'http://festival.logosid.xyz/',
-  image: 'http://festival.logosid.xyz/favicon/logos-large.png',
-  type: 'website',
-  appId: '244180207721395',
-  robots: 'follow, index',
-}
+import HeroImage from '@/public/img/homepage/main/logos-hero.png'
 
 const Seo = (props) => {
   const router = useRouter()
+  const domain = 'http://localhost:3000'
+
+  const defaultMeta = {
+    title: 'Logos Festival',
+    site_name: 'Logos Festival',
+    description:
+      'Festival keilmuan yang diselenggarakan oleh LOGOS ID. Akan ada berbagai macam kegiatan seperti Justice Bootcamp dan Justice Talk',
+    url: 'http://festival.logosid.xyz/',
+    // image: 'http://festival.logosid.xyz/favicon/logos-large.png',
+    image: domain + HeroImage.src,
+    type: 'website',
+    appId: '244180207721395',
+    robots: 'follow, index',
+  }
+
   const meta = {
     ...defaultMeta,
     ...props,
   }
+
   meta['title'] = props.templateTitle
     ? `${meta.site_name} | ${props.templateTitle}`
     : meta.title
   meta['description'] = props.templateDesc
     ? props.templateDesc
     : meta.description
+
+  meta['image'] = props.image ? domain + props.image : meta.image
 
   return (
     <Head>

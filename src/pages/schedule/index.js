@@ -56,7 +56,12 @@ const Schedule = () => {
 
   return (
     <>
-      <Seo templateTitle="Jadwal" templateDesc={subtitleData} />
+      <Seo
+        templateTitle="Jadwal"
+        templateDesc={
+          'Jadwal acara Justice Bootcamp dan Justice Talks yang dilaksanakan di LogosFest'
+        }
+      />
       <section id="schedule" className="flex flex-col min-h-screen">
         <Layout>
           <Container className="pt-[88px] lg:pt-[120px] px-4 w-full">

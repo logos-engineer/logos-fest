@@ -9,7 +9,11 @@ import Seo from '@/components/Seo'
 export default function SpeakerDetail({ speakerData, speakerClass }) {
   return (
     <>
-      <Seo templateTitle={`Speaker - ${speakerData.name}`} />
+      <Seo
+        templateTitle={`Speaker - ${speakerData.name}`}
+        image={speakerData.imgUrl}
+        templateDesc={speakerData.profile}
+      />
       <Layout>
         <SpeakerInfo
           photo={speakerData.imgUrl}

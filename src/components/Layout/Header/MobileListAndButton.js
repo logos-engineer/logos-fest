@@ -13,7 +13,12 @@ export default function MobileListAndButton() {
       <button className="pr-4 lg:hidden" onClick={() => handleView(true)}>
         <img src="/icon/ham.svg" alt="menu nav" className="w-6 h-6" />
       </button>
-      <DetailNav viewModal={viewList} handleModal={() => handleView(false)} />
+      <DetailNav
+        viewModal={viewList}
+        handleModal={() => {
+          handleView(false)
+        }}
+      />
     </>
   )
 }
