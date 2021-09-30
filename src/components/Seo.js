@@ -83,6 +83,7 @@ const Seo = (props) => {
       {favicons.map((linkProps) => (
         <link key={linkProps.href} {...linkProps} />
       ))}
+      <link rel="manifest" href="/favicon/site.webmanifest" />
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta
         name="msapplication-TileImage"
@@ -127,10 +128,6 @@ const favicons = [
     type: 'image/x-icon',
     sizes: '16x16',
     href: '/favicon/favicon.ico',
-  },
-  {
-    rel: 'manifest',
-    href: '/favicon/site.manifest.json',
   },
 ]
 
