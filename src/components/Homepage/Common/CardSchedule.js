@@ -4,8 +4,9 @@ import PropTypes from 'prop-types'
 import Link from 'next/link'
 import InViewDiv from '@/components/Common/InViewDiv'
 import { FadeInUp } from '@/components/Animations'
-import { motion } from 'framer-motion'
 import clsx from 'clsx'
+import splitbee from '@splitbee/web'
+import { SPLITBEE_EVENTS } from '@/constants/eventSplitbee'
 
 const CardSchedule = ({
   title,
@@ -27,7 +28,15 @@ const CardSchedule = ({
       )}
     >
       <Link href={titleLink || `/schedule/${category}/${slug}`} passHref>
-        <a aria-label={title} className="flex-1 cursor-pointer">
+        <a
+          aria-label={title}
+          className="flex-1 cursor-pointer"
+          onClick={() =>
+            splitbee.track(titleLink || `/schedule/${category}/${slug}`, {
+              data: SPLITBEE_EVENTS.SCHEDULE,
+            })
+          }
+        >
           <h5 className="text-black-500 text-base font-semibold lg:text-xl">
             {title}
           </h5>
@@ -52,7 +61,12 @@ const CardSchedule = ({
         ))}
       </div>
       {/* <Link href={urlRegister} passHref> */}
-      <a className="mt-8" target="_blank" href={urlRegister}>
+      <a
+        className="mt-8"
+        target="_blank"
+        href={urlRegister}
+        onClick={() => splitbee.track(urlRegister, { data: category })}
+      >
         <Button variant="primary" size="base">
           Register Now
         </Button>
