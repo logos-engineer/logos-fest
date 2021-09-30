@@ -19,10 +19,7 @@ const Event = () => {
 
   return (
     <Layout>
-      <Seo
-        templateTitle={`Justice - ${route.query.event}`}
-        templateDesc={eventDesc}
-      />
+      <Seo templateTitle={`Justice - Event`} templateDesc={eventDesc} />
       <section id="justice-event" className="pt-120px w-full">
         <Hero eventName={eventName} />
         <TalkLists eventName={eventName} />
