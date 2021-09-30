@@ -64,6 +64,7 @@ const Hero = () => {
               className="relative rounded-3xl overflow-hidden"
             >
               <Image
+                placeholder="blur"
                 src={HeroImage}
                 alt="Logos Festival"
                 width={694}

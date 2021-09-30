@@ -57,7 +57,11 @@ const Schedule = () => {
   return (
     <>
       <Seo
-        templateTitle="Jadwal"
+        templateTitle={
+          route.query.event
+            ? `Jadwal ${route.query.event.replace('-', ' ')}`
+            : 'Jadwal'
+        }
         templateDesc={
           'Jadwal acara Justice Bootcamp dan Justice Talks yang dilaksanakan di LogosFest'
         }
