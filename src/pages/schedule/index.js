@@ -6,9 +6,9 @@ import Layout from '@/components/Layout/Layout'
 import ClassList from '@/components/SchedulePage/ClassList'
 import { allSchedule } from '@/data/listScheduleName'
 import { useRouter } from 'next/router'
-import Head from 'next/head'
 import { FadeInUp } from '@/components/Animations'
 import { motion } from 'framer-motion'
+import Seo from '@/components/Seo'
 
 const Schedule = () => {
   const route = useRouter()
@@ -56,9 +56,16 @@ const Schedule = () => {
 
   return (
     <>
-      <Head>
-        <title>Jadwal</title>
-      </Head>
+      <Seo
+        templateTitle={
+          route.query.event
+            ? `Jadwal ${route.query.event.replace('-', ' ')}`
+            : 'Jadwal'
+        }
+        templateDesc={
+          'Jadwal acara Justice Bootcamp dan Justice Talks yang dilaksanakan di LogosFest'
+        }
+      />
       <section id="schedule" className="flex flex-col min-h-screen">
         <Layout>
           <Container className="pt-[88px] lg:pt-[120px] px-4 w-full">

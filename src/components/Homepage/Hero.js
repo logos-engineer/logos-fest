@@ -8,7 +8,7 @@ import { useInView } from 'react-intersection-observer'
 import { StaggerChildFast, FadeInUp } from '../Animations'
 import InViewDiv from '../Common/InViewDiv'
 import Image from 'next/image'
-import HeroImage from '@/public/img/homepage/logos-hero.png'
+import HeroImage from '@/public/img/homepage/main/logos-hero.png'
 const Hero = () => {
   const modalContext = useContext(ModalContext)
   const router = useRouter()
@@ -64,6 +64,7 @@ const Hero = () => {
               className="relative rounded-3xl overflow-hidden"
             >
               <Image
+                placeholder="blur"
                 src={HeroImage}
                 alt="Logos Festival"
                 width={694}
