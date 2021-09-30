@@ -7,7 +7,7 @@ import splitbee from '@splitbee/web'
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     splitbee.init({
-      token: 'OF7G9OB5SDD8',
+      token: 'C75H4N98QDIJ',
       disableCookie: false,
     })
   }, [])
