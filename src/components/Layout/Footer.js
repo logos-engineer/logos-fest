@@ -55,9 +55,9 @@ const Footer = () => {
             {' '}
           </div>
           <div className="flex flex-col justify-between mt-6 lg:flex-row lg:items-center">
-            <h5 className="text-white text-xs lg:text-base lg:font-semibold">
+            <p className="text-white text-xs lg:text-base lg:font-semibold">
               © Logos ID 2021. All Right Reserved
-            </h5>
+            </p>
             <div className="flex gap-4 mt-4 lg:gap-1 lg:mt-0">
               <IconLink
                 src="/icon/instagram.svg"

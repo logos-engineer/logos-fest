@@ -5,11 +5,11 @@ import PropTypes from 'prop-types'
 const HeadSection = ({ className, title, subtitle = '' }) => {
   return (
     <div className={clsx('flex flex-col ', className)}>
-      <h3 className="text-center text-black-primary text-lg font-semibold leading-1.4 capitalize lg:text-3xl">
+      <h2 className="text-center text-black-primary text-lg font-semibold leading-1.4 capitalize lg:text-3xl">
         {title}
-      </h3>
+      </h2>
       {subtitle && subtitle.length > 0 && (
-        <h6 className="mt-4 text-center text-sm lg:text-md">{subtitle}</h6>
+        <h3 className="mt-4 text-center text-sm lg:text-md">{subtitle}</h3>
       )}
     </div>
   )

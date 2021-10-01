@@ -37,9 +37,9 @@ const CardSchedule = ({
             })
           }
         >
-          <h5 className="text-black-500 text-base font-semibold lg:text-xl">
+          <h4 className="text-black-500 text-base font-semibold lg:text-xl">
             {title}
-          </h5>
+          </h4>
         </a>
       </Link>
       <p className="mt-2 text-ocean-300 text-sm lg:text-base">{date}</p>
@@ -64,6 +64,7 @@ const CardSchedule = ({
       <a
         className="mt-8"
         target="_blank"
+        rel="noreferrer noopener"
         href={urlRegister}
         onClick={() => splitbee.track(urlRegister, { data: category })}
       >

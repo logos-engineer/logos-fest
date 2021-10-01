@@ -10,9 +10,9 @@ const CardEvent = ({ imgSrc, imgAlt, title, subtitle, url }) => {
       <div className="flex items-center justify-center w-8 h-8 bg-ocean-300 rounded-lg sm:w-16 sm:h-16 sm:rounded-2xl">
         <img className="w-4 h-4 sm:w-8 sm:h-8" src={imgSrc} alt={imgAlt} />
       </div>
-      <h3 className="leading- 1.4 mt-4 text-black-primary font-semibold capitalize lg:mt-8 lg:text-2xl">
+      <h4 className="leading- 1.4 mt-4 text-black-primary font-semibold capitalize lg:mt-8 lg:text-2xl">
         {title}
-      </h3>
+      </h4>
       <p className="line-clamp-3 sm:line-clamp-5 mt-2 text-sm lg:mt-4 lg:text-base">
         {subtitle}
       </p>
