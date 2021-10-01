@@ -14,11 +14,14 @@ const Hero = () => {
   const router = useRouter()
   const controls = useAnimation()
   const [ref, inView] = useInView()
-  useEffect(() => {
-    if (inView) {
-      controls.start('show')
-    }
-  }, [inView])
+  controls.start("show")
+
+  // useEffect(() => {
+  //   if (inView) {
+  //     controls.start('show')
+  //   }
+  // }, [inView])
+  
   return (
     <section id="hero" className="lg:pt-[221px] pb-14 pt-28 w-full sm:pb-36">
       <Container>
