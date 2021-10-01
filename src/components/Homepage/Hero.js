@@ -28,7 +28,7 @@ const Hero = () => {
             className="flex flex-col col-span-12 justify-center lg:col-span-5 lg:pr-7"
           >
             <motion.p variants={FadeInUp} className="text-ocean-300 text-md">
-              3 November - 3 Desember
+              4 November - 3 Desember
             </motion.p>
             <motion.h1
               variants={FadeInUp}
