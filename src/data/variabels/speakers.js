@@ -28,7 +28,7 @@ export const speaker3 = {
 }
 export const speaker4 = {
   id: 4,
-  name: 'Martin Suryajaya, M.Hum',
+  name: 'Martin Suryajaya, S.S, M.Hum',
   slug: 'martin-surjaya',
   jabatan: 'Kandidat Doktor STF Driyarkara, Jakarta',
   profile:
@@ -37,7 +37,7 @@ export const speaker4 = {
 }
 export const speaker5 = {
   id: 5,
-  name: 'Zainal Arifin Mochtar',
+  name: 'Dr. Zainal Arifin Mochtar, S.H., LL.M.',
   slug: 'zainal-arifin',
   jabatan: 'Pakar Hukum Tata Negara UGM',
   profile:
@@ -46,7 +46,7 @@ export const speaker5 = {
 }
 export const speaker6 = {
   id: 6,
-  name: 'Gandjar Laksmana Bonaprapta',
+  name: 'Gandjar Laksmana Bonaprapta S.H., M.H.',
   slug: 'gandjar-laksmana',
   jabatan: 'Pakar Hukum Universitas Indonesia',
   profile:
@@ -64,7 +64,7 @@ export const speaker7 = {
 }
 export const speaker8 = {
   id: 8,
-  name: 'Peter Carey',
+  name: 'Prof. Peter Carey, Ph. D',
   slug: 'peter-carey',
   jabatan: 'Sejarawan, Dosen Sejarah Universitas Indonesia',
   profile:
@@ -73,7 +73,7 @@ export const speaker8 = {
 }
 export const speaker9 = {
   id: 9,
-  name: 'Yoes C. Kenawas',
+  name: 'Yoes C. Kenawas, M.Si., M.Sc., M.A.',
   slug: 'yoes-c',
   jabatan: 'Peneliti Ilmu Politik',
   profile:
@@ -91,7 +91,7 @@ export const speaker10 = {
 }
 export const speaker11 = {
   id: 11,
-  name: 'Ikhaputri Widiantini',
+  name: 'Ikhaputri Widiantini, S.S., M.Si',
   slug: 'ikhaputri-widiantini',
   jabatan: 'Dosen Ilmu Filsafat Universitas Indonesia',
   profile:
@@ -100,7 +100,7 @@ export const speaker11 = {
 }
 export const speaker12 = {
   id: 12,
-  name: 'Syarif Maulana',
+  name: 'Syarif Maulana, S.IP, M.I.Kom',
   slug: 'syarif-maulana',
   jabatan: 'Dosen Filsafat Universitas Parahyangan',
   profile:
@@ -109,7 +109,7 @@ export const speaker12 = {
 }
 export const speaker13 = {
   id: 13,
-  name: 'Hera Diani',
+  name: 'Hera Diani, S.T.',
   slug: 'hera-diani',
   jabatan: 'Penulis/Editor/Konsultan Komunikasi',
   profile:
