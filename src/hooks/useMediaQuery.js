@@ -1,29 +1,18 @@
 import { useState, useCallback, useEffect } from 'react'
 
-const useMediaQuery = (width) => {
-  const [targetReached, setTargetReached] = useState(false)
+import { useMediaQuery } from 'react-responsive'
 
-  const updateTarget = useCallback((e) => {
-    if (e.matches) {
-      setTargetReached(true)
-    } else {
-      setTargetReached(false)
-    }
-  }, [])
-
+const useMediaQueryHook = (width) => {
+  const [desktop, setDesktop] = useState(false)
+  const isDekstop = useMediaQuery({ minWidth: width })
   useEffect(() => {
-    const media = window.matchMedia(`(min-width: ${width}px)`)
-    media.addEventListener('change', (e) => updateTarget(e))
-
-    // Check on mount (callback is not called until a change occurs)
-    if (media.matches) {
-      setTargetReached(true)
+    if (isDekstop !== desktop) {
+      setDesktop(isDekstop)
     }
+    console.log('Dekstop', isDekstop)
+  }, [isDekstop])
 
-    return () => media.removeEventListener('change', (e) => updateTarget(e))
-  }, [])
-
-  return targetReached
+  return desktop
 }
 
-export default useMediaQuery
+export default useMediaQueryHook
