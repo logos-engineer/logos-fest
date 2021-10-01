@@ -130,7 +130,7 @@ const favicons = [
   },
   {
     rel: 'manifest',
-    href: '/favicon/site.manifest.json',
+    href: '/favicon/site.webmanifest',
   },
 ]
 
