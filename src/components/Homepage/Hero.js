@@ -14,11 +14,14 @@ const Hero = () => {
   const router = useRouter()
   const controls = useAnimation()
   const [ref, inView] = useInView()
-  useEffect(() => {
-    if (inView) {
-      controls.start('show')
-    }
-  }, [inView])
+  controls.start("show")
+
+  // useEffect(() => {
+  //   if (inView) {
+  //     controls.start('show')
+  //   }
+  // }, [inView])
+  
   return (
     <section id="hero" className="lg:pt-[221px] pb-14 pt-28 w-full sm:pb-36">
       <Container>
@@ -28,7 +31,7 @@ const Hero = () => {
             className="flex flex-col col-span-12 justify-center lg:col-span-5 lg:pr-7"
           >
             <motion.p variants={FadeInUp} className="text-ocean-300 text-md">
-              4 November - 3 Desember
+              3 November - 4 Desember
             </motion.p>
             <motion.h1
               variants={FadeInUp}

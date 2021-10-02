@@ -6,12 +6,13 @@ import { allSchedule } from '@/data/listScheduleName'
 import clsx from 'clsx'
 import { Fragment } from 'react'
 import CardSchedule from './Common/CardSchedule'
-import useMediaQuery from '@/hooks/useMediaQuery'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import Link from 'next/link'
 import InViewDiv from '../Common/InViewDiv'
 import { FadeInUp } from '../Animations'
+
+import useMediaQueryHook from '@/hooks/useMediaQuery'
 
 const tabDesktop = () => {
   return (
@@ -76,7 +77,7 @@ const tabMobile = () => {
 }
 
 const Schedule = () => {
-  const isDesktop = useMediaQuery(1024)
+  const isDesktop = useMediaQueryHook(1024)
   return (
     <section id="schedule" className="pt-14 w-full sm:pt-36">
       <Container className="overflow-hidden">

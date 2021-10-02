@@ -129,6 +129,10 @@ const favicons = [
     sizes: '16x16',
     href: '/favicon/favicon.ico',
   },
+  {
+    rel: 'manifest',
+    href: '/favicon/site.webmanifest',
+  },
 ]
 
 export default Seo
