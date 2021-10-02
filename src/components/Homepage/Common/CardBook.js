@@ -31,9 +31,9 @@ const CardBook = ({ className, title, subtitle, imgSrc }) => {
         </div>
       </div>
       <div className="flex flex-col flex-grow-0 my-auto p-4 lg:px-10">
-        <h4 className="text-black-primary text-sm font-semibold leading-normal lg:text-base">
+        <h3 className="text-black-primary text-sm font-semibold leading-normal lg:text-base">
           {title}
-        </h4>
+        </h3>
         <p className="mt-2 text-black-primary text-opacity-70 text-sm lg:text-base">
           {subtitle}
         </p>

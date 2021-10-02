@@ -91,7 +91,7 @@ export const speaker10 = {
 }
 export const speaker11 = {
   id: 11,
-  name: 'Ikhaputri Widiantini, S.S., M.Si',
+  name: 'Ikhaputri Widiantini, S.Hum, M.Si',
   slug: 'ikhaputri-widiantini',
   jabatan: 'Dosen Ilmu Filsafat Universitas Indonesia',
   profile:

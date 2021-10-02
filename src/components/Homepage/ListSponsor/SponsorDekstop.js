@@ -68,6 +68,7 @@ const SponsorDekstop = () => {
       <Link href="https://indikafoundation.org/" passHref>
         <a
           target="_blank"
+          rel="noreferrer noopener"
           className="flex col-span-full items-center justify-center"
           onClick={() =>
             splitbee.track('https://indikafoundation.org/', {
@@ -91,6 +92,7 @@ const SponsorDekstop = () => {
             <Link href={item.url} passHref>
               <a
                 target="_blank"
+                rel="noreferrer noopener"
                 onClick={() => {
                   splitbee.track(item.url, {
                     data: SPLITBEE_EVENTS.SPONSOR,
@@ -117,6 +119,7 @@ const SponsorDekstop = () => {
             <Link href={item.url} passHref>
               <a
                 target="_blank"
+                rel="noreferrer noopener"
                 onClick={() => {
                   splitbee.track('https://indikafoundation.org/', {
                     data: SPLITBEE_EVENTS.SPONSOR,
