@@ -132,7 +132,7 @@ const law1 = {
         tersendiri bagi penegakkan keadilan dalam konteks hukum. Pola adaptasi tertentu diperlukan untuk
         menghadapi tantangan-tantangan baru dalam kultur peradaban manusia yang semakin serba digital.
         Perubahan tersebut perlu disikapi dengan bijak agar keadilan tetap dapat ditegakan bagi seluruh manusia.`,
-  date: 'Jumat, 10 November 2021',
+  date: 'Rabu, 10 November 2021',
   time: '19.00 - 21.00',
   speaker: [speaker5],
   slug: 'equity-in-law',
@@ -152,7 +152,7 @@ const law2 = {
         tersendiri bagi penegakkan keadilan dalam konteks hukum. Pola adaptasi tertentu diperlukan untuk
         menghadapi tantangan-tantangan baru dalam kultur peradaban manusia yang semakin serba digital.
         Perubahan tersebut perlu disikapi dengan bijak agar keadilan tetap dapat ditegakan bagi seluruh manusia.`,
-  date: 'Minggu, 12 November 2021',
+  date: 'Jumat, 12 November 2021',
   time: '19.00 - 21.00',
   speaker: [speaker6],
   slug: 'restorative-justice',
@@ -172,7 +172,7 @@ const law3 = {
         tersendiri bagi penegakkan keadilan dalam konteks hukum. Pola adaptasi tertentu diperlukan untuk
         menghadapi tantangan-tantangan baru dalam kultur peradaban manusia yang semakin serba digital.
         Perubahan tersebut perlu disikapi dengan bijak agar keadilan tetap dapat ditegakan bagi seluruh manusia.`,
-  date: 'Selasa, 14 November 2021',
+  date: 'Minggu, 14 November 2021',
   time: '19.00 - 21.00',
   speaker: [speaker7],
   slug: 'cyber-law',
@@ -190,7 +190,7 @@ const politics1 = {
   
   Demi menciptakan politik yang berkeadilan, peran generasi milenial sangat berpengaruh dalam terwujudnya politik demokrasi. Digitalisasi telah menjadi era baru untuk generasi milenial dalam penentuan dan keberhasilan demokrasi, baik di tingkat daerah maupun nasional. Bukan hanya memberikan ruang opini bagi generasi milenial, digitalisasi juga dapat menimbulkan banyak konflik politik yang berdampak negatif. Oleh karena itu, pelaksanaan pendidikan politik penting untuk dilaksanakan agar generasi milenial dapat berpartisipasi aktif dalam kegiatan politik yang berkeadilan.
   .`,
-  date: 'Jumat, 17 November 2021',
+  date: 'Rabu, 17 November 2021',
   time: '19.00 - 21.00',
   speaker: [speaker8],
   slug: 'sejarah-dan-aliran-politik-indonesia',
@@ -220,7 +220,7 @@ const politics2 = {
         ruang opini bagi generasi milenial, digitalisasi juga dapat menimbulkan banyak konflik politik yang
         berdampak negatif. Oleh karena itu, pelaksanaan pendidikan politik penting untuk dilaksanakan agar
         generasi milenial dapat berpartisipasi aktif dalam kegiatan politik yang berkeadilan.`,
-  date: 'Minggu, 19 November 2021',
+  date: 'Jumat, 19 November 2021',
   time: '19.00 - 21.00',
   speaker: [speaker9],
   slug: 'politik-dinasti-indonesia',
@@ -249,7 +249,7 @@ const politics3 = {
         ruang opini bagi generasi milenial, digitalisasi juga dapat menimbulkan banyak konflik politik yang
         berdampak negatif. Oleh karena itu, pelaksanaan pendidikan politik penting untuk dilaksanakan agar
         generasi milenial dapat berpartisipasi aktif dalam kegiatan politik yang berkeadilan.`,
-  date: 'Selasa, 21 November 2021',
+  date: 'Minggu, 21 November 2021',
   time: '19.00 - 21.00',
   speaker: [speaker10],
   slug: 'youth-political-participation-in-indonesia',
@@ -279,7 +279,7 @@ informasi dan komunikasi merupakan ranah maskulin sehingga dunia teknologi masih
 Tidak hanya patriarchy online, perempuan sering menjadi korban stereotipe, violence & online abuse,
 marjinalisasi, dan diskriminasi seperti rape culture. Berdasarkan masalah tersebut, menjadi penting untuk
 mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasyarakat.`,
-  date: 'Jumat, 24 November 2021',
+  date: 'Rabu, 24 November 2021',
   time: '19.00 - 21.00',
   speaker: [speaker11],
   slug: 'gender-dan-feminisme',
@@ -308,7 +308,7 @@ informasi dan komunikasi merupakan ranah maskulin sehingga dunia teknologi masih
 Tidak hanya patriarchy online, perempuan sering menjadi korban stereotipe, violence & online abuse,
 marjinalisasi, dan diskriminasi seperti rape culture. Berdasarkan masalah tersebut, menjadi penting untuk
 mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasyarakat.`,
-  date: 'Minggu, 26 November 2021',
+  date: 'Jumat, 26 November 2021',
   time: '19.00 - 21.00',
   speaker: [speaker12],
   slug: 'keadilan-dan-kesetaraan-gender-dalam-seni',
@@ -337,7 +337,7 @@ informasi dan komunikasi merupakan ranah maskulin sehingga dunia teknologi masih
 Tidak hanya patriarchy online, perempuan sering menjadi korban stereotipe, violence & online abuse,
 marjinalisasi, dan diskriminasi seperti rape culture. Berdasarkan masalah tersebut, menjadi penting untuk
 mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasyarakat.`,
-  date: 'Selasa, 28 November 2021',
+  date: 'Minggu, 28 November 2021',
   time: '19.00 - 21.00',
   speaker: [speaker13],
   slug: 'digital-dan-gender',
