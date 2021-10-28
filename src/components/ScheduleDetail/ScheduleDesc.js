@@ -19,13 +19,14 @@ export default function ScheduleDesc({ data }) {
           <h1 className="mb-6 text-black-primary text-lg lg:text-3xl">
             {data.title}
           </h1>
-          <div className="flex flex-col mb-6 space-y-4 lg:flex-row lg:space-x-8 lg:space-y-0">
+          <div className="flex flex-col flex-wrap gap-5 mb-6 space-y-4 lg:flex-row lg:space-y-0">
             {data.speaker.map((data) => (
               <SpeakerCard
                 key={data.name}
                 imgSrc={data.imgUrl}
                 name={data.name}
                 job={data.jabatan}
+                slug={data.slug}
               />
             ))}
           </div>

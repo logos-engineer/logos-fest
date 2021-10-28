@@ -351,11 +351,11 @@ mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasy
 
 const talk1 = {
   id: 14,
-  title: 'Justice and Philosophy',
-  desc: ``,
+  title: 'Justice, Philosophy and Critical Pedagogy',
+  desc: `Justice Talks merupakan acara puncak dari rangkaian Justice Festival Logos ID yang didukung oleh Indika Foundation. Dalam Justice Talks, terdapat 3 orang panelis yang membawakan tema Justice, Philosophy, dan Critical Pedagogy.`,
   date: 'TBA',
   time: '00.00 - 00.00',
-  speaker: [speakerTalk2],
+  speaker: [speakerTalk1, speakerTalk2, speakerTalk3],
   slug: 'justice-and-philosophy',
   url: 'https://lynk.id/logos_id/',
   category: 'talk',
