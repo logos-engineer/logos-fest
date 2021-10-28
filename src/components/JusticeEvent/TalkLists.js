@@ -22,13 +22,15 @@ const TalkLists = ({ eventName }) => {
             variants={StaggerChildFast}
             className="grid gap-6 grid-cols-1 mt-12 lg:gap-10 lg:grid-cols-2"
           >
-            {finalEvent.length > 1 ? (
+            {finalEvent.length >= 1 ? (
               finalEvent.map((datas, idx) => (
                 <CardSchedule
                   titleLink={`/schedule?event=${datas.slug}`}
                   key={idx}
                   slug={datas.slug}
-                  title={`Bootcamp ${datas.title}`}
+                  title={`${eventName === 'bootcamp' ? 'Bootcamp' : ''} ${
+                    datas.title
+                  }`}
                   date={datas.period}
                   subtitle={datas.subtitle}
                   urlRegister={datas.url}

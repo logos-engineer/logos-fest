@@ -98,7 +98,7 @@ const Schedule = () => {
             <Tab.Group>
               {isDesktop ? tabDesktop() : tabMobile()}
 
-              <Tab.Panels>
+              <Tab.Panels className={'w-full'}>
                 {allSchedule &&
                   allSchedule.map((item, index) => {
                     let itemSchedule = item?.schedule?.filter(
@@ -106,7 +106,7 @@ const Schedule = () => {
                     )
                     return (
                       <Tab.Panel
-                        className="grid gap-5 grid-cols-1 mt-12 lg:gap-10 lg:grid-cols-2"
+                        className="grid gap-6 grid-cols-1 mt-12 lg:gap-10 lg:grid-cols-2"
                         key={index}
                       >
                         {itemSchedule.length !== 0 ? (

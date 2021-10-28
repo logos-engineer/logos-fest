@@ -116,3 +116,32 @@ export const speaker13 = {
     'Hera Diani seorang jurnalis dengan pengalaman 21 tahun untuk media cetak dan digital. Beliau merupakan Co-founder Magdalene.co, majalah web yang berfokus pada isu-isu perempuan dan gender. Beliau seorang konsultan Komunikasi berpengalaman yang berspesialisasi dalam pembangunan berkelanjutan dan kampanye kesehatan masyarakat, untuk lembaga nirlaba dan multilateral.',
   imgUrl: '/img/speaker/hera-diani.png',
 }
+
+export const speakerTalk1 = {
+  id: 14,
+  name: 'Takeshi Morisato',
+  slug: 'takeshi-morishato',
+  jabatan: `Post-Doctoral Research Fellow, Research Centre for East Asian Studies (EASt) & Centre Interdisciplinaire d' Etude des Religions et de la Laïcité (CIERL), Université libre de Bruxelles (Belgium)`,
+  profile: '',
+  imgUrl: '/img/speaker/takeshi-morisato.jpeg',
+}
+
+export const speakerTalk2 = {
+  id: 15,
+  name: 'Dr. Johanna Oksala',
+  slug: 'johanna-oksala',
+  jabatan: `Philosopher, Arthur J. Schmitt Professor of Philosophy`,
+  profile: `Johanna Oksala is the Arthur J. Schmitt Professor of Philosophy. She joined Loyola University Chicago in August 2019. Before coming to LUC, Oksala taught at Pratt Institute of Art and Design (NY, USA), New School for Social Research (NY, USA), University of Helsinki (Finland), and University of Dundee (Scotland, UK).
+Professor Oksala’s areas of expertise are political philosophy, feminist philosophy, environmental philosophy, Foucault, and phenomenology. She is the author of five monographs and over fifty refereed journal articles and book chapters. Her work has been translated into eight languages. Oksala is on the editorial board of several academic journals, and she has given over a hundred conference papers and invited talks internationally.`,
+  imgUrl: '/img/speaker/johanna-oksala.jpg',
+}
+
+export const speakerTalk3 = {
+  id: 16,
+  name: 'Dr. Marc Pruyn',
+  slug: 'marc-pruyn',
+  jabatan: `Senior Lecturer, School of Curriculum, Teaching & Inclusive Education, Monash University`,
+  profile:
+    'Marc Pruyn is a Senior Lecturer in the Faculty of Education at Monash University. His areas of expertise include curriculum, pedagogy, educational foundations and research methodologies. Marc worked as a bilingual primary school teacher in Los Angeles for nine years and earned his PhD from UCLA. Before moving to Melbourne in 2010, he was a faculty member for fourteen years at New Mexico State University.',
+  imgUrl: '/img/speaker/marc-pruyn.jpeg',
+}
