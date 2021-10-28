@@ -1,4 +1,10 @@
-import { kelas1, kelas2, kelas3, kelas4 } from '@/data/variabels/events'
+import {
+  kelas1,
+  kelas2,
+  kelas3,
+  kelas4,
+  kelasTalks1,
+} from '@/data/variabels/events'
 import {
   speaker1,
   speaker2,
@@ -13,6 +19,9 @@ import {
   speaker11,
   speaker12,
   speaker13,
+  speakerTalk1,
+  speakerTalk2,
+  speakerTalk3,
 } from '@/data/variabels/speakers'
 
 export const bootcampClass = [
@@ -65,9 +74,13 @@ export const bootcampClass = [
 export const justiceClass = [
   {
     title: 'Justice Talks',
-    subtitle: 'Segera datang',
+    subtitle: `Justice Talks merupakan acara puncak dari rangkaian Justice Festival Logos ID yang didukung oleh Indika Foundation. Dalam Justice Talks, terdapat 3 orang panelis yang membawakan tema Justice, Philosophy, dan Critical Pedagogy`,
+    period: 'TBA',
+    timePeriod: 'TBA',
+    speakersData: [speakerTalk1, speakerTalk2, speakerTalk3],
     slug: 'justice-talks',
-    schedule: [],
+    url: 'https://lynk.id/logos_id/',
+    schedule: kelasTalks1,
   },
 ]
 

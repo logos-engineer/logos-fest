@@ -48,8 +48,6 @@ export function getStaticPaths() {
 export function getStaticProps({ params }) {
   const flatSchedule = allSchedule.map((data) => data.schedule).flat()
 
-  console.log(flatSchedule)
-
   const indexSchedule = flatSchedule
     .map((data) => data.slug)
     .indexOf(params.event)
