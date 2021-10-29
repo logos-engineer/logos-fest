@@ -75,8 +75,8 @@ export const justiceClass = [
   {
     title: 'Justice Talks',
     subtitle: `Justice Talks merupakan acara puncak dari rangkaian Justice Festival Logos ID yang didukung oleh Indika Foundation. Dalam Justice Talks, terdapat 3 orang panelis yang membawakan tema Justice, Philosophy, dan Critical Pedagogy`,
-    period: 'TBA',
-    timePeriod: 'TBA',
+    period: '4 Desember 2021',
+    timePeriod: '19.30 - 21.30 WIB',
     speakersData: [speakerTalk1, speakerTalk2, speakerTalk3],
     slug: 'justice-talks',
     url: 'https://lynk.id/logos_id/',
