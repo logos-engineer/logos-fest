@@ -12,6 +12,9 @@ import {
   speaker11,
   speaker12,
   speaker13,
+  speakerTalk1,
+  speakerTalk2,
+  speakerTalk3,
 } from './speakers'
 
 const philosophy1 = {
@@ -346,7 +349,21 @@ mengintegrasikan pandangan sensitif dan responsif gender dalam kehidupan bermasy
   bootcampCategory: 'bootcamp-gender',
 }
 
+const talk1 = {
+  id: 14,
+  title: 'Justice, Philosophy and Critical Pedagogy',
+  desc: `Justice Talks merupakan acara puncak dari rangkaian Justice Festival Logos ID yang didukung oleh Indika Foundation. Dalam Justice Talks, terdapat 3 orang panelis yang membawakan tema Justice, Philosophy, dan Critical Pedagogy.`,
+  date: 'TBA',
+  time: '00.00 - 00.00',
+  speaker: [speakerTalk1, speakerTalk2, speakerTalk3],
+  slug: 'justice-and-philosophy',
+  url: 'https://lynk.id/logos_id/',
+  category: 'talk',
+  bootcampCategory: 'justice-talks',
+}
+
 export const kelas1 = [philosophy1, philosophy2, philosophy3, philosophy4]
 export const kelas2 = [law1, law2, law3]
 export const kelas3 = [politics1, politics2, politics3]
 export const kelas4 = [gender1, gender2, gender3]
+export const kelasTalks1 = [talk1]

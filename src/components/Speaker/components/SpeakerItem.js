@@ -31,7 +31,9 @@ const SpeakerItem = ({ name, imgSrc, university, slug }) => {
           <div className="absolute bottom-0 left-0 right-0 top-0">
             <div className="absolute bottom-0 left-0 right-0 flex flex-col pb-4 pt-12 px-4 h-auto bg-speaker-gradient">
               <h4 className="text-white text-md font-semibold">{name}</h4>
-              <p className="text-white text-base">{university}</p>
+              <p className="line line-clamp-2 text-white text-base">
+                {university}
+              </p>
             </div>
           </div>
         </div>

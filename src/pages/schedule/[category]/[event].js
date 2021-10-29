@@ -7,7 +7,8 @@ import { allSchedule } from '@/data/listScheduleName'
 import Seo from '@/components/Seo'
 
 export default function ScheduleDetail({ dataSchedule, recomendation }) {
-  const route = useRouter()
+  const {category} = useRouter().query
+  
 
   return (
     <>
@@ -22,7 +23,7 @@ export default function ScheduleDetail({ dataSchedule, recomendation }) {
             Untuk sementara menggunakan komponen rekomendasi bootcamp class        
         */}
 
-        <BootcampClass data={recomendation} />
+        <BootcampClass data={recomendation} category={ category}/>
       </Layout>
     </>
   )
@@ -47,8 +48,6 @@ export function getStaticPaths() {
 
 export function getStaticProps({ params }) {
   const flatSchedule = allSchedule.map((data) => data.schedule).flat()
-
-  console.log(flatSchedule)
 
   const indexSchedule = flatSchedule
     .map((data) => data.slug)

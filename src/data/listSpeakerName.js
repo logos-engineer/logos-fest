@@ -12,6 +12,9 @@ import {
   speaker11,
   speaker12,
   speaker13,
+  speakerTalk1,
+  speakerTalk2,
+  speakerTalk3
 } from '@/data/variabels/speakers'
 
 const ListSpeakerName = [
@@ -28,6 +31,9 @@ const ListSpeakerName = [
   speaker11,
   speaker12,
   speaker13,
+  speakerTalk1,
+  speakerTalk2,
+  speakerTalk3,
 ]
 
 export default ListSpeakerName

@@ -35,12 +35,7 @@ export default function SpeakerInfo({ photo, name, univ, desc }) {
               {univ}
             </h2>
             <p className="text-black-primary text-opacity-75 text-sm lg:text-base">
-              {desc ||
-                `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem neque
-            pretium egestas in et, faucibus adipiscing lectus ipsum. Vel aliquam
-            non eget quisque rhoncus velit. Gravida mi sed habitant sed
-            sollicitudin auctor. Tincidunt risus, volutpat vel morbi. Velit,
-            facilisis tellus neque`}
+              {desc || "" }
             </p>
           </motion.div>
         </Grid>
