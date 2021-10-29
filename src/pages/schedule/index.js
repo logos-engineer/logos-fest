@@ -117,11 +117,6 @@ const Schedule = () => {
                 </div>
                 <div className="grid gap-6 grid-cols-1 mt-12 lg:gap-10 lg:grid-cols-2">
                   {renderFiltered()}
-                  {selected === 'justice-talks' && (
-                    <p className="col-span-2 mt-3 w-full text-center text-black-primary text-xl font-bold leading-snug lg:mt-4 lg:text-3xl">
-                      Segera datang
-                    </p>
-                  )}
                 </div>
               </motion.div>
             </Grid>

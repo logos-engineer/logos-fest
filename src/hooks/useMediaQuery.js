@@ -9,7 +9,7 @@ const useMediaQueryHook = (width) => {
     if (isDekstop !== desktop) {
       setDesktop(isDekstop)
     }
-    console.log('Dekstop', isDekstop)
+    
   }, [isDekstop])
 
   return desktop
